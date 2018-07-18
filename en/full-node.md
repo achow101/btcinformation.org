@@ -2,7 +2,7 @@
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
 
-layout: base-core
+layout: base
 lang: en
 id: full-node
 title: "Running A Full Node - Bitcoin"
@@ -13,8 +13,6 @@ end_of_page: |
   <script>boxShow();</script> 
 breadcrumbs:
   - bitcoin
-  - bcc
-  - bcc documentation
   - Bandwidth sharing
 ---
 
@@ -215,7 +213,28 @@ have an easy-to-use node.
 
 ### Possible Problems
 
-{% include bitcoin-core/bitcoin-core-possible-problems.md %}
+- **Legal:** Bitcoin use is [prohibited or restricted in some
+  areas.](https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country)
+
+- **Bandwidth limits**: Some Internet plans will charge an additional
+  amount for any excess upload bandwidth used that isn't included in
+  the plan. Worse, some providers may terminate your connection without
+  warning because of overuse. We advise that you check whether your
+  Internet connection is subjected to such limitations and monitor your
+  bandwidth use so that you can stop Bitcoin Core before you reach your
+  upload limit.
+
+- **Anti-virus:** Several people have placed parts of known computer
+  viruses in the Bitcoin block chain. This block chain data can't infect
+  your computer, but some anti-virus programs quarantine the data
+  anyway, making it more difficult to run Bitcoin Core. This problem mostly
+  affects computers running Windows.
+
+- **Attack target:** Bitcoin Core powers the Bitcoin peer-to-peer
+  network, so people who want to disrupt the network may
+  attack Bitcoin Core users in ways that will affect other things
+  you do with your computer, such as an attack that limits your
+  available download bandwidth.
 </div>
 
 <div class="toccontent-block boxexpand expanded" markdown="1">
@@ -1152,7 +1171,7 @@ automatically started minimized in the task bar.
 
 The Bitcoin Core daemon (bitcoind) is not included in the .dmg file you may have downloaded to install Bitcoin-QT. Bitcoind, along with its support binaries, is instead included in the OS X .tar.gz file listed on the official Bitcoin Core download page. To download this file using Terminal, execute the following command:
 
-    curl -O https://bitcoin.org/bin/bitcoin-core-{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-osx64.tar.gz
+    curl -O https://bitcoincore.org/bin/bitcoin-core-{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-osx64.tar.gz
 
 {{verifyReleaseSignatures}}
 

@@ -58,7 +58,6 @@ pre-build-tests-fast: check-for-non-ascii-urls check-for-wrong-filename-assignme
     check-for-missing-copyright-licenses \
     check-bundle \
     check-for-english-in-en-dir \
-    check-for-consistent-bitcoin-core-titles \
     check-for-too-many-wallets-on-one-platform \
     check-validate-yaml \
 
@@ -78,7 +77,6 @@ pre-build-tests: pre-build-tests-fast
 
 ## All post-build tests, including those which might take multiple minutes
 post-build-tests: post-build-tests-fast \
-    check-for-broken-bitcoin-core-download-links \
     check-html-proofer
 
 ## All manual updates to content that should be run by a human. This
@@ -246,19 +244,6 @@ manual-check-diff-sha256sums:
 	  | uniq -u \
 	  | sort -k2
 
-check-for-broken-bitcoin-core-download-links:
-## Ensure that the links from the Download page to the current Bitcoin
-## Core binaries are correct
-	$S grep 'class="dl"' _site/en/download.html \
-	  | sed 's/.*href="//; s/".*//' \
-	  | while read url ; do \
-	    if [ "$${url##http*}" ]; then \
-	      curl -sI "https://bitcoin.org$$url" ; \
-	    else \
-	      curl -sI "$$url" ; \
-	    fi | grep -q '200 OK' || echo "Error: Could not retrieve $$url" ; \
-	  done | eval $(ERROR_ON_OUTPUT)
-
 check-html-proofer:
 	$S bundle exec ruby _contrib/bco-htmlproof
 
@@ -289,11 +274,6 @@ check-for-javascript-in-svgs:
 check-for-english-in-en-dir:
 ## All pages must have page.lang set to work properly with the site templates
 	$S grep -rl -- '---' en/ | xargs grep -L '^ *lang: *en' | eval $(ERROR_ON_OUTPUT)
-
-check-for-consistent-bitcoin-core-titles:
-## Ensure all page titles in the en/bitcoin-core/ hierarchy mention
-## Bitcoin Core
-	$S grep -r -L '^title:.*Bitcoin Core' en/bitcoin-core/ | eval $(ERROR_ON_OUTPUT)
 
 check-for-too-many-wallets-on-one-platform:
 	$S for platform in desktop windows mac linux mobile android ios windowsphone web hardware \
