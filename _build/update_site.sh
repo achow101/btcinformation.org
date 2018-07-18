@@ -5,11 +5,11 @@
 
 PATH=/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin
 
-AUTHORIZED_SIGNERS_DIR='/bitcoin.org/auto-build-committers.gnupg'
-REPO='https://github.com/bitcoin-dot-org/bitcoin.org.git'
-BUNDLE_DIR='/bitcoin.org/bundle'
-SITEDIR='/bitcoin.org/site'
-DESTDIR='build@bitcoinorgsite:/var/www/site'
+AUTHORIZED_SIGNERS_DIR='/bitcoin-site/auto-build-committers.gnupg'
+REPO='https://github.com/achow101/bitcoin-site.git'
+BUNDLE_DIR='/bitcoin-site/bundle'
+SITEDIR='/bitcoin-site/site'
+DESTDIR='build@bitcoinsite:/var/www/site'
 WORKDIR=`mktemp -d`
 BITCOINORG_BUILD_TYPE='deployment'
 
