@@ -225,7 +225,6 @@ http://opensource.org/licenses/MIT.
 [bitcoinpdf]: https://bitcoin.org/en/bitcoin-paper
 [choose your wallet]: /en/choose-your-wallet
 [communities]: /en/community
-[dev communities]: /en/development#devcommunities
 [developer documentation]: /en/developer-documentation
 [devex complex raw transaction]: /en/developer-examples#complex-raw-transaction
 [devex payment protocol]: /en/developer-examples#payment-protocol
@@ -426,3 +425,19 @@ periodically to point to recent code. Last update: 2014-11-12 --> {% endcomment 
 [core bloom.cpp hash]: https://github.com/bitcoin/bitcoin/blob/cbf28c6619fe348a258dfd7d08bdbd2392d07511/src/bloom.cpp#L46
 [MAX_SIZE]: https://github.com/bitcoin/bitcoin/blob/60abd463ac2eaa8bc1d616d8c07880dc53d97211/src/serialize.h#L23
 [rpcprotocol.h]: https://github.com/bitcoin/bitcoin/blob/f914f1a746d7f91951c1da262a4a749dd3ebfa71/src/rpcprotocol.h
+
+<!-- FIXME previously removed links -->
+[bcc contribute issues]: https://github.com/bitcoin/bitcoin/issues/
+[core executable]: https://bitcoincore.org/en/download/
+
+[Bitcoin Core 0.11.0]: https://bitcoincore.org/en/releases/0.11.0/
+[Bitcoin Core 0.11.1]: https://bitcoincore.org/en/releases/0.11.1/
+[Bitcoin Core 0.11.2]: https://bitcoincore.org/en/releases/0.11.2/
+[Bitcoin Core 0.12.0]: https://bitcoincore.org/en/releases/0.12.0/
+[Bitcoin Core 0.12.1]: https://bitcoincore.org/en/releases/0.12.1/
+[Bitcoin Core 0.13.0]: https://bitcoincore.org/en/releases/0.13.0/
+[Bitcoin Core 0.13.1]: https://bitcoincore.org/en/releases/0.13.1/
+[Bitcoin Core 0.13.2]: https://bitcoincore.org/en/releases/0.13.2/
+[Bitcoin Core 0.14.0]: https://bitcoincore.org/en/releases/0.14.0/
+[Bitcoin Core 0.14.1]: https://bitcoincore.org/en/releases/0.14.1/
+[Bitcoin Core 0.14.2]: https://bitcoincore.org/en/releases/0.14.2/

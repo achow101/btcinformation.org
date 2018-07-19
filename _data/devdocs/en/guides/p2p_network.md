@@ -174,7 +174,7 @@ the local block chain is more than about 24 hours in the past).
 
 {% autocrossref %}
 
-Bitcoin Core (up until version [0.9.3][bitcoin core 0.9.3]) uses a
+Bitcoin Core (up until version 0.9.3) uses a
 simple initial block download (IBD) method we'll call *blocks-first*.
 The goal is to download the blocks from the best block chain in sequence.
 

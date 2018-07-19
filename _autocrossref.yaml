@@ -421,3 +421,17 @@ CVE-2012-2459:
 '`walletpassphrase` RPC': rpc walletpassphrase
 '`walletpassphrasechange`': rpc walletpassphrasechange
 '`walletpassphrasechange` RPC': rpc walletpassphrasechange
+
+## Versions of Bitcoin Core (linked to Bitcoin.org release notes)
+Bitcoin Core 0.11.0:
+Bitcoin Core 0.11.1:
+Bitcoin Core 0.11.2:
+Bitcoin Core 0.12.0:
+Bitcoin Core 0.12.1:
+Bitcoin Core 0.13.0:
+Bitcoin Core 0.13.1:
+Bitcoin Core 0.13.2:
+Bitcoin Core 0.14.0:
+Bitcoin Core 0.14.1:
+Bitcoin Core 0.14.2:
+Bitcoin Core master:

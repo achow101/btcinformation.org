@@ -9,7 +9,7 @@ http://opensource.org/licenses/MIT.
 
 {% autocrossref %}
 
-As of [version 0.10.0][bitcoin core 0.10.0], Bitcoin Core provides
+As of version 0.10.0, Bitcoin Core provides
 an **unauthenticated** HTTP REST interface.  The interface runs on the
 same port as the JSON-RPC interface, by default port 8332 for mainnet and
 port 18332 for testnet. It must be enabled by either starting Bitcoin
