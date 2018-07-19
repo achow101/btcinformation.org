@@ -39,9 +39,7 @@ max_wallet_text_length: 418  ## Unicode characters
         <div class="wallet-os-container clearfix" id="{{ os.name }}">
           <div class="wallet-os-btn-block">
             <div class="wallet-os-download-buttons">
-              {% if os.link == 'bitcoincore' %}
-              <a class="wallet-os-download-link btn-bright" href="/{{ page.lang }}/{% translate download url %}">{% translate walletdownload choose-your-wallet %}</a>
-              {% elsif os.link contains 'play.google.com' or os.link contains 'itunes.apple.com' or os.link contains 'chrome.google.com'
+              {% if os.link contains 'play.google.com' or os.link contains 'itunes.apple.com' or os.link contains 'chrome.google.com'
               %}
               <a class="wallet-os-download-link btn-bright" href="{{ os.link }}">{% translate walletdownload choose-your-wallet %}</a>
               {% else %}

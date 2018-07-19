@@ -12,7 +12,7 @@ platform:
     name: desktop
     default: &DEFAULT
       text: "walletbitcoincore"
-      link: "bitcoincore"
+      link: "https://bitcoincore.org/en/download"
       source: "https://github.com/bitcoin/bitcoin"
       screenshot: "bitcoincore.png?1528322191"
       check:
