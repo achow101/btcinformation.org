@@ -449,7 +449,7 @@ The following instructions describe installing Bitcoin Core using tools
 available in most mainstream Linux distributions.  We assume you use a
 Bourne-like shell such as `bash`.
 
-Using any computer, go to the [Bitcoin Core download page](/en/download)
+Using any computer, go to the [Bitcoin Core download page][]
 and verify you have made a secure connection to the server.
 
 ![Verify secure connection](/img/full-node/en-secure-connection.png?{{site.time | date: '%s'}})
@@ -634,7 +634,7 @@ If you're a expert system administrator and want to use an init script instead, 
 
 *Instructions for Bitcoin Core 0.14.2 on Windows 10
 
-Go to the [Bitcoin Core download page](/en/download) and verify you have
+Go to the [Bitcoin Core download page][] and verify you have
 made a secure connection to the server.
 
 ![Verify secure connection](/img/full-node/en-win10-secure-connection.png?{{site.time | date: '%s'}})
@@ -788,7 +788,7 @@ daemon will be automatically started.
 
 *Instructions for Bitcoin Core 0.14.2 on Windows 8 and 8.1.*
 
-Go to the [Bitcoin Core download page](/en/download) and verify you have
+Go to the [Bitcoin Core download page][] and verify you have
 made a secure connection to the server.
 
 ![Verify secure connection](/img/full-node/en-secure-connection.png?{{site.time | date: '%s'}})
@@ -942,7 +942,7 @@ daemon will be automatically started.
 
 *Instructions for Bitcoin Core 0.14.2
 
-Go to the [Bitcoin Core download page](/en/download) and verify you have
+Go to the [Bitcoin Core download page][] and verify you have
 made a secure connection to the server.
 
 ![Verify secure connection](/img/full-node/en-secure-connection.png?{{site.time | date: '%s'}})
@@ -1104,7 +1104,7 @@ Save the file. The next time you login to your computer, Bitcoin Core daemon wil
 
 *Instructions for Bitcoin Core 0.14.2 on Mac OS X Yosemite*
 
-Go to the [Bitcoin Core download page](/en/download) and verify you have
+Go to the [Bitcoin Core download page][] and verify you have
 made a secure connection to the server.
 
 ![Verify secure connection](/img/full-node/en-osx-safari-secure-connection.png?{{site.time | date: '%s'}})
@@ -1630,6 +1630,8 @@ peers you've whitelisted using the `-whitelist` parameter.
 </div>
 </div>
 </div>
+
+[bitcoin core download page]: https://bitcoincore.org/en/download
 <!-- <script>updateToc();</script>
 <script>accordion();</script>
 <script>onScrollButton();</script> -->
