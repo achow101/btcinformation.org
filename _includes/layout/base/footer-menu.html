@@ -6,16 +6,18 @@ http://opensource.org/licenses/MIT.
 <div class="row footer-row">
   <div class="donate">
     <div class="row donate-row">
+      {% if site.donation_banner %}
       <div>
         <span class="footer-title">{% translate donate-community layout %}:</span>
         <a onclick="openDonationModal()" class="donate-btn btn-bright">{% translate donate layout %}</a>
         <p class="donate-text">Bitcoin.org is community supported.
-          <a class="donate-link" href="bitcoin:3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa" target="_blank">3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa</a>
+          <a class="donate-link" href="bitcoin:{{site.donation_banner.address}}" target="_blank">{{site.donation_banner.address</a>
         </p>
       </div>
       <div class="donate-qrcode">
-        <img src="/img/footer/qr.png?{{site.time | date: '%s'}}" alt="QR code">
+        <img src="/img/footer/qr-{{site.donation_banner.address}}.png?{{site.time | date: '%s'}}" alt="QR code">
       </div>
+      {% endif %}
     </div>
   </div>
   

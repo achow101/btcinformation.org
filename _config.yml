@@ -570,13 +570,13 @@ collections:
   devdocs:
     output: false
 
-donation_banner:
-  address: 3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa
-  display: false
-  amounts_in_usd:
-    - 5
-    - 25
-    - 50
+#donation_banner:
+#  address: 3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa
+#  display: false
+#  amounts_in_usd:
+#    - 5
+#    - 25
+#    - 50
 
 defaults:
   - scope:
