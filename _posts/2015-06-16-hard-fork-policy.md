@@ -7,7 +7,7 @@ layout: post
 lang: en
 category: blog
 
-title: "Bitcoin.org Hard Fork Policy"
+title: "Hard Fork Policy"
 permalink: /en/posts/hard-fork-policy.html
 date: 2015-06-16
 ---
@@ -18,9 +18,9 @@ permanently lose their value. In between are many possible outcomes, but
 none of them are good.
 
 The danger of a contentious hard fork is potentially so significant
-that Bitcoin.org has decided to adopt a new policy:
+that this site has decided to adopt a new policy:
 
-> Bitcoin.org will not promote software or services that will leave the
+> We will not promote software or services that will leave the
 > previous consensus because of an intentional and contentious hard fork attempt.
 
 This policy applies to full node software, such as Bitcoin Core,
