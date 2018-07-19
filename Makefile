@@ -16,7 +16,7 @@ default: clean build
 
 ## `make preview`: start the built-in Jekyll preview
 preview: clean
-	$S export LANG=C.UTF-8 ; bundle exec jekyll serve --incremental
+	$S export LANG=C.UTF-8 ; export ENABLED_LANGS="en" ; bundle exec jekyll serve --incremental
 
 ## `make test`: don't build, but do run all tests
 test: pre-build-tests post-build-tests
@@ -103,7 +103,7 @@ clean:
 ## Always build using the default locale so log messages can be grepped.
 ## This should not affect webpage output.
 build:
-	$S export LANG=C.UTF-8 ; bundle exec jekyll build 2>&1 | tee $(JEKYLL_LOG)
+	$S export LANG=C.UTF-8 ; export ENABLED_LANGS="en" ; bundle exec jekyll build 2>&1 | tee $(JEKYLL_LOG)
 	$S grep -r -L 'Note: this file is built non-deterministically' _site/ \
 	  | egrep -v 'sha256sums.txt' \
 	  | sort \
