@@ -22,7 +22,7 @@ optional:
         - RPC byte order (where the byte order is reversed)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Internal byte order](/en/developer-reference#hash-byte-order) --- Bitcoin.org Developer Reference"
+        - "[Internal byte order](/en/developer-reference#hash-byte-order) --- Developer Reference"
         - "[Block hashing algorithm ('endian conversion')](https://en.bitcoin.it/wiki/Block_hashing_algorithm) --- Bitcoin Wiki"
 
 ---

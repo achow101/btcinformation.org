@@ -8,5 +8,5 @@ layout: null
 User-agent: *
 Disallow: /
 {% else %}
-Sitemap: https://bitcoin.org/sitemap.xml
+Sitemap: {{site.url}}/sitemap.xml
 {% endif %}

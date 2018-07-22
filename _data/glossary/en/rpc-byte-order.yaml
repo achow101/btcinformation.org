@@ -21,7 +21,7 @@ optional:
         - Internal byte order (hash digests displayed in their typical order; used in serialized blocks and serialized transactions)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[RPC byte order](/en/developer-reference#hash-byte-order) --- Bitcoin.org Developer Reference"
+        - "[RPC byte order](/en/developer-reference#hash-byte-order) --- Developer Reference"
         - "[Block hashing algorithm ('endian conversion')](https://en.bitcoin.it/wiki/Block_hashing_algorithm) --- Bitcoin Wiki"
 
 ---

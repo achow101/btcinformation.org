@@ -25,7 +25,7 @@ optional:
         - Coinbase.com
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Coinbase](/en/developer-reference#term-coinbase-field) --- Bitcoin.org Developer Reference"
+        - "[Coinbase](/en/developer-reference#term-coinbase-field) --- Developer Reference"
         - "[Coinbase](https://en.bitcoin.it/wiki/Coinbase) --- Bitcoin Wiki"
         - "[What is the coinbase?](http://bitcoin.stackexchange.com/q/4571) --- Bitcoin StackExchange"
 

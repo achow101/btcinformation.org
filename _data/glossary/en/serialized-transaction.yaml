@@ -25,7 +25,7 @@ optional:
     not_to_be_confused_with_capitalize_first_letter:
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Serialized transactions](/en/developer-reference#term-raw-format) --- Bitcoin.org Developer Guide"
+        - "[Serialized transactions](/en/developer-reference#term-raw-format) --- Developer Guide"
         - "[Tx message (serialized transaction)](https://en.bitcoin.it/wiki/Protocol_documentation#tx) --- Bitcoin Wiki"
         - "[Transaction](https://en.bitcoin.it/wiki/Transaction) --- Bitconi Wiki"
 

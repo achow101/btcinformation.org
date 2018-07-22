@@ -100,9 +100,8 @@ Core running.
 * Table of contents
 {:toc}
 
-<ul class="reportissue"><li><a href="https://github.com/bitcoin-dot-org/bitcoin.org/issues/new">Report An Issue</a></li></ul>
-<ul class="editsource"><li><a href="https://github.com/bitcoin-dot-org/bitcoin.org/tree/master/en/full-node.md">Edit On GitHub</a></li></ul>
-
+<ul class="reportissue"><li><a href="{{site.repo}}/issues/new">Report An Issue</a></li></ul>
+<ul class="editsource"><li><a href="{{site.repo}}/tree/master/en/full-node.md">Edit On GitHub</a></li></ul>
 </div></div>
 <div markdown="1" class="toccontent">
 
@@ -1428,7 +1427,7 @@ anything, search the web for help with "port forwarding", and ask for
 help on sites like [SuperUser](http://superuser.com).
 
 We can't provide direct support, but if you see a way to improve these
-instructions, please [open an issue.](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new)
+instructions, please [open an issue.]({{site.repo}}/issues/new)
 
 #### Firewall Configuration
 
@@ -1461,7 +1460,7 @@ web for help with "port forwarding" and "opening firewall ports", and
 ask for help on sites like [SuperUser](http://superuser.com).
 
 We can't provide direct support, but if you see a way to improve these
-instructions, please [open an issue.](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new)
+instructions, please [open an issue.]({{site.repo}}/issues/new)
 
 ## Configuration Tuning
 

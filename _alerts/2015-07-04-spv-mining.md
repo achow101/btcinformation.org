@@ -119,7 +119,7 @@ rules.
 
 The recommended fix, which was attempted, was to
 get all miners off of SPV mining and back to full validation (at
-least temporarily). If this happens, Bitcoin.org will reduce its
+least temporarily). If this happens, this site will reduce its
 current recommendation of waiting {{confs}} extra confirmations to a
 lower number.
 

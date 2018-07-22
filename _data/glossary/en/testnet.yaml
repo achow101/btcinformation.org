@@ -25,7 +25,7 @@ optional:
         - Regtest (a local testing environment where developers can control block generation)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Testnet mode](/en/developer-examples#testnet) --- Bitcoin.org Developer Examples"
+        - "[Testnet mode](/en/developer-examples#testnet) --- Developer Examples"
         - "[Testnet](https://en.bitcoin.it/wiki/Testnet) --- Bitcoin Wiki"
         - "[Get testnet bitcoins][Piotr Piasecki's testnet faucet] --- Testnet Faucet"
 

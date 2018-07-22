@@ -7,7 +7,7 @@ layout: base
 ---
 {% if page.canonical != nil %}
 <script>window.location.href='{{ page.canonical }}';</script>
-<link rel="canonical" href="https://bitcoin.org{{ page.canonical }}"/>
+<link rel="canonical" href="{{site.url}}{{ page.canonical }}"/>
 {% endif %}
 
 <link rel="alternate" type="application/rss+xml" href="/en/rss/alerts.rss" title="Bitcoin network status and alerts">
@@ -15,8 +15,8 @@ layout: base
 <div class="subhead-links">
   <a href="/en/alerts">Network alerts history</a>
 | <a type="application/rss+xml" href="/en/rss/alerts.rss"><img src="/img/icons/header_rss.svg" alt="rss" class="rssicon"> Subscribe to RSS feed</a>
-| <a href="https://github.com/bitcoin-dot-org/bitcoin.org/commits/master/{{page.path|uri_escape}}">Post history</a>
-| <a href="https://github.com/bitcoin-dot-org/bitcoin.org/issues/new?body=Source%20File%3A%20{{page.path|uri_escape}}%0A%0A">Report issue</a>
+| <a href="{{site.repo}}/commits/master/{{page.path|uri_escape}}">Post history</a>
+| <a href="{{site.repo}}/issues/new?body=Source%20File%3A%20{{page.path|uri_escape}}%0A%0A">Report issue</a>
 </div>
 
 <div class="post">

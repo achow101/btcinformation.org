@@ -21,7 +21,7 @@ optional:
         - Inv message (one of the P2P messages that transmits inventories)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Inventory](/en/developer-reference#term-inventory) --- Bitcoin.org Developer Reference"
+        - "[Inventory](/en/developer-reference#term-inventory) --- Developer Reference"
         - "[Inventory vectors](https://en.bitcoin.it/wiki/Protocol_documentation#Inventory_Vectors) --- Bitcoin Wiki"
 
 ---

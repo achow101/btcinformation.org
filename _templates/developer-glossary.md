@@ -89,4 +89,4 @@ show_toc: false
 <span markdown="span">{% translate suggestnewterm %}</span>
 </div>
 
-[1]: https://github.com/bitcoin-dot-org/bitcoin.org/issues/new?title=New%20glossary%20term%20suggestion:
+[1]: {{site.repo}}/issues/new?title=New%20glossary%20term%20suggestion:

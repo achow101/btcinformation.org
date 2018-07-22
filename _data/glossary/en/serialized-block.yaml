@@ -24,7 +24,7 @@ optional:
     not_to_be_confused_with_capitalize_first_letter:
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Serialized blocks](/en/developer-reference#serialized-blocks) --- Bitcoin.org Developer Reference"
+        - "[Serialized blocks](/en/developer-reference#serialized-blocks) --- Developer Reference"
         - "[Block message (serialized block)](https://en.bitcoin.it/wiki/Protocol_documentation#block) --- Bitcoin Wiki"
 
 ---

@@ -50,13 +50,13 @@ module Jekyll
             #Don't add a page if their url is not translated
             next if locs[lang]['url'][id].nil? or locs[lang]['url'][id] == ''
             sitemap.puts '<url>'
-            sitemap.puts '  <loc>https://bitcoin.org/'+lang+'/'+CGI::escape(locs[lang]['url'][id])+'</loc>'
+            sitemap.puts '  <loc>' + site.config["url"] + '/'+lang+'/'+CGI::escape(locs[lang]['url'][id])+'</loc>'
             locs.each do |altlang,value|
               next if locs[altlang]['url'][id].nil? or locs[altlang]['url'][id] == '' or altlang == lang
               sitemap.puts '  <xhtml:link'
               sitemap.puts '    rel="alternate"'
               sitemap.puts '    hreflang="'+altlang+'"'
-              sitemap.puts '    href="https://bitcoin.org/'+altlang+'/'+CGI::escape(locs[altlang]['url'][id])+'" />'
+              sitemap.puts '    href="' + site.config["url"] + '/'+altlang+'/'+CGI::escape(locs[altlang]['url'][id])+'" />'
             end
             sitemap.puts '</url>'
           end
@@ -68,14 +68,14 @@ module Jekyll
           data = File.read(file)
           next if !data.index('google-site-verification:').nil?
           sitemap.puts '<url>'
-          sitemap.puts '  <loc>https://bitcoin.org/'+file.gsub('.html','').gsub('.md','')+'</loc>'
+          sitemap.puts '  <loc>' + site.config["url"] + '/'+file.gsub('.html','').gsub('.md','')+'</loc>'
           sitemap.puts '</url>'
         end
         #Add alerts pages
         Dir.foreach('_alerts') do |file|
           next if file == '.' or file == '..'
           sitemap.puts '<url>'
-          sitemap.puts '  <loc>https://bitcoin.org/en/alert/'+file.gsub('.html','')+'</loc>'
+          sitemap.puts '  <loc>' + site.config["url"] + '/'+file.gsub('.html','')+'</loc>'
           sitemap.puts '</url>'
         end
         #Close sitemap

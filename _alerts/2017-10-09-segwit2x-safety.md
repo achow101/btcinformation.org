@@ -19,7 +19,7 @@ The signatories of this agreement wrongly believe that the currency created by a
 this contentious hard fork will eventually become Bitcoin. Therefore storing any BTC on services such
 as Coinbase, Bitpay and Xapo is strongly not recommended. By storing BTC on these services, you could
 find that after the hard fork, your BTC has been renamed to something else or replaced entirely with the new altcoin.
-The best way to ensure that your BTC is protected is to [download the latest version of Bitcoin Core](https://bitcoin.org/en/download)
+The best way to ensure that your BTC is protected is to [download the latest version of Bitcoin Core][core executable]
 and transfer out any BTC stored on services that are a signatory to this agreement. We have
 listed the businesses supporting this contentious hard fork at the bottom of this document.
 
@@ -63,7 +63,7 @@ miners, developers and economy. Even when there is overwhelming consensus, unles
 emergency, a hard fork should have at least a year notice period to give enough time for users to upgrade. This
 hard fork being adopted by the signatories of this agreement achieves none of these things. It is a rushed
 and hasty upgrade which only has minority community support and has been thoroughly rejected by users and the technical community.
-As this new altcoin is not Bitcoin, Bitcoin.org will not list wallets and services that present
+As this new altcoin is not Bitcoin, this site will not list wallets and services that present
 this altcoin as "Bitcoin" or "BTC" to their users after the hard fork. These services have exited
 the Bitcoin system in a contentious manner and therefore are no longer useful to our visitors.
 
@@ -129,3 +129,5 @@ The following companies and services have pledged to adopt the contentious hard 
 + Netki (United States)
 + Purse (United States)
 + Veem (United States)
+
+{% include references.md %}

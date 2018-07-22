@@ -222,7 +222,7 @@ http://opensource.org/licenses/MIT.
 
 [bitcoin URI subsection]: /en/developer-guide#bitcoin-uri
 [bitcoind initial setup]: /en/developer-examples
-[bitcoinpdf]: https://bitcoin.org/en/bitcoin-paper
+[bitcoinpdf]: /en/bitcoin-paper
 [choose your wallet]: /en/choose-your-wallet
 [communities]: /en/community
 [developer documentation]: /en/developer-documentation
@@ -318,7 +318,7 @@ http://opensource.org/licenses/MIT.
 [bcc pulls]: https://github.com/bitcoin/bitcoin/pulls
 [bcc tor]: https://en.bitcoin.it/wiki/Tor
 [bcc tor hs]: https://en.bitcoin.it/wiki/Tor#Hidden_services
-[core github tag]: https://github.com/bitcoin-dot-org/bitcoin.org/labels/Core
+[core github tag]: {{site.repo}}/labels/Core
 [BFGMiner]: https://github.com/luke-jr/bfgminer
 [Bitcoin beginners]: http://www.reddit.com/r/bitcoinbeginners
 [Bitcoin Core 0.1.6]: https://github.com/bitcoin/bitcoin/commit/cc0b4c3b62367a2aebe5fc1f4d0ed4b97e9c2ac9
@@ -354,12 +354,12 @@ http://opensource.org/licenses/MIT.
 [dig command]: https://en.wikipedia.org/wiki/Dig_%28Unix_command%29
 [DNS A records]: http://tools.ietf.org/html/rfc1035#section-3.2.2
 [DNS Seed Policy]: https://github.com/bitcoin/bitcoin/blob/master/doc/dnsseed-policy.md
-[docs issue]: https://github.com/bitcoin-dot-org/bitcoin.org/issues
+[docs issue]: {{site.repo}}/issues
 [ECDSA]: https://en.wikipedia.org/wiki/Elliptic_Curve_DSA
-[edit bandwidth sharing guide]: https://github.com/bitcoin-dot-org/bitcoin.org/edit/master/en/full-node.md
+[edit bandwidth sharing guide]: {{site.repo}}/edit/master/en/full-node.md
 [Electrum server]: https://github.com/spesmilo/electrum-server
 [Eloipool]: https://github.com/luke-jr/eloipool
-[errors in docs]: https://github.com/bitcoin-dot-org/bitcoin.org/issues?q=is%3Aissue+label%3A%22Dev+Docs%22
+[errors in docs]: {{site.repo}}/issues?q=is%3Aissue+label%3A%22Dev+Docs%22
 [fake satoshi transaction]: https://www.reddit.com/r/Bitcoin/comments/3fv42j/blockchaininfo_spoofed_transactions_problem_aug_4/
 [forum tech support]: https://bitcointalk.org/index.php?board=4.0
 [ghash betcoin double spend]: https://bitcointalk.org/index.php?topic=321630.msg3445371
@@ -390,8 +390,8 @@ http://opensource.org/licenses/MIT.
 [netcat]: https://en.wikipedia.org/wiki/Netcat
 [nop opcodes]: https://en.bitcoin.it/wiki/Script#Reserved_words
 [offline transactions]: http://bitcoin.stackexchange.com/a/34122/21052
-[open a pull request]: https://github.com/bitcoin-dot-org/bitcoin.org#working-with-github
-[open an issue]: https://github.com/bitcoin-dot-org/bitcoin.org/issues/new
+[open a pull request]: {{site.repo}}#working-with-github
+[open an issue]: {{site.repo}}/issues/new
 [open assets protocol]: https://github.com/OpenAssets/open-assets-protocol/blob/master/specification.mediawiki
 [Payment Request Generator]: https://github.com/gavinandresen/paymentrequest/blob/master/php/demo_website/createpaymentrequest.php
 [peter todd p2sh example]: https://github.com/petertodd/checklocktimeverify-demos/blob/master/lib/python-bitcoinlib/examples/publish-text.py

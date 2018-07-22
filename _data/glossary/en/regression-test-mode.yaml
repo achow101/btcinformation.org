@@ -26,6 +26,6 @@ optional:
         - Testnet (a global testing environment which mostly mimics mainnet)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Regtest mode](/en/developer-examples#regtest-mode) --- Bitcoin.org Developer Examples"
+        - "[Regtest mode](/en/developer-examples#regtest-mode) --- Developer Examples"
 
 ---

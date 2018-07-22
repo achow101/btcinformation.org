@@ -21,6 +21,6 @@ optional:
         - Regtest (a private testing node similar to testnet)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Mainnet](/en/developer-examples#term-mainnet) --- Bitcoin.org Developer Examples"
+        - "[Mainnet](/en/developer-examples#term-mainnet) --- Developer Examples"
 
 ---

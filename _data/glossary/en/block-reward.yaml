@@ -24,7 +24,7 @@ optional:
         - Transaction fees
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Block reward](/en/developer-reference#term-block-reward) --- Bitcoin.org Developer Reference"
+        - "[Block reward](/en/developer-reference#term-block-reward) --- Developer Reference"
 
 
 ---

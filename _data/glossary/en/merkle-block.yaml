@@ -21,7 +21,7 @@ optional:
         - MerkleBlock message (a P2P protocol message that transmits a merkle block)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Merkle block](/en/developer-reference#merkleblock) --- Bitcoin.org Developer Reference"
+        - "[Merkle block](/en/developer-reference#merkleblock) --- Developer Reference"
         - "[MerkleBlock P2P protocol message](https://en.bitcoin.it/wiki/Protocol_documentation#filterload.2C_filteradd.2C_filterclear.2C_merkleblock) --- Bitcoin Wiki"
 
 ---

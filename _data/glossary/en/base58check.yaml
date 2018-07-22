@@ -26,7 +26,7 @@ optional:
         - IP address
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[base58check](/en/developer-reference#term-base58check) --- Bitcoin.org Developer Reference"
+        - "[base58check](/en/developer-reference#term-base58check) --- Developer Reference"
         - "[Base58Check encoding](https://en.bitcoin.it/wiki/Base58Check_encoding) --- Bitcoin Wiki"
 
 ---

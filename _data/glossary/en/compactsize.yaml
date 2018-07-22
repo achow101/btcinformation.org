@@ -25,7 +25,7 @@ optional:
         - Compact (the data type used for nBits in the block header)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[CompactSize Unsigned Integers](/en/developer-reference#compactsize-unsigned-integers) --- Bitcoin.org Developer Reference"
+        - "[CompactSize Unsigned Integers](/en/developer-reference#compactsize-unsigned-integers) --- Developer Reference"
         - "[Variable length integers (compactSize)](https://en.bitcoin.it/wiki/Protocol_documentation#Variable_length_integer) --- Bitcoin Wiki"
 
 ---

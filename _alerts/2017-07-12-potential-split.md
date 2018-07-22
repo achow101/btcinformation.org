@@ -19,7 +19,7 @@ UTC</span>, Bitcoin [confirmation scores][confirmation scoring] may
 become less reliable than normal for a period of up to a month.
 
 Users are advised to wait for more confirmations than they usually would
-before accepting any payment as final.  Bitcoin.org's usual
+before accepting any payment as final.  This site's usual
 [recommendation][confirmation scoring] during network disruption is to
 wait for 30 confirmations.
 
@@ -117,7 +117,7 @@ use.
 ## Document history
 
 **Note:** The information contained herein is not to be construed as an official
-statement by Bitcoin Core. Bitcoin.org and Bitcoin Core open source projects are
+statement by Bitcoin Core. This site and the Bitcoin Core open source projects are
 run by separate teams.
 
 A [full history][] of this document is available.  The following points
@@ -129,7 +129,7 @@ first.
 - <span class="date">2017/07/13 11:21 UTC</span>: add general info about split.
 - <span class="date">2017/07/12 12:00 UTC</span>: initial version.
 
-[full history]: https://github.com/bitcoin-dot-org/bitcoin.org/commits/master/_alerts/2017-07-12-potential-split.md
+[full history]: {{site.repo}}/commits/master/_alerts/2017-07-12-potential-split.md
 [list of updates]: #document-history
 [news sites]: /en/resources#news
 [community resources]: /en/community

@@ -602,6 +602,6 @@ Take note that for both types of broadcasting, mechanisms are in place to punish
 
 *Removed in Bitcoin Core 0.13.0*
 
-Earlier versions of Bitcoin Core allowed developers and trusted community members to issue [Bitcoin alerts](https://bitcoin.org/en/alerts) to notify users of critical network-wide issues. This messaging system [was retired](https://bitcoin.org/en/alert/2016-11-01-alert-retirement) in Bitcoin Core v0.13.0; however, internal alerts, partition detection warnings and the `-alertnotify` option features remain.
+Earlier versions of Bitcoin Core allowed developers and trusted community members to issue [Bitcoin alerts](/en/alerts) to notify users of critical network-wide issues. This messaging system [was retired](/en/alert/2016-11-01-alert-retirement) in Bitcoin Core v0.13.0; however, internal alerts, partition detection warnings and the `-alertnotify` option features remain.
 
 {% endautocrossref %}
