@@ -84,6 +84,11 @@ base-url:    /
 ## Used in newer versions of Jekyll
 baseurl:    /
 
+name: "Example.com"  ## FIXME:update_to_real_name
+url: "https://example.com" ## No trailing slash.  FIXME:update_to_real_domain
+repo: https://github.com/achow101/bitcoin-site
+email: "FIXME@example.com"  ## FIXME:update_to_real_email_address
+
 source:      .
 destination: ./_site
 plugins_dir: ./_plugins
@@ -92,6 +97,10 @@ exclude:
     - Gemfile.lock
     - Makefile
     - vendor  # Travis CI creates a vendor/ dir with files we shouldn't render
+    - CONTRIBUTING.md
+    - README.md
+    - docs/
+    - quality-assurance/schemas
 
 future:      true
 lsi:         false
