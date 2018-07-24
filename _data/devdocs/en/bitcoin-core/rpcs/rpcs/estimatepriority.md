@@ -65,6 +65,6 @@ Result:
 
 *See also*
 
-* [EstimateFee][rpc estimatefee]: {{summary_estimateFee}}
+* [EstimateFee][rpc estimatefee]: {{summary_estimateFee}}{{DEPRECATED}}
 
 {% endautocrossref %}
