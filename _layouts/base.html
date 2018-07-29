@@ -10,7 +10,9 @@
 </head>
 
 <body>
-{% include layout/base/pagetop-donation.html %}
+{% if site.donation_banner.display %}
+  {% include layout/base/pagetop-donation.html %}
+{% endif %}
 {% include layout/base/pagetop-detect-mobile.html %}
 
 {% include layout/base/pagetop-alert.html %}
@@ -25,11 +27,8 @@
   {% include layout/base/breadcrumbs.html %}
   {% include layout/base/content.html %}
   <div class="footer">
-    <div class="container">
-       {% include layout/base/footer-logo.html %} 
-       {% include layout/base/footer-menu.html %} 
-       {% include layout/base/footer-sponsor.html %}
-    </div>
+    {% include layout/base/footer-menu.html %}
+    {% include layout/base/footer-sponsor.html %}
     {% include layout/base/footer-license.html %}
   </div>
 </div>

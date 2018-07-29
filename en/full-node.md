@@ -6,11 +6,6 @@ layout: base
 lang: en
 id: full-node
 title: "Running A Full Node - Bitcoin"
-end_of_page: |
-  <script>updateToc();</script>
-  <script>accordion();</script>
-  <script>onScrollButton();</script> 
-  <script>boxShow();</script> 
 breadcrumbs:
   - bitcoin
   - Bandwidth sharing
@@ -42,8 +37,8 @@ key](/laanwj.asc). That key's fingerprint is:
 
     71A3 B167 3540 5025 D447  E8F2 7481 0B01 2346 C9A6
 
-Even earlier releases were signed by Gavin Andresen's
-key. His primary key's fingerprint is:
+Even earlier releases were signed by [Gavin Andresen's
+key](/gavinandresen.asc). His primary key's fingerprint is:
 
     2664 6D99 CBAE C9B8 1982  EF60 29D9 EE6B 1FC7 30C1
 
@@ -96,35 +91,20 @@ Core running.
 
 -->
 
-<div class="hero">
-<div class="container hero-container" markdown="1">
-
 # Running A Full Node
-<p class="summary">Support the Bitcoin network by running your own full node</p>
-{% include helpers/hero-social.html %}
-</div>
-</div>
 
-<div class="toc-container">
-<div class="row toc-row">
+<p class="summary">Support the Bitcoin network by running your own full node</p>
+
 <div markdown="1" id="toc" class="toc"><div markdown="1">
-<button class="mob-sidebar-open" hidden>ALL TOPICS</button>
-<div class="sidebar">
-<div class="sidebar-inner" markdown="1">
-<button class="mob-sidebar-close" hidden></button>
 
 * Table of contents
 {:toc}
 
 <ul class="reportissue"><li><a href="https://github.com/bitcoin-dot-org/bitcoin.org/issues/new">Report An Issue</a></li></ul>
 <ul class="editsource"><li><a href="https://github.com/bitcoin-dot-org/bitcoin.org/tree/master/en/full-node.md">Edit On GitHub</a></li></ul>
-</div>
-</div>
 
 </div></div>
 <div markdown="1" class="toccontent">
-
-<div class="toccontent-intro" markdown="1">
 
 ## What Is A Full Node?
 
@@ -143,9 +123,6 @@ Many people and organizations volunteer to run full nodes using spare
 computing and bandwidth resources---but more volunteers are needed to
 allow Bitcoin to continue to grow.  This document describes how you can
 help and what helping will cost you.
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Costs And Warnings
 
@@ -235,9 +212,6 @@ have an easy-to-use node.
   attack Bitcoin Core users in ways that will affect other things
   you do with your computer, such as an attack that limits your
   available download bandwidth.
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Initial Block Download(IBD)
 
@@ -624,9 +598,9 @@ If you're a expert system administrator and want to use an init script instead, 
 </div>
 
 {{installFinished}}
-</div>
 
-<div class="toccontent-block boxexpand expanded" markdown="1">
+
+
 
 ## Windows Instructions
 
@@ -1033,6 +1007,7 @@ automatically started minimized in the task bar.
 
 {{installFinished}}
 
+
 ##### Bitcoin Core Daemon {#win7-daemon}
 {:.no_toc}
 
@@ -1094,9 +1069,8 @@ Save the file. The next time you login to your computer, Bitcoin Core daemon wil
 </div>
 
 {{installFinished}}
-</div>
 
-<div class="toccontent-block boxexpand expanded" markdown="1">
+
 
 ## Mac OS X Instructions
 
@@ -1202,9 +1176,6 @@ The next time you login to your desktop, Bitcoin Core daemon will be automatical
 </div>
 
 {{installFinished}}
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Upgrading Bitcoin Core
 
@@ -1226,9 +1197,6 @@ upgrade from a very old version.
 
 Sometimes downgrade is not possible because of changes to the data files. Again,
 check the release notes for the new version if you are planning to downgrade.
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Network Configuration
 
@@ -1494,9 +1462,6 @@ ask for help on sites like [SuperUser](http://superuser.com).
 
 We can't provide direct support, but if you see a way to improve these
 instructions, please [open an issue.](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new)
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Configuration Tuning
 
@@ -1509,10 +1474,10 @@ limit it to using one CPU core for signature verification, you can start
 Bitcoin Core like this:
 
 {% highlight bash %}
-### Bitcoin Core daemon
+## Bitcoin Core daemon
 bitcoind -par=1 -daemon
 
-### Bitcoin Core GUI
+## Bitcoin Core GUI
 bitcoin-qt -par=1
 {% endhighlight %}
 
@@ -1625,13 +1590,5 @@ won't see incoming transactions until they've received at least one confirmation
 
 You will still be able to send transactions from the built-in wallet or from
 peers you've whitelisted using the `-whitelist` parameter.
-</div>
-
-</div>
-</div>
-</div>
 
 [bitcoin core download page]: https://bitcoincore.org/en/download
-<!-- <script>updateToc();</script>
-<script>accordion();</script>
-<script>onScrollButton();</script> -->
