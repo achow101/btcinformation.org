@@ -69,7 +69,8 @@ post-build-tests-fast: check-for-build-errors ensure-each-svg-has-a-png check-fo
 	check-for-empty-title-tag \
     check-for-subheading-anchors \
     check-jshint \
-    check-for-javascript-in-svgs
+    check-for-javascript-in-svgs \
+    check-legacy-bitcoinorg \
 
 ## All pre-build tests, including those which might take multiple minutes
 pre-build-tests: pre-build-tests-fast
@@ -285,3 +286,11 @@ check-for-too-many-wallets-on-one-platform:
 check-validate-yaml:
 ## Validate YAML files against schemas
 	$S find _wallets -type f -exec bundle exec _contrib/schema-validator.rb quality-assurance/schemas/wallets.yaml {} \;
+
+check-legacy-bitcoinorg:
+	$S ## Check for links to legacy site
+	$S ! egrep -I -r 'https*://bitcoin\.org[^\.]' _site/
+	$S ## Check for links to legacy repository
+	$S ! egrep -I -r 'github\.com/bitcoin-dot-org' _site/
+	$S ## Check for references to legacy names, but all skipping that test for particular references, e.g. <!-- skip-test -->
+	$S ! egrep -I -ir 'bitcoin\.org[^\.]' _site/ | grep -v skip-test | egrep -v '_site/(LICENSE|img/)' | grep .
