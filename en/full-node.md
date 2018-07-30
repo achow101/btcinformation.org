@@ -71,7 +71,7 @@ interaction with your node:
 
 
 {% capture complete_list_of_commands_and_ibd %}
-A complete list of commands is available in the [Bitcoin.org developer
+A complete list of commands is available in the [developer
 reference](/en/developer-reference#rpc-quick-reference).
 
 When Bitcoin Core daemon first starts, it will begin to download the block

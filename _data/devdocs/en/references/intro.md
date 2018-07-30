@@ -15,7 +15,7 @@ Core, either from [source][core git] or from a [pre-compiled executable][core ex
 Questions about Bitcoin development are best asked on
 the [Bitcoin StackExchange][].
 Errors or suggestions related to
-documentation on Bitcoin.org can be [submitted as an issue][docs issue]
+documentation on this site can be [submitted as an issue][docs issue]
 or posted to the [bitcoin-documentation mailing list][].
 
 In the following documentation, some strings have been shortened or wrapped: "[...]"
@@ -32,7 +32,7 @@ definition of the term will be displayed in a tooltip.
 
 {% autocrossref %}
 
-The Bitcoin.org Developer Documentation describes how Bitcoin works to
+This Developer Documentation describes how Bitcoin works to
 help educate new Bitcoin developers, but it is not a specification---and
 it never will be.
 

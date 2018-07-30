@@ -9,15 +9,19 @@ http://opensource.org/licenses/MIT.
 
 {% autocrossref %}
 
+{% comment %}
 <!-- reference tx (made by Satoshi in block 170):
     bitcoind decoderawtransaction $( bitcoind getrawtransaction f4184fc596403b9d638783cf57adfe4c75c605f6356fbc91338530e9831e9e16 )
 -->
+{% endcomment %}
 
+{% comment %}
 <!-- SOMEDAY: we need more terms than just output/input to denote the
 various ways the outputs/inputs are used, such as "prevout", "nextout",
 "curout", "curin", "nextin".  (Is there any use for "previn"?)  Someday,
 when I'm terribly bored, I should rewrite this whole transaction section
 to use those terms and then get feedback to see if it actually helps. -harding -->
+{% endcomment %}
 
 Transactions let users spend satoshis. Each transaction is constructed
 out of several parts which enable both simple direct payments and complex
@@ -83,10 +87,12 @@ transcription easier and providing security against
 unanticipated problems which might allow reconstruction of private keys
 from public key data at some later point.
 
+{% comment %}
 <!-- Editors: from here on I will typically use the terms "pubkey hash"
 and "full public key" to provide quick differentiation between the
 different states of a public key and to help the text better match the
 space-constrained diagrams where "public-key hash" wouldn't fit. -harding -->
+{% endcomment %}
 
 Bob provides the pubkey hash to Alice. Pubkey hashes are almost always
 sent encoded as Bitcoin [addresses][/en/glossary/address]{:#term-address}{:.term}, which are base58-encoded strings
@@ -193,10 +199,12 @@ unspendable. Turing-incompleteness (specifically, a lack of loops or
 gotos) makes the script language less flexible and more predictable,
 greatly simplifying the security model.
 
+{% comment %}
 <!-- Editors: please do not substitute for the words push or pop in
 sections about stacks. These are programming terms. Also "above",
 "below", "top", and "bottom" are commonly used relative directions or
 locations in stack descriptions. -harding -->
+{% endcomment %}
 
 To test whether the transaction is valid, signature script and pubkey script operations
 are executed one item at a time, starting with Bob's signature script
@@ -588,12 +596,14 @@ one input signed with `ALL`, the `ALL` signer can choose where to spend
 the satoshis without consulting the `NONE` signer---but nobody else can
 modify the transaction.
 
+{% comment %}
 <!-- TODO: describe useful combinations maybe using a 3x3 grid;
 do something similar for the multisig section with different hashtypes
 between different sigs -->
 
 <!-- TODO: add to the technical section details about what the different
 hash types sign, including the procedure for inserting the subscript -->
+{% endcomment %}
 
 {% endautocrossref %}
 
@@ -668,7 +678,7 @@ will accept.
 
 There is also a concept of so-called "[high-priority transactions][/en/glossary/high-priority-transaction]{:#term-high-priority-transactions}{:.term}" which spend satoshis that have not moved for a long time.
 
-In the past, these "priority" transaction were often exempt from the normal fee requirements. Before Bitcoin Core 0.12, 50 KB of each block would be reserved for these high-priority transactions, however this is now set to 0 KB by default.  After the priority area, all transactions are prioritized based on their fee per byte, with higher-paying transactions being added in sequence until all of the available space is filled. <!-- Consider adding links to blockmaxsize and blockmaxweight options once available in the glossary. -->
+In the past, these "priority" transaction were often exempt from the normal fee requirements. Before Bitcoin Core 0.12, 50 KB of each block would be reserved for these high-priority transactions, however this is now set to 0 KB by default.  After the priority area, all transactions are prioritized based on their fee per byte, with higher-paying transactions being added in sequence until all of the available space is filled. {% comment %}<!-- Consider adding links to blockmaxsize and blockmaxweight options once available in the glossary. -->{% endcomment %}
 
 As of Bitcoin Core 0.9, a [minimum fee][/en/glossary/minimum-relay-fee]{:#term-minimum-fee}{:.term} (currently 1,000 satoshis) has been required to
 broadcast a transaction across the network. Any transaction paying only the minimum fee
@@ -787,9 +797,11 @@ transaction should be tracked by the transaction outputs (UTXOs) it
 spends as inputs, as they cannot be changed without invalidating the
 transaction.
 
+{% comment %}
 <!-- TODO/harding: The paragraph above needs practical advice about how
 to do that. I'll need to find some time to look at somebody's wallet
 code. -harding -->
+{% endcomment %}
 
 Best practices further dictate that if a transaction does seem to
 disappear from the network and needs to be reissued, that it be reissued

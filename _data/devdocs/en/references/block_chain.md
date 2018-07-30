@@ -62,8 +62,8 @@ fe9f0864 ........................... Nonce
   and later versions began to reject version 2 blocks without the block
   height in coinbase at block height 224,412 (March 2013) and began to
   reject new version 1 blocks three weeks later at block height 227,930.
-  <!-- source for heights: my (@harding) own headers dump and counting
-  script -->
+  {% comment %}<!-- source for heights: my (@harding) own headers dump and counting
+  script -->{% endcomment %}
 
 * **Version 3** blocks were introduced in Bitcoin Core 0.10.0 (February
   2015) as a soft fork. When the fork reach full enforcement (July
@@ -127,10 +127,12 @@ row (and, if necessary, repeated further to create additional rows).
 Once a row is obtained with only two hashes, those hashes are concatenated and
 hashed to produce the merkle root.
 
+{% comment %}
 <!-- built block 170's merkle root with Python to confirm left-to-right order
      for A|B concatenation demonstrated below:
          sha256(sha256("82501c1178fa0b222c1f3d474ec726b832013f0a532b44bb620cce8624a5feb1169e1e83e930853391bc6f35f605c6754cfead57cf8387639d3b4096c54f18f4".decode("hex")).digest()).digest().encode("hex_codec")
 -->
+{% endcomment %}
 
 ![Example Merkle Tree Construction](/img/dev/en-merkle-tree-construction.svg?{{site.time | date: '%s'}})
 
@@ -159,11 +161,13 @@ you might parse a decimal number in base-10 scientific notation:
 
 ![Quickly Converting nBits](/img/dev/en-nbits-quick-parse.svg?{{site.time | date: '%s'}})
 
+{% comment %}
 <!-- Source for paragraph below: Bitcoin Core src/tests/bignum_tests.cpp:
 num.SetCompact(0x04923456);
 BOOST_CHECK_EQUAL(num.GetHex(), "-12345600");
 BOOST_CHECK_EQUAL(num.GetCompact(), 0x04923456U);
 -->
+{% endcomment %}
 
 Although the target threshold should be an unsigned integer, the
 original nBits implementation inherits properties from a signed data
@@ -172,7 +176,9 @@ the significand is set. This is useless---the header hash is
 treated as an unsigned number, so it can never be equal to or lower than a
 negative target threshold. Bitcoin Core deals with this in two ways:
 
+{% comment %}
 <!-- source for "Bitcoin Core converts..." src/main.h GetBlockWork() -->
+{% endcomment %}
 
 * When parsing nBits, Bitcoin Core converts a negative target
   threshold into a target of zero, which the header hash can equal (in
@@ -233,4 +239,3 @@ invalid if it tries to spend more value than is available from the
 block reward.
 
 {% endautocrossref %}
-

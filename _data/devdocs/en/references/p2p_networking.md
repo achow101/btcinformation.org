@@ -1332,8 +1332,10 @@ The following table lists message reject codes.  Codes are tied to the
 type of message they reply to; for example there is a 0x10 reject code
 for transactions and a 0x10 reject code for blocks.
 
+{% comment %}
 <!-- several descriptions below copied verbatim from BIP61; sort order:
 ascending code number (primary) and alphabetic in reply to (secondary) -->
+{% endcomment %}
 
 | Code | In Reply To       | Extra Bytes | Extra Type | Description
 |------|-------------------|-------------|------------|----------------

@@ -216,7 +216,8 @@ Mozilla root store.
 The certificates must be provided in a specific order---the same order
 used by Apache's `SSLCertificateFile` directive and other server
 software.   The figure below shows the [certificate chain][]{:#term-certificate-chain}{:.term} of the
-www.bitcoin.org X.509 certificate and how each certificate (except the
+www.bitcoin.org <!--skip-test-->
+X.509 certificate and how each certificate (except the
 root certificate) would be loaded into the [X509Certificates][]{:#term-x509certificates}{:.term} protocol
 buffer message.
 

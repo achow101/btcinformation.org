@@ -12,8 +12,8 @@ platform:
     name: desktop
     default: &DEFAULT
       text: "walletmsigna"
-      link: "https://ciphrex.com/redirect/?referer=bitcoin.org"
-      source: "https://ciphrex.com/redirect/?url=https://github.com/ciphrex/CoinVault?referer=bitcoin.org"
+      link: "https://ciphrex.com/"
+      source: "https://github.com/ciphrex/CoinVault"
       screenshot: "msigna.png?1528322191"
       check:
         control: "checkgoodcontrolfull"

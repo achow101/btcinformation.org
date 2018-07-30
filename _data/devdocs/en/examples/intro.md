@@ -57,7 +57,7 @@ or regression test mode (regtest) described below.
 
 Questions about Bitcoin use are best sent to the [BitcoinTalk forum][forum
 tech support] and [IRC channels][]. Errors or suggestions related to
-documentation on Bitcoin.org can be [submitted as an issue][docs issue]
+documentation on this site can be [submitted as an issue][docs issue]
 or posted to the [bitcoin-documentation mailing list][].
 
 In the following documentation, some strings have been shortened or wrapped: "[...]"

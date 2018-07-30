@@ -271,7 +271,7 @@ adds many important features to payment requests:
 Instead of being asked to pay a meaningless address, such as
 "mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN", spenders are asked to pay the
 Common Name (CN) description from the receiver's X.509 certificate, such
-as "www.bitcoin.org".
+as "www.bitcoin.org".<!--skip-test-->
 
 To request payment using the payment protocol, you use an extended (but
 backwards-compatible) `bitcoin:` URI.  For example:
@@ -486,7 +486,7 @@ connecting to large numbers of Bitcoin peers to track how transactions and
 blocks differ from each other. Some third-party APIs can provide you with this 
 type of service.
 
-<!-- TODO Example of double spend risk analysis using bitcoinj, eventually? -->
+{% comment %}<!-- TODO Example of double spend risk analysis using bitcoinj, eventually? -->{% endcomment %}
 
 For example, unconfirmed transactions can be compared among all connected peers 
 to see if any UTXO is used in multiple unconfirmed transactions, indicating a 

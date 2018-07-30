@@ -5,7 +5,7 @@
 layout: base
 lang: en
 ---
-<link rel="alternate" type="application/atom+xml" href="/en/rss/blog.xml" title="Bitcoin.org Site Blog">
+<link rel="alternate" type="application/atom+xml" href="/en/rss/blog.xml" title="{{site.name}} Site Blog">
 
 <div class="subhead-links"><a href="/en/blog">Blog home</a>
 | <a type="application/atom+xml" href="/en/rss/blog.xml"><img src="/img/icons/header_rss.svg" alt="rss" class="rssicon"> Subscribe to RSS feed</a>
@@ -21,7 +21,7 @@ lang: en
     {{ content }}
   </article>
 
-  <p class="post-meta">Posted to the <a href="/en/blog">Bitcoin.org Site
+  <p class="post-meta">Posted to the <a href="/en/blog">Site
   Blog</a> on {{ page.date | date: "%d %B %Y" }} {% if page.author %} by {{ page.author }}{% endif %}{% if page.meta %} {{ page.meta }}{% endif %}</p>
 
 </div>

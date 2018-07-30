@@ -9,7 +9,7 @@ node [ shape = box ];
 
 
 subgraph cluster_signing {
-    btcorg [ label = "www.bitcoin.org" ]
+    btcorg [ label = "www.example.org" ]
     rapidssl [ label = "RapidSSL CA" ]
     geotrust [ label = "GeoTrust Global CA" ]
 
@@ -18,12 +18,12 @@ subgraph cluster_signing {
 }
 
 subgraph cluster_loading {
-    one [ label = "    x509.certificate.append(bitcoin_org-cert) " ] 
+    one [ label = "    x509.certificate.append(example_org-cert) " ] 
     two [ label = "    x509.certificate.append(rapidssl_ca-cert) " ] 
     one -> two
     label = "Certificates In Loading Order\n(Root CA Certificate Is Not Loaded)"
 }
 
-label = "(Certificates are loaded into X509Certificates() in reverse signing order)\n \nExample Certificate Loading Order For Payment Requests From Bitcoin.org"
+label = "(Certificates are loaded into X509Certificates() in reverse signing order)\n \nExample Certificate Loading Order For Payment Requests From Example.org"
 
 }

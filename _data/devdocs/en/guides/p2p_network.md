@@ -64,8 +64,10 @@ addresses for inactive nodes. In either case, nodes are added to the
 DNS seed if they run on the default Bitcoin ports of 8333 for mainnet
 or 18333 for testnet.
 
+{% comment %}
 <!-- paragraph below based on Greg Maxwell's email in
      http://comments.gmane.org/gmane.comp.bitcoin.devel/5378 -->
+{% endcomment %}
 
 DNS seed results are not authenticated and a malicious seed operator or
 network man-in-the-middle attacker can return only IP addresses of
@@ -89,8 +91,10 @@ significant delay to the amount of time it takes to connect to the
 network, forcing a user to wait before sending a transaction or checking
 the status of payment.
 
+{% comment %}
 <!-- reference for "Bitcoin Core...11 seconds" below:
      https://github.com/bitcoin/bitcoin/pull/4559 -->
+{% endcomment %}
 
 To avoid this possible delay, BitcoinJ always uses dynamic DNS seeds to
 get IP addresses for nodes believed to be currently active.
@@ -100,11 +104,13 @@ its peer database, it spends up to 11 seconds attempting to connect to
 at least one of them before falling back to seeds; if a connection is
 made within that time, it does not query any seeds.
 
+{% comment %}
 <!-- reference for Bitcoin Core behavior described below: search for
 "FixedSeeds" in src/net.cpp; BitcoinJ has IPv4 seeds in its chainparams
 and a function to use them, but I don't see that function being used in
 any of the examples/wallet templates (but I'm not Java fluent, so
 maybe PEBKAC). -@harding -->
+{% endcomment %}
 
 Both Bitcoin Core and BitcoinJ also include a hardcoded list of IP
 addresses and port numbers to several dozen nodes which were active

@@ -173,7 +173,7 @@ release, CC them instead.  If you don't know who is responsible, ask in
 
 #### Who to Contact
 
-The following people can publish alerts on Bitcoin.org.  Their email
+The following people can publish alerts on this site.  Their email
 addresses are on the linked GitHub profiles.
 
 - Will Binns, [@wbnns](https://github.com/wbnns), wbnns on Freenode
