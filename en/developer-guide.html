@@ -5,12 +5,12 @@
 
 
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<meta property="og:image" content="https://example.com/img/icons/opengraph.png?1533148456" />
+<meta property="og:image" content="https://example.com/img/icons/opengraph.png?1533165313" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>Developer Guide - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="/css/main.css?1533148456">
+<link rel="stylesheet" href="/css/main.css?1533165313">
 <!--[if lt IE 8]><link rel="stylesheet" href="/css/ie.css"><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" href="/css/ie8.css"><![endif]-->
 
@@ -310,7 +310,7 @@ the <a href="/en/glossary/consensus-rules" title="The block validation rules tha
 | <a href="https://github.com/achow101/bitcoin-site/issues/new?body=Source%20File%3A%20_data/devdocs/en/guides/block_chain.md%0A%0A">Report Issue</a>
 </div>
 
-  <p><img src="/img/dev/en-blockchain-overview.svg?1533148456" alt="Block Chain Overview" /></p>
+  <p><img src="/img/dev/en-blockchain-overview.svg?1533165313" alt="Block Chain Overview" /></p>
 
   <p>The illustration above shows a simplified version of a <a href="/en/glossary/block-chain" title="A chain of blocks with each block referencing the block that preceded it. The most-difficult-to-recreate chain is the best block chain." class="auto-link">block chain</a>.
 A <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." id="term-block" class="term">block</a> of one or more new transactions
@@ -331,7 +331,7 @@ transaction spends the <a href="/en/glossary/denominations" title="Denominations
 transactions, so the <a href="/en/glossary/input" title="An input in a transaction which contains three fields: an outpoint, a signature script, and a sequence number.  The outpoint references a previous output and the signature script allows spending it." class="auto-link">input</a> of one transaction is the <a href="/en/glossary/output" title="An output in a transaction which contains two fields: a value field for transferring zero or more satoshis and a pubkey script for indicating what conditions must be fulfilled for those satoshis to be further spent." class="auto-link">output</a> of a
 previous transaction.</p>
 
-  <p><img src="/img/dev/en-transaction-propagation.svg?1533148456" alt="Transaction Propagation" /></p>
+  <p><img src="/img/dev/en-transaction-propagation.svg?1533165313" alt="Transaction Propagation" /></p>
 
   <p>A single transaction can create multiple <a href="/en/glossary/output" title="An output in a transaction which contains two fields: a value field for transferring zero or more satoshis and a pubkey script for indicating what conditions must be fulfilled for those satoshis to be further spent." class="auto-link">outputs</a>, as would be
 the case when sending to multiple <a href="/en/glossary/address" title="A 20-byte hash formatted using base58check to produce either a P2PKH or P2SH Bitcoin address.  Currently the most common way users exchange payment information." class="auto-link">addresses</a>, but each <a href="/en/glossary/output" title="An output in a transaction which contains two fields: a value field for transferring zero or more satoshis and a pubkey script for indicating what conditions must be fulfilled for those satoshis to be further spent." class="auto-link">output</a> of
@@ -449,7 +449,7 @@ by their <a href="/en/glossary/block-height" title="The number of blocks precedi
 <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block</a> (<a href="/en/glossary/genesis-block" title="The first block in the Bitcoin block chain." class="auto-link">block 0</a>, most commonly known as the <a href="/en/glossary/genesis-block" title="The first block in the Bitcoin block chain." id="term-genesis-block" class="term">genesis block</a>). For example,
 <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block</a> 2016 is where <a href="/en/glossary/difficulty" title="How difficult it is to find a block relative to the difficulty of finding the easiest possible block. The easiest possible block has a proof-of-work difficulty of 1." class="auto-link">difficulty</a> could have first been adjusted.</p>
 
-  <p><img src="/img/dev/en-blockchain-fork.svg?1533148456" alt="Common And Uncommon Block Chain Forks" /></p>
+  <p><img src="/img/dev/en-blockchain-fork.svg?1533165313" alt="Common And Uncommon Block Chain Forks" /></p>
 
   <p>Multiple <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">blocks</a> can all have the same <a href="/en/glossary/block-height" title="The number of blocks preceding a particular block on a block chain. For example, the genesis block has a height of zero because zero block preceded it." class="auto-link">block height</a>, as is common when
 two or more <a href="/en/glossary/mining" title="Mining is the act of creating valid Bitcoin blocks, which requires demonstrating proof of work, and miners are devices that mine or people who own those devices." class="auto-link">miners</a> each produce a <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block</a> at roughly the same time. This
@@ -580,7 +580,7 @@ build on the same chain as <a href="/en/glossary/mining" title="Mining is the ac
 <a href="/en/glossary/node" title="A computer that connects to the Bitcoin network." class="auto-link">nodes</a> and one for upgraded <a href="/en/glossary/node" title="A computer that connects to the Bitcoin network." class="auto-link">nodes</a>—called a <a href="/en/glossary/hard-fork" title="A permanent divergence in the block chain, commonly occurs when non-upgraded nodes can't validate blocks created by upgraded nodes that follow newer consensus rules." id="term-hard-fork" class="term">hard
 fork</a>.</p>
 
-  <p><img src="/img/dev/en-hard-fork.svg?1533148456" alt="Hard Fork" /></p>
+  <p><img src="/img/dev/en-hard-fork.svg?1533165313" alt="Hard Fork" /></p>
 
   <p>In the second case, rejection by upgraded <a href="/en/glossary/node" title="A computer that connects to the Bitcoin network." class="auto-link">nodes</a>, it’s possible to keep
 the <a href="/en/glossary/block-chain" title="A chain of blocks with each block referencing the block that preceded it. The most-difficult-to-recreate chain is the best block chain." class="auto-link">block chain</a> from permanently diverging if upgraded <a href="/en/glossary/node" title="A computer that connects to the Bitcoin network." class="auto-link">nodes</a> control a
@@ -590,7 +590,7 @@ upgraded <a href="/en/glossary/node" title="A computer that connects to the Bitc
 will accept as the best valid <a href="/en/glossary/block-chain" title="A chain of blocks with each block referencing the block that preceded it. The most-difficult-to-recreate chain is the best block chain." class="auto-link">block chain</a>. This is called a <a href="/en/glossary/soft-fork" title="A softfork is a change to the bitcoin protocol  wherein only previously valid blocks/transactions  are made invalid. Since old nodes will recognise  the new blocks as valid, a softfork is backward-compatible." id="term-soft-fork" class="term">soft
 fork</a>.</p>
 
-  <p><img src="/img/dev/en-soft-fork.svg?1533148456" alt="Soft Fork" /></p>
+  <p><img src="/img/dev/en-soft-fork.svg?1533165313" alt="Soft Fork" /></p>
 
   <p>Although a <a href="/en/glossary/fork" title="When two or more blocks have the same block height, forking the block chain.  Typically occurs when two or more miners find blocks at nearly the same time.  Can also happen as part of an attack." class="auto-link">fork</a> is an actual divergence in <a href="/en/glossary/block-chain" title="A chain of blocks with each block referencing the block that preceded it. The most-difficult-to-recreate chain is the best block chain." class="auto-link">block chains</a>, changes to the
 <a href="/en/glossary/consensus-rules" title="The block validation rules that full nodes follow to stay in consensus with other nodes." class="auto-link">consensus rules</a> are often described by their potential to create either
@@ -684,7 +684,7 @@ and they’re an exception to many of the rules listed below. Instead of
 pointing out the <a href="/en/glossary/coinbase" title="A special field used as the sole input for coinbase transactions. The coinbase allows claiming the block reward and provides up to 100 bytes for arbitrary data." class="auto-link">coinbase</a> exception to each rule, we invite you to read
 about <a href="/en/glossary/coinbase-transaction" title="The first transaction in a block.  Always created by a miner, it includes a single coinbase." class="auto-link">coinbase transactions</a> in the <a href="/en/glossary/block-chain" title="A chain of blocks with each block referencing the block that preceded it. The most-difficult-to-recreate chain is the best block chain." class="auto-link">block chain</a> section of this guide.</p>
 
-  <p><img src="/img/dev/en-tx-overview.svg?1533148456" alt="The Parts Of A Transaction" /></p>
+  <p><img src="/img/dev/en-tx-overview.svg?1533165313" alt="The Parts Of A Transaction" /></p>
 
   <p>The figure above shows the main parts of a Bitcoin transaction. Each
 transaction has at least one <a href="/en/glossary/input" title="An input in a transaction which contains three fields: an outpoint, a signature script, and a sequence number.  The outpoint references a previous output and the signature script allows spending it." class="auto-link">input</a> and one <a href="/en/glossary/output" title="An output in a transaction which contains two fields: a value field for transferring zero or more satoshis and a pubkey script for indicating what conditions must be fulfilled for those satoshis to be further spent." class="auto-link">output</a>. Each <a href="/en/glossary/input" title="An input in a transaction which contains three fields: an outpoint, a signature script, and a sequence number.  The outpoint references a previous output and the signature script allows spending it." id="term-input" class="term">input</a> spends the
@@ -698,7 +698,7 @@ Bitcoin <a href="/en/glossary/node" title="A computer that connects to the Bitco
 lets developers create new rules for future transactions without
 invalidating previous transactions.</p>
 
-  <p><img src="/img/dev/en-tx-overview-spending.svg?1533148456" alt="Spending An Output" /></p>
+  <p><img src="/img/dev/en-tx-overview-spending.svg?1533165313" alt="Spending An Output" /></p>
 
   <p>An <a href="/en/glossary/output" title="An output in a transaction which contains two fields: a value field for transferring zero or more satoshis and a pubkey script for indicating what conditions must be fulfilled for those satoshis to be further spent." class="auto-link">output</a> has an implied index number based on its location in the
 transaction—the index of the first <a href="/en/glossary/output" title="An output in a transaction which contains two fields: a value field for transferring zero or more satoshis and a pubkey script for indicating what conditions must be fulfilled for those satoshis to be further spent." class="auto-link">output</a> is zero. The <a href="/en/glossary/output" title="An output in a transaction which contains two fields: a value field for transferring zero or more satoshis and a pubkey script for indicating what conditions must be fulfilled for those satoshis to be further spent." class="auto-link">output</a> also has an
@@ -721,7 +721,7 @@ type. <a href="/en/glossary/p2pkh-address" title="A Bitcoin payment address comp
 and then lets Bob further spend those <a href="/en/glossary/denominations" title="Denominations of Bitcoin value, usually measured in fractions of a bitcoin but sometimes measured in multiples of a satoshi.  One bitcoin equals 100,000,000 satoshis." class="auto-link">satoshis</a> using a simple
 cryptographic <a href="/en/developer-guide#term-key-pair" title="A private key and its derived public key" class="auto-link">key pair</a>.</p>
 
-  <p><img src="/img/dev/en-creating-p2pkh-output.svg?1533148456" alt="Creating A P2PKH Public Key Hash To Receive Payment" /></p>
+  <p><img src="/img/dev/en-creating-p2pkh-output.svg?1533165313" alt="Creating A P2PKH Public Key Hash To Receive Payment" /></p>
 
   <p>Bob must first generate a private/public <a href="/en/developer-guide#term-key-pair" title="A private key and its derived public key" id="term-key-pair" class="term">key pair</a> before Alice can create the
 first transaction. Bitcoin uses the Elliptic Curve Digital <a href="/en/glossary/signature" title="A value related to a public key which could only have reasonably been created by someone who has the private key that created that public key. Used in Bitcoin to authorize spending satoshis previously sent to a public key." class="auto-link">Signature</a> Algorithm (<a href="https://en.wikipedia.org/wiki/Elliptic_Curve_DSA" class="auto-link">ECDSA</a>) with
@@ -770,7 +770,7 @@ called <a href="/en/glossary/signature-script" title="Data generated by a spende
 and <a href="/en/glossary/signature" title="A value related to a public key which could only have reasonably been created by someone who has the private key that created that public key. Used in Bitcoin to authorize spending satoshis previously sent to a public key." class="auto-link">signatures</a> with conditional logic, creating a programmable
 authorization mechanism.</p>
 
-  <p><img src="/img/dev/en-unlocking-p2pkh-output.svg?1533148456" alt="Unlocking A P2PKH Output For Spending" /></p>
+  <p><img src="/img/dev/en-unlocking-p2pkh-output.svg?1533165313" alt="Unlocking A P2PKH Output For Spending" /></p>
 
   <p>For a P2PKH-style <a href="/en/glossary/output" title="An output in a transaction which contains two fields: a value field for transferring zero or more satoshis and a pubkey script for indicating what conditions must be fulfilled for those satoshis to be further spent." class="auto-link">output</a>, Bob’s <a href="/en/glossary/signature-script" title="Data generated by a spender which is almost always used as variables to satisfy a pubkey script. Signature Scripts are called scriptSig in code." class="auto-link">signature script</a> will contain the following two
 pieces of data:</p>
@@ -792,7 +792,7 @@ created the <a href="/en/glossary/public-key" title="The public portion of a key
 makes the non-<a href="/en/glossary/signature" title="A value related to a public key which could only have reasonably been created by someone who has the private key that created that public key. Used in Bitcoin to authorize spending satoshis previously sent to a public key." class="auto-link">signature</a>-script parts of his transaction tamper-proof so Bob can safely
 broadcast them over the <a href="/en/developer-guide#term-network" title="The Bitcoin P2P network which broadcasts transactions and blocks" class="auto-link">peer-to-peer network</a>.</p>
 
-  <p><img src="/img/dev/en-signing-output-to-spend.svg?1533148456" alt="Some Things Signed When Spending An Output" /></p>
+  <p><img src="/img/dev/en-signing-output-to-spend.svg?1533165313" alt="Some Things Signed When Spending An Output" /></p>
 
   <p>As illustrated in the figure above, the data Bob signs includes the
 <a href="/en/glossary/txid" title="An identifier used to uniquely identify a particular transaction; specifically, the sha256d hash of the transaction." class="auto-link">txid</a> and <a href="/en/developer-guide#term-output-index" title="The sequentially-numbered index of outputs in a single transaction starting from 0" class="auto-link">output index</a> of the previous transaction, the previous
@@ -842,7 +842,7 @@ and continuing to the end of Alice’s <a href="/en/glossary/pubkey-script" titl
 evaluation of a standard <a href="/en/glossary/p2pkh-address" title="A Bitcoin payment address comprising a hashed public key, allowing the spender to create a standard pubkey script that Pays To PubKey Hash (P2PKH)." class="auto-link">P2PKH pubkey script</a>; below the figure is a description
 of the process.</p>
 
-  <p><img src="/img/dev/en-p2pkh-stack.svg?1533148456" alt="P2PKH Stack Evaluation" /></p>
+  <p><img src="/img/dev/en-p2pkh-stack.svg?1533165313" alt="P2PKH Stack Evaluation" /></p>
 
   <ul>
     <li>
@@ -919,7 +919,7 @@ wants, hashes the <a href="/en/glossary/redeem-script" title="A script similar i
 hash</a> to Alice. Alice creates a P2SH-style <a href="/en/glossary/output" title="An output in a transaction which contains two fields: a value field for transferring zero or more satoshis and a pubkey script for indicating what conditions must be fulfilled for those satoshis to be further spent." class="auto-link">output</a> containing
 Bob’s <a href="/en/glossary/redeem-script" title="A script similar in function to a pubkey script. One copy of it is hashed to create a P2SH address (used in an actual pubkey script) and another copy is placed in the spending signature script to enforce its conditions." class="auto-link">redeem script hash</a>.</p>
 
-  <p><img src="/img/dev/en-creating-p2sh-output.svg?1533148456" alt="Creating A P2SH Redeem Script And Hash" /></p>
+  <p><img src="/img/dev/en-creating-p2sh-output.svg?1533165313" alt="Creating A P2SH Redeem Script And Hash" /></p>
 
   <p>When Bob wants to spend the <a href="/en/glossary/output" title="An output in a transaction which contains two fields: a value field for transferring zero or more satoshis and a pubkey script for indicating what conditions must be fulfilled for those satoshis to be further spent." class="auto-link">output</a>, he provides his <a href="/en/glossary/signature" title="A value related to a public key which could only have reasonably been created by someone who has the private key that created that public key. Used in Bitcoin to authorize spending satoshis previously sent to a public key." class="auto-link">signature</a> along with
 the full (serialized) <a href="/en/glossary/redeem-script" title="A script similar in function to a pubkey script. One copy of it is hashed to create a P2SH address (used in an actual pubkey script) and another copy is placed in the spending signature script to enforce its conditions." class="auto-link">redeem script</a> in the <a href="/en/glossary/signature-script" title="Data generated by a spender which is almost always used as variables to satisfy a pubkey script. Signature Scripts are called scriptSig in code." class="auto-link">signature script</a>. The
@@ -928,7 +928,7 @@ value as the <a href="/en/glossary/redeem-script" title="A script similar in fun
 <a href="/en/glossary/redeem-script" title="A script similar in function to a pubkey script. One copy of it is hashed to create a P2SH address (used in an actual pubkey script) and another copy is placed in the spending signature script to enforce its conditions." class="auto-link">redeem script</a> exactly as it would if it were the primary <a href="/en/glossary/pubkey-script" title="A script included in outputs which sets the conditions that must be fulfilled for those satoshis to be spent.  Data for fulfilling the conditions can be provided in a signature script. Pubkey Scripts are called a scriptPubKey in code." class="auto-link">pubkey script</a>, letting
 Bob spend the <a href="/en/glossary/output" title="An output in a transaction which contains two fields: a value field for transferring zero or more satoshis and a pubkey script for indicating what conditions must be fulfilled for those satoshis to be further spent." class="auto-link">output</a> if the <a href="/en/glossary/redeem-script" title="A script similar in function to a pubkey script. One copy of it is hashed to create a P2SH address (used in an actual pubkey script) and another copy is placed in the spending signature script to enforce its conditions." class="auto-link">redeem script</a> does not return false.</p>
 
-  <p><img src="/img/dev/en-unlocking-p2sh-output.svg?1533148456" alt="Unlocking A P2SH Output For Spending" /></p>
+  <p><img src="/img/dev/en-unlocking-p2sh-output.svg?1533165313" alt="Unlocking A P2SH Output For Spending" /></p>
 
   <p>The hash of the <a href="/en/glossary/redeem-script" title="A script similar in function to a pubkey script. One copy of it is hashed to create a P2SH address (used in an actual pubkey script) and another copy is placed in the spending signature script to enforce its conditions." class="auto-link">redeem script</a> has the same properties as a <a href="/en/glossary/p2pkh-address" title="A Bitcoin payment address comprising a hashed public key, allowing the spender to create a standard pubkey script that Pays To PubKey Hash (P2PKH)." class="auto-link">pubkey
 hash</a>—so it can be transformed into the standard Bitcoin <a href="/en/glossary/address" title="A 20-byte hash formatted using base58check to produce either a P2PKH or P2SH Bitcoin address.  Currently the most common way users exchange payment information." class="auto-link">address</a> format
@@ -1573,7 +1573,7 @@ by <a href="/en/glossary/locktime" title="Part of a transaction which indicates 
 it to Alice to sign, as shown in the
 illustration below.</p>
 
-  <p><img src="/img/dev/en-micropayment-channel.svg?1533148456" alt="Micropayment Channel Example" /></p>
+  <p><img src="/img/dev/en-micropayment-channel.svg?1533165313" alt="Micropayment Channel Example" /></p>
 
   <p>Alice checks that the <a href="/en/developer-guide#issuing-refunds" title="A transaction which refunds some or all satoshis received in a previous transaction" class="auto-link">refund</a> transaction’s <a href="/en/glossary/locktime" title="Part of a transaction which indicates the earliest time or earliest block when that transaction may be added to the block chain." class="auto-link">locktime</a> is 24 hours in the
 future, signs it, and gives a copy of it back to Bob. She then asks Bob
@@ -1645,7 +1645,7 @@ illustration below, makes this decision easy: they create a single
 transaction which does all of the spending simultaneously, ensuring none
 of them can steal the others’ <a href="/en/glossary/denominations" title="Denominations of Bitcoin value, usually measured in fractions of a bitcoin but sometimes measured in multiples of a satoshi.  One bitcoin equals 100,000,000 satoshis." class="auto-link">satoshis</a>.</p>
 
-  <p><img src="/img/dev/en-coinjoin.svg?1533148456" alt="Example CoinJoin Transaction" /></p>
+  <p><img src="/img/dev/en-coinjoin.svg?1533165313" alt="Example CoinJoin Transaction" /></p>
 
   <p>Each contributor looks through their collection of Unspent Transaction
 <a href="/en/glossary/output" title="An output in a transaction which contains two fields: a value field for transferring zero or more satoshis and a pubkey script for indicating what conditions must be fulfilled for those satoshis to be further spent." class="auto-link">Outputs</a> (<a href="/en/glossary/unspent-transaction-output" title="An Unspent Transaction Output (UTXO) that can be spent as an input in a new transaction." class="auto-link">UTXOs</a>) for 100 <a href="/en/glossary/denominations" title="Denominations of Bitcoin value, usually measured in fractions of a bitcoin but sometimes measured in multiples of a satoshi.  One bitcoin equals 100,000,000 satoshis." class="auto-link">millibitcoins</a> they can spend. They then each generate
@@ -1756,7 +1756,7 @@ distribute those <a href="/en/glossary/public-key" title="The public portion of 
 those <a href="/en/glossary/public-key" title="The public portion of a keypair which can be used to verify signatures made with the private portion of the keypair." class="auto-link">public keys</a>, creates and signs transactions spending those
 <a href="/en/glossary/output" title="An output in a transaction which contains two fields: a value field for transferring zero or more satoshis and a pubkey script for indicating what conditions must be fulfilled for those satoshis to be further spent." class="auto-link">outputs</a>, and broadcasts the signed transactions.</p>
 
-  <p><img src="/img/dev/en-wallets-full-service.svg?1533148456" alt="Full-Service Wallets" /></p>
+  <p><img src="/img/dev/en-wallets-full-service.svg?1533165313" alt="Full-Service Wallets" /></p>
 
   <p>As of this writing, almost all popular <a href="/en/glossary/wallet" title="Software that stores private keys and monitors the block chain (sometimes as a client of a server that does the processing) to allow users to spend and receive satoshis." class="auto-link">wallets</a> can be used as
 full-service <a href="/en/glossary/wallet" title="Software that stores private keys and monitors the block chain (sometimes as a client of a server that does the processing) to allow users to spend and receive satoshis." class="auto-link">wallets</a>.</p>
@@ -1791,7 +1791,7 @@ interacts with the <a href="/en/developer-guide#term-network" title="The Bitcoin
 (described in a later subsection) to create <a href="/en/glossary/parent-key" title="In HD wallets, a key used to derive child keys.  The key can be either a private key or a public key, and the key derivation may also require a chain code." class="auto-link">parent private and public
 keys</a> which can create <a href="/en/glossary/child-key" title="In HD wallets, a key derived from a parent key.  The key can be either a private key or a public key, and the key derivation may also require a chain code." class="auto-link">child private and public keys</a>.</p>
 
-  <p><img src="/img/dev/en-wallets-signing-only.svg?1533148456" alt="Signing-Only Wallets" /></p>
+  <p><img src="/img/dev/en-wallets-signing-only.svg?1533165313" alt="Signing-Only Wallets" /></p>
 
   <p>When first run, the signing-only <a href="/en/glossary/wallet" title="Software that stores private keys and monitors the block chain (sometimes as a client of a server that does the processing) to allow users to spend and receive satoshis." class="auto-link">wallet</a> creates a <a href="/en/glossary/parent-key" title="In HD wallets, a key used to derive child keys.  The key can be either a private key or a public key, and the key derivation may also require a chain code." class="auto-link">parent private key</a> and
 transfers the corresponding <a href="/en/glossary/parent-key" title="In HD wallets, a key used to derive child keys.  The key can be either a private key or a public key, and the key derivation may also require a chain code." class="auto-link">parent public key</a> to the networked <a href="/en/glossary/wallet" title="Software that stores private keys and monitors the block chain (sometimes as a client of a server that does the processing) to allow users to spend and receive satoshis." class="auto-link">wallet</a>.</p>
@@ -1933,7 +1933,7 @@ webservers, can be designed to distribute <a href="/en/glossary/public-key" titl
 or <a href="/en/glossary/p2sh-address" title="A Bitcoin payment address comprising a hashed script, allowing the spender to create a standard pubkey script that Pays To Script Hash (P2SH). The script can be almost any valid pubkey script." class="auto-link">P2SH addresses</a>) and nothing more.  There are two common ways to
 design these minimalist <a href="/en/glossary/wallet" title="Software that stores private keys and monitors the block chain (sometimes as a client of a server that does the processing) to allow users to spend and receive satoshis." class="auto-link">wallets</a>:</p>
 
-  <p><img src="/img/dev/en-wallets-distributing-only.svg?1533148456" alt="Distributing-Only Wallets" /></p>
+  <p><img src="/img/dev/en-wallets-distributing-only.svg?1533165313" alt="Distributing-Only Wallets" /></p>
 
   <ul>
     <li>
@@ -2057,7 +2057,7 @@ shows such a point on the elliptic curve used by Bitcoin,
 y<sup>2</sup> = x<sup>3</sup> + 7, over a field of
 contiguous numbers.</p>
 
-  <p><img src="/img/dev/en-ecdsa-compressed-public-key.svg?1533148456" alt="Point On ECDSA Curve" /></p>
+  <p><img src="/img/dev/en-ecdsa-compressed-public-key.svg?1533165313" alt="Point On ECDSA Curve" /></p>
 
   <p>(<a href="http://www.secg.org/sec2-v2.pdf" class="auto-link">Secp256k1</a> actually modulos coordinates by a large prime, which produces a
 field of non-contiguous integers and a significantly less clear plot,
@@ -2180,7 +2180,7 @@ code</a> to continue being useful
 even if, for example, a web-based <a href="/en/glossary/public-key" title="The public portion of a keypair which can be used to verify signatures made with the private portion of the keypair." class="auto-link">public key</a> distribution program
 gets hacked.</p>
 
-  <p><img src="/img/dev/en-hd-overview.svg?1533148456" alt="Overview Of Hierarchical Deterministic Key Derivation" /></p>
+  <p><img src="/img/dev/en-hd-overview.svg?1533165313" alt="Overview Of Hierarchical Deterministic Key Derivation" /></p>
 
   <p>As illustrated above, HD key derivation takes four inputs<!--noref-->:</p>
 
@@ -2227,7 +2227,7 @@ key</a> and <a href="/en/glossary/master-chain-code-and-private-key" title="In H
 code</a> are derived from random data,
 as illustrated below.</p>
 
-  <p><img src="/img/dev/en-hd-root-keys.svg?1533148456" alt="Creating A Root Extended Key Pair" /></p>
+  <p><img src="/img/dev/en-hd-root-keys.svg?1533165313" alt="Creating A Root Extended Key Pair" /></p>
 
   <p>A <a href="/en/glossary/hd-wallet-seed" title="A potentially-short value used as a seed to generate the master private key and master chain code for an HD wallet." id="term-root-seed" class="term">root seed</a> is created from either 128
 bits, 256 bits, or 512 bits of random data. This <a href="/en/glossary/hd-wallet-seed" title="A potentially-short value used as a seed to generate the master private key and master chain code for an HD wallet." class="auto-link">root seed</a> of as little
@@ -2235,7 +2235,7 @@ as 128 bits is the the only data the user needs to backup in order to
 derive every key created by a particular <a href="/en/glossary/wallet" title="Software that stores private keys and monitors the block chain (sometimes as a client of a server that does the processing) to allow users to spend and receive satoshis." class="auto-link">wallet</a> program using
 particular settings.</p>
 
-  <p><img src="/img/icons/icon_warning.svg?1533148456" alt="Warning icon" />
+  <p><img src="/img/icons/icon_warning.svg?1533165313" alt="Warning icon" />
  <strong>Warning:</strong> As of this writing, <a href="/en/glossary/hd-protocol" title="The Hierarchical Deterministic (HD) key creation and transfer protocol (BIP32), which allows creating child keys from parent keys in a hierarchy. Wallets using the HD protocol are called HD wallets." class="auto-link">HD wallet</a> programs are not expected to
 be fully compatible, so users must only use the same <a href="/en/glossary/hd-protocol" title="The Hierarchical Deterministic (HD) key creation and transfer protocol (BIP32), which allows creating child keys from parent keys in a hierarchy. Wallets using the HD protocol are called HD wallets." class="auto-link">HD wallet</a> program
 with the same HD-related settings for a particular <a href="/en/glossary/hd-wallet-seed" title="A potentially-short value used as a seed to generate the master private key and master chain code for an HD wallet." class="auto-link">root seed</a>.</p>
@@ -2263,7 +2263,7 @@ further-descended <a href="/en/glossary/private-key" title="The private portion 
 of the extended <a href="/en/glossary/private-key" title="The private portion of a keypair which can create signatures that other people can verify using the public key." class="auto-link">private keys</a> descending from that <a href="/en/glossary/private-key" title="The private portion of a keypair which can create signatures that other people can verify using the public key." class="auto-link">private key</a>, as
 shown in the grandchild and great-grandchild generations of the illustration below.</p>
 
-  <p><img src="/img/dev/en-hd-cross-generational-key-compromise.svg?1533148456" alt="Cross-Generational Key Compromise" /></p>
+  <p><img src="/img/dev/en-hd-cross-generational-key-compromise.svg?1533165313" alt="Cross-Generational Key Compromise" /></p>
 
   <p>Perhaps worse, the attacker can reverse the normal <a href="/en/glossary/child-key" title="In HD wallets, a key derived from a parent key.  The key can be either a private key or a public key, and the key derivation may also require a chain code." class="auto-link">child private key</a>
 derivation formula and subtract a <a href="/en/glossary/chain-code" title="In HD wallets, 256 bits of entropy added to the public and private keys to help them generate secure child keys; the master chain code is usually derived from a seed along with the master private key" class="auto-link">parent chain code</a> from a <a href="/en/glossary/child-key" title="In HD wallets, a key derived from a parent key.  The key can be either a private key or a public key, and the key derivation may also require a chain code." class="auto-link">child private
@@ -2286,7 +2286,7 @@ together the index number, the <a href="/en/glossary/chain-code" title="In HD wa
 <a href="/en/glossary/chain-code" title="In HD wallets, 256 bits of entropy added to the public and private keys to help them generate secure child keys; the master chain code is usually derived from a seed along with the master private key" class="auto-link">child chain code</a> and the integer value which is combined with the <a href="/en/glossary/parent-key" title="In HD wallets, a key used to derive child keys.  The key can be either a private key or a public key, and the key derivation may also require a chain code." class="auto-link">parent
 private key</a> to create the <a href="/en/glossary/child-key" title="In HD wallets, a key derived from a parent key.  The key can be either a private key or a public key, and the key derivation may also require a chain code." class="auto-link">child private key</a>.</p>
 
-  <p><img src="/img/dev/en-hd-private-parent-to-private-child.svg?1533148456" alt="Creating Child Public Keys From An Extended Private Key" /></p>
+  <p><img src="/img/dev/en-hd-private-parent-to-private-child.svg?1533165313" alt="Creating Child Public Keys From An Extended Private Key" /></p>
 
   <p>The hardened formula, illustrated above, combines together the index
 number, the <a href="/en/glossary/chain-code" title="In HD wallets, 256 bits of entropy added to the public and private keys to help them generate secure child keys; the master chain code is usually derived from a seed along with the master private key" class="auto-link">parent chain code</a>, and the <a href="/en/glossary/parent-key" title="In HD wallets, a key used to derive child keys.  The key can be either a private key or a public key, and the key derivation may also require a chain code." class="auto-link">parent private key</a> to create
@@ -2324,7 +2324,7 @@ key</a> and <em>M</em> being a <a href="/en/glossary/public-key" title="The publ
 key</a>. The following hierarchy illustrates prime notation and hardened key
 firewalls.</p>
 
-  <p><img src="/img/dev/en-hd-tree.svg?1533148456" alt="Example HD Wallet Tree Using Prime Notation" /></p>
+  <p><img src="/img/dev/en-hd-tree.svg?1533165313" alt="Example HD Wallet Tree Using Prime Notation" /></p>
 
   <p><a href="/en/glossary/wallet" title="Software that stores private keys and monitors the block chain (sometimes as a client of a server that does the processing) to allow users to spend and receive satoshis." class="auto-link">Wallets</a> following the <a href="https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki" class="auto-link">BIP32</a> <a href="/en/glossary/hd-protocol" title="The Hierarchical Deterministic (HD) key creation and transfer protocol (BIP32), which allows creating child keys from parent keys in a hierarchy. Wallets using the HD protocol are called HD wallets." class="auto-link">HD protocol</a> only create hardened children of
 the <a href="/en/glossary/master-chain-code-and-private-key" title="In HD wallets, the master chain code and master private key are the two pieces of data derived from the root seed." class="auto-link">master private key</a> (<em>m</em>) to prevent a compromised <a href="/en/glossary/child-key" title="In HD wallets, a key derived from a parent key.  The key can be either a private key or a public key, and the key derivation may also require a chain code." class="auto-link">child key</a> from
@@ -2425,7 +2425,7 @@ can, respectively, request and make payments using Bitcoin—and how
 they can deal with complications such as <a href="/en/developer-guide#issuing-refunds" title="A transaction which refunds some or all satoshis received in a previous transaction" class="auto-link">refunds</a> and <a href="/en/developer-guide#rebilling-recurring-payments" title="Billing a spender on a regular schedule" class="auto-link">recurrent
 rebilling</a>.</p>
 
-  <p><img src="/img/dev/en-payment-processing.svg?1533148456" alt="Bitcoin Payment Processing" /></p>
+  <p><img src="/img/dev/en-payment-processing.svg?1533165313" alt="Bitcoin Payment Processing" /></p>
 
   <p>The figure above illustrates payment processing using Bitcoin from a
 receiver’s perspective, starting with a new order. The following
@@ -2534,7 +2534,7 @@ and other important features such as <a href="/en/developer-guide#issuing-refund
     </li>
   </ol>
 
-  <p><img src="/img/icons/icon_warning.svg?1533148456" alt="Warning icon" />
+  <p><img src="/img/icons/icon_warning.svg?1533165313" alt="Warning icon" />
  <strong>Warning:</strong> Special care must be taken to avoid the theft of incoming
 payments. In particular, <a href="/en/glossary/private-key" title="The private portion of a keypair which can create signatures that other people can verify using the public key." class="auto-link">private keys</a> should not be stored on web servers,
 and <a href="/en/glossary/payment-protocol" title="The protocol defined in BIP70 (and other BIPs) which lets spenders get signed payment details from receivers." class="auto-link">payment requests</a> should be sent over HTTPS or other secure methods
@@ -2663,7 +2663,7 @@ parameters—and any other optional parameters—but they were
 omitted here to keep the QR code small and easy to scan with unsteady
 or low-resolution mobile cameras.</p>
 
-  <p><img src="/img/dev/en-qr-code.svg?1533148456" alt="Bitcoin QR Codes" /></p>
+  <p><img src="/img/dev/en-qr-code.svg?1533165313" alt="Bitcoin QR Codes" /></p>
 
   <p>The error correction is combined with a checksum to ensure the <a href="/en/developer-guide#term-uri-qr-code" title="A QR code containing a bitcoin: URI" class="auto-link">Bitcoin QR code</a>
 cannot be successfully decoded with data missing or accidentally altered,
@@ -2723,7 +2723,7 @@ the other parameters and fetch a <a href="/en/developer-examples#term-paymentreq
 The browser, QR code reader, or other program processing the URI opens
 the spender’s Bitcoin <a href="/en/glossary/wallet" title="Software that stores private keys and monitors the block chain (sometimes as a client of a server that does the processing) to allow users to spend and receive satoshis." class="auto-link">wallet</a> program on the URI.</p>
 
-  <p><img src="/img/dev/en-payment-protocol.svg?1533148456" alt="BIP70 Payment Protocol" /></p>
+  <p><img src="/img/dev/en-payment-protocol.svg?1533165313" alt="BIP70 Payment Protocol" /></p>
 
   <p>The <a href="/en/glossary/payment-protocol" title="The protocol defined in BIP70 (and other BIPs) which lets spenders get signed payment details from receivers." class="auto-link">Payment Protocol</a> is described in depth in <a href="https://github.com/bitcoin/bips/blob/master/bip-0070.mediawiki" class="auto-link">BIP70</a>, <a href="https://github.com/bitcoin/bips/blob/master/bip-0071.mediawiki" class="auto-link">BIP71</a>, and <a href="https://github.com/bitcoin/bips/blob/master/bip-0072.mediawiki" class="auto-link">BIP72</a>.
 An example CGI program and description of all the parameters which can
@@ -2805,7 +2805,7 @@ server’s <a href="https://en.wikipedia.org/wiki/X.509" class="auto-link">X.509
 to allow other signing methods in the future.)  Bob’s server sends the
 <a href="/en/glossary/payment-protocol" title="The protocol defined in BIP70 (and other BIPs) which lets spenders get signed payment details from receivers." class="auto-link">payment request</a> to Charlie’s <a href="/en/glossary/wallet" title="Software that stores private keys and monitors the block chain (sometimes as a client of a server that does the processing) to allow users to spend and receive satoshis." class="auto-link">wallet</a> in the reply to the HTTP GET.</p>
 
-  <p><img src="/img/dev/en-btcc-payment-request.png?1533148456" alt="Bitcoin Core Showing Validated Payment Request" /></p>
+  <p><img src="/img/dev/en-btcc-payment-request.png?1533165313" alt="Bitcoin Core Showing Validated Payment Request" /></p>
 
   <p>Charlie’s <a href="/en/glossary/wallet" title="Software that stores private keys and monitors the block chain (sometimes as a client of a server that does the processing) to allow users to spend and receive satoshis." class="auto-link">wallet</a> receives the <a href="/en/developer-examples#term-paymentrequest" title="The PaymentRequest of the payment protocol which contains and allows signing of the PaymentDetails" class="auto-link">PaymentRequest</a> message, checks its <a href="/en/glossary/signature" title="A value related to a public key which could only have reasonably been created by someone who has the private key that created that public key. Used in Bitcoin to authorize spending satoshis previously sent to a public key." class="auto-link">signature</a>, and
 then displays the details from the <a href="/en/developer-examples#term-paymentdetails" title="The PaymentDetails of the payment protocol which allows the receiver to specify the payment details to the spender" class="auto-link">PaymentDetails</a> message to Charlie. Charlie
@@ -3251,7 +3251,7 @@ chance receivers get paid on time.</p>
 
   <p>For a client to be fooled, an adversary would need to give a complete alternative <a href="/en/glossary/block-chain" title="A chain of blocks with each block referencing the block that preceded it. The most-difficult-to-recreate chain is the best block chain." class="auto-link">block chain</a> history that is of greater <a href="/en/glossary/difficulty" title="How difficult it is to find a block relative to the difficulty of finding the easiest possible block. The easiest possible block has a proof-of-work difficulty of 1." class="auto-link">difficulty</a> than the current “true” chain, which is computationally expensive (if not impossible) due to the fact that the chain with the most cumulative <a href="/en/glossary/proof-of-work" title="A hash below a target value which can only be obtained, on average, by performing a certain amount of brute force work---therefore demonstrating proof of work." class="auto-link">proof of work</a> is by definition the “true” chain. Due to the computational <a href="/en/glossary/difficulty" title="How difficult it is to find a block relative to the difficulty of finding the easiest possible block. The easiest possible block has a proof-of-work difficulty of 1." class="auto-link">difficulty</a> required to generate a new <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block</a> at the tip of the chain, the ability to fool a <a href="/en/glossary/node" title="A computer that connects to the Bitcoin network." class="auto-link">full node</a> becomes very expensive after 6 <a href="/en/glossary/confirmation-score" title="A score indicating the number of blocks on the best block chain that would need to be modified to remove or modify a particular transaction. A confirmed transaction has a confirmation score of one or higher." class="auto-link">confirmations</a>. This form of verification is highly resistent to sybil attacks—only a single honest <a href="/en/developer-guide#term-network" title="The Bitcoin P2P network which broadcasts transactions and blocks" class="auto-link">network</a> <a href="/en/glossary/node" title="A computer that connects to the Bitcoin network." class="auto-link">peer</a> is required in order to receive and verify the complete state of the “true” <a href="/en/glossary/block-chain" title="A chain of blocks with each block referencing the block that preceded it. The most-difficult-to-recreate chain is the best block chain." class="auto-link">block chain</a>.</p>
 
-  <p><img src="/img/dev/en-block-height-vs-depth.svg?1533148456" alt="Block Height Compared To Block Depth" /></p>
+  <p><img src="/img/dev/en-block-height-vs-depth.svg?1533165313" alt="Block Height Compared To Block Depth" /></p>
 
   <h3 id="simplified-payment-verification-spv">Simplified Payment Verification (SPV)</h3>
   <div class="subhead-links sourcefile" data-sourcefile="_data/devdocs/en/guides/operating_modes.md"><a href="https://github.com/achow101/bitcoin-site/edit/master/_data/devdocs/en/guides/operating_modes.md">Edit</a>
@@ -3485,14 +3485,14 @@ the local <a href="/en/glossary/block-chain" title="A chain of blocks with each 
 simple <a href="/en/glossary/initial-block-download" title="The process used by a new node (or long-offline node) to download a large number of blocks to catch up to the tip of the best block chain." class="auto-link">initial block download</a> (<a href="/en/glossary/initial-block-download" title="The process used by a new node (or long-offline node) to download a large number of blocks to catch up to the tip of the best block chain." class="auto-link">IBD</a>) method we’ll call <em><a href="/en/glossary/blocks-first-sync" title="Synchronizing the block chain by downloading each block from a peer and then validating it." class="auto-link">blocks-first</a></em>.
 The goal is to download the <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">blocks</a> from the <a href="/en/glossary/block-chain" title="A chain of blocks with each block referencing the block that preceded it. The most-difficult-to-recreate chain is the best block chain." class="auto-link">best block chain</a> in sequence.</p>
 
-  <p><img src="/img/dev/en-blocks-first-flowchart.svg?1533148456" alt="Overview Of Blocks-First Method" /></p>
+  <p><img src="/img/dev/en-blocks-first-flowchart.svg?1533165313" alt="Overview Of Blocks-First Method" /></p>
 
   <p>The first time a <a href="/en/glossary/node" title="A computer that connects to the Bitcoin network." class="auto-link">node</a> is started, it only has a single <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block</a> in its
 local <a href="/en/glossary/block-chain" title="A chain of blocks with each block referencing the block that preceded it. The most-difficult-to-recreate chain is the best block chain." class="auto-link">best block chain</a>—the hardcoded <a href="/en/glossary/genesis-block" title="The first block in the Bitcoin block chain." class="auto-link">genesis block</a> (<a href="/en/glossary/genesis-block" title="The first block in the Bitcoin block chain." class="auto-link">block 0</a>).  This
 <a href="/en/glossary/node" title="A computer that connects to the Bitcoin network." class="auto-link">node</a> chooses a remote <a href="/en/glossary/node" title="A computer that connects to the Bitcoin network." class="auto-link">peer</a>, called the sync <a href="/en/glossary/node" title="A computer that connects to the Bitcoin network." class="auto-link">node</a>, and sends it the
 <a href="/en/developer-reference#getblocks" title="A P2P protocol message used to request an inv message containing a range of block header hashes" class="auto-link"><code>getblocks</code> message</a> illustrated below.</p>
 
-  <p><img src="/img/dev/en-ibd-getblocks.svg?1533148456" alt="First GetBlocks Message Sent During IBD" /></p>
+  <p><img src="/img/dev/en-ibd-getblocks.svg?1533165313" alt="First GetBlocks Message Sent During IBD" /></p>
 
   <p>In the <a href="/en/glossary/block-header" title="An 80-byte header belonging to a single block which is hashed repeatedly to create proof of work." class="auto-link">header</a> hashes field of the <a href="/en/developer-reference#getblocks" title="A P2P protocol message used to request an inv message containing a range of block header hashes" class="auto-link"><code>getblocks</code> message</a>, this new <a href="/en/glossary/node" title="A computer that connects to the Bitcoin network." class="auto-link">node</a>
 sends the <a href="/en/glossary/block-header" title="An 80-byte header belonging to a single block which is hashed repeatedly to create proof of work." class="auto-link">header</a> hash of the only <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block</a> it has, the <a href="/en/glossary/genesis-block" title="The first block in the Bitcoin block chain." class="auto-link">genesis block</a>
@@ -3506,7 +3506,7 @@ replies with 500 <a href="/en/glossary/block" title="One or more transactions pr
 <a href="/en/developer-reference#getblocks" title="A P2P protocol message used to request an inv message containing a range of block header hashes" class="auto-link"><code>getblocks</code> message</a>) starting from <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block</a> 1. It sends these <a href="/en/glossary/inventory" title="A data type identifier and a hash; used to identify transactions and blocks available for download through the Bitcoin P2P network." class="auto-link">inventories</a>
 in the <a href="/en/developer-reference#inv" title="A P2P protocol message used to send inventories of transactions and blocks known to the transmitting peer" class="auto-link"><code>inv</code> message</a> illustrated below.</p>
 
-  <p><img src="/img/dev/en-ibd-inv.svg?1533148456" alt="First Inv Message Sent During IBD" /></p>
+  <p><img src="/img/dev/en-ibd-inv.svg?1533165313" alt="First Inv Message Sent During IBD" /></p>
 
   <p><a href="/en/glossary/inventory" title="A data type identifier and a hash; used to identify transactions and blocks available for download through the Bitcoin P2P network." class="auto-link">Inventories</a> are unique identifiers for information on the <a href="/en/developer-guide#term-network" title="The Bitcoin P2P network which broadcasts transactions and blocks" class="auto-link">network</a>. Each
 <a href="/en/glossary/inventory" title="A data type identifier and a hash; used to identify transactions and blocks available for download through the Bitcoin P2P network." class="auto-link">inventory</a> contains a type field and the unique identifier for an
@@ -3521,7 +3521,7 @@ is 4860…0000 as seen in the illustration above.)</p>
   <p>The <a href="/en/glossary/initial-block-download" title="The process used by a new node (or long-offline node) to download a large number of blocks to catch up to the tip of the best block chain." class="auto-link">IBD</a> <a href="/en/glossary/node" title="A computer that connects to the Bitcoin network." class="auto-link">node</a> uses the received <a href="/en/glossary/inventory" title="A data type identifier and a hash; used to identify transactions and blocks available for download through the Bitcoin P2P network." class="auto-link">inventories</a> to request 128 <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">blocks</a> from
 the sync <a href="/en/glossary/node" title="A computer that connects to the Bitcoin network." class="auto-link">node</a> in the <a href="/en/developer-reference#getdata" title="A P2P protocol message used to request one or more transactions, blocks, or merkle blocks" class="auto-link"><code>getdata</code> message</a> illustrated below.</p>
 
-  <p><img src="/img/dev/en-ibd-getdata.svg?1533148456" alt="First GetData Message Sent During IBD" /></p>
+  <p><img src="/img/dev/en-ibd-getdata.svg?1533165313" alt="First GetData Message Sent During IBD" /></p>
 
   <p>It’s important to <a href="/en/glossary/blocks-first-sync" title="Synchronizing the block chain by downloading each block from a peer and then validating it." class="auto-link">blocks-first</a> <a href="/en/glossary/node" title="A computer that connects to the Bitcoin network." class="auto-link">nodes</a> that the <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">blocks</a> be requested and
 sent in order because each <a href="/en/glossary/block-header" title="An 80-byte header belonging to a single block which is hashed repeatedly to create proof of work." class="auto-link">block header</a> references the <a href="/en/glossary/block-header" title="An 80-byte header belonging to a single block which is hashed repeatedly to create proof of work." class="auto-link">header</a> hash of
@@ -3535,7 +3535,7 @@ of the <a href="/en/glossary/block" title="One or more transactions prefaced by 
 and sent in a separate <a href="/en/developer-reference#block" title="The P2P network message which sends a serialized block" class="auto-link"><code>block</code> message</a>. The first <a href="/en/developer-reference#block" title="The P2P network message which sends a serialized block" class="auto-link"><code>block</code> message</a> sent
 (for <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block</a> 1) is illustrated below.</p>
 
-  <p><img src="/img/dev/en-ibd-block.svg?1533148456" alt="First Block Message Sent During IBD" /></p>
+  <p><img src="/img/dev/en-ibd-block.svg?1533165313" alt="First Block Message Sent During IBD" /></p>
 
   <p>The <a href="/en/glossary/initial-block-download" title="The process used by a new node (or long-offline node) to download a large number of blocks to catch up to the tip of the best block chain." class="auto-link">IBD</a> <a href="/en/glossary/node" title="A computer that connects to the Bitcoin network." class="auto-link">node</a> downloads each <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block</a>, validates it, and then requests the
 next <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block</a> it hasn’t requested yet, maintaining a queue of up to 128
@@ -3545,7 +3545,7 @@ requesting the <a href="/en/glossary/inventory" title="A data type identifier an
 <a href="/en/developer-reference#getblocks" title="A P2P protocol message used to request an inv message containing a range of block header hashes" class="auto-link"><code>getblocks</code> message</a> contains multiple <a href="/en/glossary/block-header" title="An 80-byte header belonging to a single block which is hashed repeatedly to create proof of work." class="auto-link">header</a> hashes as illustrated
 below:</p>
 
-  <p><img src="/img/dev/en-ibd-getblocks2.svg?1533148456" alt="Second GetBlocks Message Sent During IBD" /></p>
+  <p><img src="/img/dev/en-ibd-getblocks2.svg?1533165313" alt="Second GetBlocks Message Sent During IBD" /></p>
 
   <p>Upon <a href="/en/developer-guide#term-receipt" title="A cryptographically-verifiable receipt created using parts of a payment request and a confirmed transaction" class="auto-link">receipt</a> of the second <a href="/en/developer-reference#getblocks" title="A P2P protocol message used to request an inv message containing a range of block header hashes" class="auto-link"><code>getblocks</code> message</a>, the sync <a href="/en/glossary/node" title="A computer that connects to the Bitcoin network." class="auto-link">node</a> searches
 its local <a href="/en/glossary/block-chain" title="A chain of blocks with each block referencing the block that preceded it. The most-difficult-to-recreate chain is the best block chain." class="auto-link">best block chain</a> for a <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block</a> that matches one of the <a href="/en/glossary/block-header" title="An 80-byte header belonging to a single block which is hashed repeatedly to create proof of work." class="auto-link">header</a>
@@ -3658,14 +3658,14 @@ chain</a>, partially validate them as best
 as possible, and then download the corresponding <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">blocks</a> in parallel.  This
 solves several problems with the older <a href="/en/glossary/blocks-first-sync" title="Synchronizing the block chain by downloading each block from a peer and then validating it." class="auto-link">blocks-first IBD</a> method.</p>
 
-  <p><img src="/img/dev/en-headers-first-flowchart.svg?1533148456" alt="Overview Of Headers-First Method" /></p>
+  <p><img src="/img/dev/en-headers-first-flowchart.svg?1533165313" alt="Overview Of Headers-First Method" /></p>
 
   <p>The first time a <a href="/en/glossary/node" title="A computer that connects to the Bitcoin network." class="auto-link">node</a> is started, it only has a single <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block</a> in its
 local <a href="/en/glossary/block-chain" title="A chain of blocks with each block referencing the block that preceded it. The most-difficult-to-recreate chain is the best block chain." class="auto-link">best block chain</a>—the hardcoded <a href="/en/glossary/genesis-block" title="The first block in the Bitcoin block chain." class="auto-link">genesis block</a> (<a href="/en/glossary/genesis-block" title="The first block in the Bitcoin block chain." class="auto-link">block 0</a>).  The
 <a href="/en/glossary/node" title="A computer that connects to the Bitcoin network." class="auto-link">node</a> chooses a remote <a href="/en/glossary/node" title="A computer that connects to the Bitcoin network." class="auto-link">peer</a>, which we’ll call the sync <a href="/en/glossary/node" title="A computer that connects to the Bitcoin network." class="auto-link">node</a>, and sends it the
 <a href="/en/developer-reference#getheaders" title="A P2P protocol message used to request a range of block headers" class="auto-link"><code>getheaders</code> message</a> illustrated below.</p>
 
-  <p><img src="/img/dev/en-ibd-getheaders.svg?1533148456" alt="First getheaders message" /></p>
+  <p><img src="/img/dev/en-ibd-getheaders.svg?1533165313" alt="First getheaders message" /></p>
 
   <p>In the <a href="/en/glossary/block-header" title="An 80-byte header belonging to a single block which is hashed repeatedly to create proof of work." class="auto-link">header</a> hashes field of the <a href="/en/developer-reference#getheaders" title="A P2P protocol message used to request a range of block headers" class="auto-link"><code>getheaders</code> message</a>, the new <a href="/en/glossary/node" title="A computer that connects to the Bitcoin network." class="auto-link">node</a>
 sends the <a href="/en/glossary/block-header" title="An 80-byte header belonging to a single block which is hashed repeatedly to create proof of work." class="auto-link">header</a> hash of the only <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block</a> it has, the <a href="/en/glossary/genesis-block" title="The first block in the Bitcoin block chain." class="auto-link">genesis block</a>
@@ -3679,7 +3679,7 @@ replies with 2,000 <a href="/en/glossary/block-header" title="An 80-byte header 
 <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block</a> 1. It sends these <a href="/en/glossary/block-header" title="An 80-byte header belonging to a single block which is hashed repeatedly to create proof of work." class="auto-link">header</a> hashes in the <a href="/en/developer-reference#headers" title="A P2P protocol message containing one or more block headers" class="auto-link"><code>headers</code> message</a>
 illustrated below.</p>
 
-  <p><img src="/img/dev/en-ibd-headers.svg?1533148456" alt="First headers message" /></p>
+  <p><img src="/img/dev/en-ibd-headers.svg?1533165313" alt="First headers message" /></p>
 
   <p>The <a href="/en/glossary/initial-block-download" title="The process used by a new node (or long-offline node) to download a large number of blocks to catch up to the tip of the best block chain." class="auto-link">IBD</a> <a href="/en/glossary/node" title="A computer that connects to the Bitcoin network." class="auto-link">node</a> can partially validate these <a href="/en/glossary/block-header" title="An 80-byte header belonging to a single block which is hashed repeatedly to create proof of work." class="auto-link">block headers</a> by ensuring that
 all fields follow <a href="/en/glossary/consensus-rules" title="The block validation rules that full nodes follow to stay in consensus with other nodes." class="auto-link">consensus rules</a> and that the hash of the <a href="/en/glossary/block-header" title="An 80-byte header belonging to a single block which is hashed repeatedly to create proof of work." class="auto-link">header</a> is
@@ -3732,7 +3732,7 @@ single sync <a href="/en/glossary/node" title="A computer that connects to the B
     </li>
   </ol>
 
-  <p><img src="/img/dev/en-headers-first-moving-window.svg?1533148456" alt="Simulated Headers-First Download Window" /></p>
+  <p><img src="/img/dev/en-headers-first-moving-window.svg?1533165313" alt="Simulated Headers-First Download Window" /></p>
 
   <p>Bitcoin Core’s <a href="/en/glossary/headers-first-sync" title="Synchronizing the block chain by downloading block headers before downloading the full blocks." class="auto-link">headers-first</a> mode uses a 1,024-<a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block</a> moving download
 window to maximize download speed. The lowest-<a href="/en/glossary/block-height" title="The number of blocks preceding a particular block on a block chain. For example, the genesis block has a height of zero because zero block preceded it." class="auto-link">height</a> <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block</a> in the window
@@ -3919,7 +3919,7 @@ hasn’t seen yet. In other words, <a href="/en/glossary/orphan-block" title="Bl
 (unlike <a href="/en/glossary/stale-block" title="Blocks which were successfully mined but which aren't included on the current best block chain, likely because some other block at the same height had its chain extended first." class="auto-link">stale blocks</a>, which have known parents but which aren’t part of
 the <a href="/en/glossary/block-chain" title="A chain of blocks with each block referencing the block that preceded it. The most-difficult-to-recreate chain is the best block chain." class="auto-link">best block chain</a>).</p>
 
-  <p><img src="/img/dev/en-orphan-stale-definition.svg?1533148456" alt="Difference Between Orphan And Stale Blocks" /></p>
+  <p><img src="/img/dev/en-orphan-stale-definition.svg?1533165313" alt="Difference Between Orphan And Stale Blocks" /></p>
 
   <p>When a <a href="/en/glossary/blocks-first-sync" title="Synchronizing the block chain by downloading each block from a peer and then validating it." class="auto-link">blocks-first</a> <a href="/en/glossary/node" title="A computer that connects to the Bitcoin network." class="auto-link">node</a> downloads an <a href="/en/glossary/orphan-block" title="Blocks whose parent block has not been processed by the local node, so they can't be fully validated yet." class="auto-link">orphan block</a>, it will not validate
 it. Instead, it will send a <a href="/en/developer-reference#getblocks" title="A P2P protocol message used to request an inv message containing a range of block header hashes" class="auto-link"><code>getblocks</code> message</a> to the <a href="/en/glossary/node" title="A computer that connects to the Bitcoin network." class="auto-link">node</a> which sent
@@ -4045,7 +4045,7 @@ transactions from the <a href="/en/developer-guide#term-network" title="The Bitc
 provides the list of new transactions plus the <a href="/en/glossary/public-key" title="The public portion of a keypair which can be used to verify signatures made with the private portion of the keypair." class="auto-link">public key</a> to which the
 <a href="/en/glossary/coinbase-transaction" title="The first transaction in a block.  Always created by a miner, it includes a single coinbase." class="auto-link">coinbase transaction</a> should be sent.</p>
 
-  <p><img src="/img/dev/en-solo-mining-overview.svg?1533148456" alt="Solo Bitcoin Mining" /></p>
+  <p><img src="/img/dev/en-solo-mining-overview.svg?1533165313" alt="Solo Bitcoin Mining" /></p>
 
   <p>The <a href="/en/glossary/mining" title="Mining is the act of creating valid Bitcoin blocks, which requires demonstrating proof of work, and miners are devices that mine or people who own those devices." class="auto-link">mining</a> software constructs a <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block</a> using the template (described below) and creates a
 <a href="/en/glossary/block-header" title="An 80-byte header belonging to a single block which is hashed repeatedly to create proof of work." class="auto-link">block header</a>. It then sends the 80-byte <a href="/en/glossary/block-header" title="An 80-byte header belonging to a single block which is hashed repeatedly to create proof of work." class="auto-link">block header</a> to its <a href="/en/glossary/mining" title="Mining is the act of creating valid Bitcoin blocks, which requires demonstrating proof of work, and miners are devices that mine or people who own those devices." class="auto-link">mining</a>
@@ -4077,7 +4077,7 @@ done. The <a href="/en/glossary/mining" title="Mining is the act of creating val
 software connects to the pool and requests the information it needs to
 construct <a href="/en/glossary/block-header" title="An 80-byte header belonging to a single block which is hashed repeatedly to create proof of work." class="auto-link">block headers</a>.</p>
 
-  <p><img src="/img/dev/en-pooled-mining-overview.svg?1533148456" alt="Pooled Bitcoin Mining" /></p>
+  <p><img src="/img/dev/en-pooled-mining-overview.svg?1533165313" alt="Pooled Bitcoin Mining" /></p>
 
   <p>In pooled <a href="/en/glossary/mining" title="Mining is the act of creating valid Bitcoin blocks, which requires demonstrating proof of work, and miners are devices that mine or people who own those devices." class="auto-link">mining</a>, the <a href="/en/glossary/mining" title="Mining is the act of creating valid Bitcoin blocks, which requires demonstrating proof of work, and miners are devices that mine or people who own those devices." class="auto-link">mining</a> pool sets the <a href="/en/glossary/nbits" title="The target is the threshold below which a block header hash must be in order for the block to valid, and nBits is the encoded form of the target threshold as it appears in the block header." class="auto-link">target threshold</a> a few orders
 of magnitude higher (less difficult) than the <a href="/en/glossary/difficulty" title="How difficult it is to find a block relative to the difficulty of finding the easiest possible block. The easiest possible block has a proof-of-work difficulty of 1." class="auto-link">network
@@ -4256,7 +4256,7 @@ both MIT licensed, can interpret GetBlockTemplate for your programs.</p>
     
 
 <div class="footersponsor">
-  <!--<div><span>A community website sponsored by</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png?1533148456" alt="Bitcoin Foundation"></a></div>-->
+  <!--<div><span>A community website sponsored by</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png?1533165313" alt="Bitcoin Foundation"></a></div>-->
 </div>
 
     
