@@ -1,0 +1,316 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta property="og:image" content="https://example.com/img/icons/opengraph.png?1533148456" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Some Miners Generating Invalid Blocks</title>
+
+<link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/main.css?1533148456">
+<!--[if lt IE 8]><link rel="stylesheet" href="/css/ie.css"><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" href="/css/ie8.css"><![endif]-->
+
+
+<script type="text/javascript" src="/js/base.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+
+</head>
+
+<body>
+
+
+
+<div id="detectmobile" class="detectmobile"></div>
+
+
+
+
+
+
+
+<div class="head"><div>
+  
+
+<a class="logo" href="/en/"><img src="/img/icons/logotop.svg" alt="Bitcoin"></a>
+
+  
+
+<ul id="menusimple" class="menusimple menumain" onclick="mobileMenuHover(event);" ontouchstart="mobileMenuHover(event);">
+  <li><a>Introduction</a>
+    <ul>
+      <li><a href="/en/bitcoin-for-individuals">Individuals</a></li>
+      <li><a href="/en/bitcoin-for-businesses">Businesses</a></li>
+      <li><a href="/en/bitcoin-for-developers">Developers</a></li>
+      <li><a href="/en/getting-started">Getting started</a></li>
+      <li><a href="/en/how-it-works">How it works</a></li>
+      <li><a href="/en/you-need-to-know">You need to know</a></li>
+    </ul>
+  </li>
+  <li><a>Resources</a>
+    <ul>
+      <li><a href="/en/resources">Resources</a>
+      <li><a href="/en/exchanges">Exchanges</a></li>
+      <li><a href="/en/community">Community</a></li>
+      
+      
+      <li><a href="/en/developer-documentation">Documentation</a></li>
+      
+      <li><a href="/en/vocabulary">Vocabulary</a></li>
+    </ul>
+  </li>
+  <li><a href="/en/innovation">Innovation</a></li>
+  <li><a>Participate</a>
+    <ul>
+      <li><a href="/en/support-bitcoin">Support Bitcoin</a>
+      <li><a href="/en/buy">Buy Bitcoin</a></li>
+    </ul>
+  </li>
+  <li><a href="/en/faq">FAQ</a></li>
+</ul>
+
+  
+
+<a id="menumobile" class="menumobile" onclick="mobileMenuShow(event);" ontouchstart="mobileMenuShow(event);"></a>
+
+</div></div>
+
+<div class="body">
+  
+
+<div class="breadcrumbs">
+  
+</div>
+
+  
+
+<div id="content" class="content">
+  
+
+<link rel="alternate" type="application/rss+xml" href="/en/rss/alerts.rss" title="Bitcoin network status and alerts">
+
+<div class="subhead-links">
+  <a href="/en/alerts">Network alerts history</a>
+| <a type="application/rss+xml" href="/en/rss/alerts.rss"><img src="/img/icons/header_rss.svg" alt="rss" class="rssicon"> Subscribe to RSS feed</a>
+| <a href="https://github.com/achow101/bitcoin-site/commits/master/_alerts/2015-07-04-spv-mining.md">Post history</a>
+| <a href="https://github.com/achow101/bitcoin-site/issues/new?body=Source%20File%3A%20_alerts/2015-07-04-spv-mining.md%0A%0A">Report issue</a>
+</div>
+
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title alerttitle"><img src="/img/icons/warning.svg" alt="warning">Some Miners Generating Invalid Blocks<br><small> 4 July 2015</small></h1>
+  </header>
+
+  <article class="post-content">
+    <p><em>This document is being updated as new information arrives.  Last
+update: 2015-07-15 13:00.  All times are UTC.</em></p>
+
+<p><strong>Note: this situation has not been fully resolved, and it does not
+appear that it will be fully resolved anytime soon. Users of the
+affected wallets listed below are still advised to wait additional
+confirmations or to switch to a safer wallet.</strong></p>
+
+<h2 id="summary">Summary</h2>
+
+<p>Your bitcoins are safe if you received them in transactions confirmed before 2015-07-15 12:00 UTC.</p>
+
+<p>However, there has been a problem with a planned upgrade. For
+bitcoins received later than the time above, confirmation scores are
+significantly less reliable then they usually are for users of
+certain software:</p>
+
+<ul>
+  <li><strong>Lightweight (<a href="http://bitcoin.stackexchange.com/questions/4649/what-is-an-spv-client">SPV</a>) wallet users</strong> should wait an additional 30
+confirmations more than you would normally wait.  Electrum users,
+please see <a href="https://en.bitcoin.it/wiki/July_2015_Forks#Electrum">this note</a>.</li>
+  <li><strong>Bitcoin Core 0.9.4 or earlier users</strong> should wait an
+additional 30 confirmations more than you would normally
+wait or upgrade to <a href="https://bitcoincore.org/en/download">Bitcoin Core 0.10.2</a>.</li>
+  <li><strong>Web wallet users</strong> should wait an additional 30 confirmations
+more than you would normally wait, unless you know for sure that your
+wallet is secured by Bitcoin Core 0.9.5 or later.</li>
+  <li><strong>Bitcoin Core 0.9.5 or later users are unaffected.</strong>  (Note:
+<a href="https://bitcoincore.org/en/download">upgrade to 0.10.2</a> is recommended due to
+denial-of-service vulnerabilities unrelated to this alert.)</li>
+</ul>
+
+<h2 id="miners">Miners</h2>
+
+<p>If you pool mine, please switch to a pool that properly validates
+blocks.  The Wiki Mining Pool Comparison page currently contains a list of <a href="https://en.bitcoin.it/wiki/Comparison_of_mining_pools#SPV_Mining_.2F_Old_Bitcoin_Core">known (or
+suspected) good and bad pools</a>.</p>
+
+<p>If you solo mine, please switch to Bitcoin Core 0.10.2.</p>
+
+<h2 id="solution">When Will Things Go Back To Normal?</h2>
+
+<p>The problem is miners creating invalid blocks.  Some software can detect
+that those blocks are invalid and reject them; other software can’t
+detect that blocks are invalid, so they show confirmations that aren’t
+real.</p>
+
+<ul>
+  <li><strong>Bitcoin Core 0.9.5 and later</strong> never had any problems because
+it could detect which blocks were invalid.</li>
+  <li><strong>Bitcoin Core 0.9.4 and earlier</strong> will never provide as much
+security as later versions of Bitcoin Core because it doesn’t know
+about the additional <a href="https://github.com/bitcoin/bips/blob/master/bip-0066.mediawiki">BIP66</a>
+consensus rules. <a href="https://bitcoincore.org/en/download">Upgrade</a> is recommended
+to return to full node security.</li>
+  <li><strong>Lightweight (SPV) wallets</strong> are not safe for less than
+30 confirmations until all the major pools switch to full
+validation.</li>
+  <li><strong>Web wallets</strong> are very diverse in what infrastructure they
+run and how they handle double spends, so unless you know for sure
+that they use Bitcoin Core 0.9.5 or later for full validation, you
+should assume they have the same security as the lightweight
+wallets described above.</li>
+</ul>
+
+<h2 id="cause">What's Happening</h2>
+
+<p>Summary: Some miners are currently generating invalid blocks. Almost
+all software (besides Bitcoin Core 0.9.5 and later) will accept these
+invalid blocks under certain conditions.</p>
+
+<p>So far, the following forks of two or more blocks have occurred:</p>
+
+<p><a name="list-of-forks"></a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Start date</th>
+      <th>End time</th>
+      <th>Blocks <sup><a href="#invalid-blocks">[1]</a></sup></th>
+      <th>Double Spends</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>4 July @ 02:10</td>
+      <td>03:50</td>
+      <td>6</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>5 July @ 21:50</td>
+      <td>23:40</td>
+      <td>3</td>
+      <td>Not yet known</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The paragraphs that follow explain the cause more throughly.</p>
+
+<p>For several months, an increasing amount of mining hash rate has been
+signaling its intent to begin enforcing <a href="https://github.com/bitcoin/bips/blob/master/bip-0066.mediawiki">BIP66</a>
+strict DER signatures.  As part of the BIP66 rules,
+once 950 of the last 1,000 blocks were version 3 (v3) blocks, all
+upgraded miners would reject version 2 (v2) blocks.</p>
+
+<p>Early morning on 4 July 2015, the 950/1000 (95%) threshold was
+reached. Shortly thereafter, a small miner (part of the non-upgraded
+5%) mined an invalid block–as was an expected occurrence.
+Unfortunately, it turned out that roughly half the network hash rate
+was mining without fully validating blocks (called SPV mining), and
+built new blocks on top of that invalid block.</p>
+
+<p>Note that the roughly 50% of the network that was SPV mining had
+explicitly indicated that they would enforce the BIP66 rules. By not
+doing so, several large miners have lost over $50,000 dollars worth
+of mining income so far.</p>
+
+<p>All software that assumes blocks are valid (because invalid blocks
+cost miners money) is at risk of showing transactions as confirmed
+when they really aren’t. This particularly affects lightweight (SPV)
+wallets and software such as old versions of Bitcoin Core which have
+been downgraded to SPV-level security by the new BIP66 consensus
+rules.</p>
+
+<p>The recommended fix, which was attempted, was to
+get all miners off of SPV mining and back to full validation (at
+least temporarily). If this happens, this site will reduce its
+current recommendation of waiting 30 extra confirmations to a
+lower number.</p>
+
+<h2 id="updates">Updates</h2>
+
+<ol>
+  <li><strong id="update-1">6 July 04:00:</strong> A new fork occurred starting 5 July at
+21:30 with three blocks before the valid chain again became the
+strongest chain. See the recently-added <a href="#list-of-forks">list of forks</a>.
+Reports that the situation has passed are <strong>not correct.</strong> Please continue
+to wait 30 more confirmations than you usually would wait before
+accepting a transaction.</li>
+</ol>
+
+<h2 id="invalid-blocks">Invalid Blocks</h2>
+
+<p>Please see the list of <a href="https://en.bitcoin.it/wiki/July_2015_Forks#Invalid_Block_Hashes">invalid block hashes</a> on the Bitcoin Wiki.</p>
+
+<!--
+<div style="text-align:right">
+  <i>This notice last updated: 2015-07-04 06:00 UTC</i>
+</div>
+-->
+
+
+  </article>
+
+</div>
+
+</div>
+
+  <div class="footer">
+    
+
+
+
+<div class="footermenu">
+  <a href="/en/alerts" class="statusmenu">Network Status</a>
+  <a href="/en/legal">Legal</a>
+  
+  <a href="/en/privacy">Privacy Policy</a>
+  
+  <a href="/en/press">Press</a>
+  <a href="/en/about-us">About Example.com</a>
+  <a href="/en/blog">Blog</a>
+</div>
+
+    
+
+<div class="footersponsor">
+  <!--<div><span>A community website sponsored by</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png?1533148456" alt="Bitcoin Foundation"></a></div>-->
+</div>
+
+    
+
+<div class="footerlicense">© Bitcoin Project 2009-2018 Released under the <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT license</a></div>
+
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+  fallbackSVG();
+  addAnchorLinks();
+  trackOutgoingLinks();
+</script>
+
+
+
+
+
+
+</body>
+
+</html>

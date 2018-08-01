@@ -1,0 +1,295 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta property="og:image" content="https://example.com/img/icons/opengraph.png?1533148456" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Beware of Bitcoin's possible incompatibility with some major services</title>
+
+<link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/main.css?1533148456">
+<!--[if lt IE 8]><link rel="stylesheet" href="/css/ie.css"><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" href="/css/ie8.css"><![endif]-->
+
+
+<script type="text/javascript" src="/js/base.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+
+</head>
+
+<body>
+
+
+
+<div id="detectmobile" class="detectmobile"></div>
+
+
+
+
+
+
+
+<div class="head"><div>
+  
+
+<a class="logo" href="/en/"><img src="/img/icons/logotop.svg" alt="Bitcoin"></a>
+
+  
+
+<ul id="menusimple" class="menusimple menumain" onclick="mobileMenuHover(event);" ontouchstart="mobileMenuHover(event);">
+  <li><a>Introduction</a>
+    <ul>
+      <li><a href="/en/bitcoin-for-individuals">Individuals</a></li>
+      <li><a href="/en/bitcoin-for-businesses">Businesses</a></li>
+      <li><a href="/en/bitcoin-for-developers">Developers</a></li>
+      <li><a href="/en/getting-started">Getting started</a></li>
+      <li><a href="/en/how-it-works">How it works</a></li>
+      <li><a href="/en/you-need-to-know">You need to know</a></li>
+    </ul>
+  </li>
+  <li><a>Resources</a>
+    <ul>
+      <li><a href="/en/resources">Resources</a>
+      <li><a href="/en/exchanges">Exchanges</a></li>
+      <li><a href="/en/community">Community</a></li>
+      
+      
+      <li><a href="/en/developer-documentation">Documentation</a></li>
+      
+      <li><a href="/en/vocabulary">Vocabulary</a></li>
+    </ul>
+  </li>
+  <li><a href="/en/innovation">Innovation</a></li>
+  <li><a>Participate</a>
+    <ul>
+      <li><a href="/en/support-bitcoin">Support Bitcoin</a>
+      <li><a href="/en/buy">Buy Bitcoin</a></li>
+    </ul>
+  </li>
+  <li><a href="/en/faq">FAQ</a></li>
+</ul>
+
+  
+
+<a id="menumobile" class="menumobile" onclick="mobileMenuShow(event);" ontouchstart="mobileMenuShow(event);"></a>
+
+</div></div>
+
+<div class="body">
+  
+
+<div class="breadcrumbs">
+  
+</div>
+
+  
+
+<div id="content" class="content">
+  
+
+<link rel="alternate" type="application/rss+xml" href="/en/rss/alerts.rss" title="Bitcoin network status and alerts">
+
+<div class="subhead-links">
+  <a href="/en/alerts">Network alerts history</a>
+| <a type="application/rss+xml" href="/en/rss/alerts.rss"><img src="/img/icons/header_rss.svg" alt="rss" class="rssicon"> Subscribe to RSS feed</a>
+| <a href="https://github.com/achow101/bitcoin-site/commits/master/_alerts/2017-10-09-segwit2x-safety.md">Post history</a>
+| <a href="https://github.com/achow101/bitcoin-site/issues/new?body=Source%20File%3A%20_alerts/2017-10-09-segwit2x-safety.md%0A%0A">Report issue</a>
+</div>
+
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title alerttitle"><img src="/img/icons/warning.svg" alt="warning">Beware of Bitcoin's possible incompatibility with some major services<br><small>11 October 2017</small></h1>
+  </header>
+
+  <article class="post-content">
+    <h2 id="summary">Summary</h2>
+
+<p>A subsection of the Bitcoin economy including prominent businesses such as Coinbase, Xapo, and BitPay have signed an agreement to adopt
+and implement a contentious hard fork of Bitcoin <a href="https://bashco.github.io/2x_Countdown/">sometime</a> in November. A hard fork is a
+backwards incompatible change to the Bitcoin network. This hard fork is not supported by
+the majority of the Bitcoin users and developers and is therefore a contentious hard fork.
+By adopting this hard fork, we believe the supporters of this agreement are shifting their users to an alternative currency (an altcoin) which is incompatible with Bitcoin.</p>
+
+<p>The signatories of this agreement wrongly believe that the currency created by adopting
+this contentious hard fork will eventually become Bitcoin. Therefore storing any BTC on services such
+as Coinbase, Bitpay and Xapo is strongly not recommended. By storing BTC on these services, you could
+find that after the hard fork, your BTC has been renamed to something else or replaced entirely with the new altcoin.
+The best way to ensure that your BTC is protected is to <a href="https://bitcoincore.org/en/download/">download the latest version of Bitcoin Core</a>
+and transfer out any BTC stored on services that are a signatory to this agreement. We have
+listed the businesses supporting this contentious hard fork at the bottom of this document.</p>
+
+<p>For users who aren’t prepared to install Bitcoin Core and go through the lengthy set up process, we recommend
+a wallet such as <a href="https://greenaddress.it/">GreenAddress</a>, <a href="https://electrum.org/">Electrum</a> or <a href="https://trezor.io/">TREZOR</a>. Avoid using web wallets like blockchain.info.
+However users should only use these wallets to store their coins and never perform transactions until well after the hard fork. Any transactions you
+make on the Bitcoin blockchain can also be replicated and “replayed” on the altcoin chain. If the coins on the contentious
+hard fork have any value, there will be methods you can use to “split” your coins and have access to them. Pay extra attention
+to major Bitcoin communication channels and media shortly after the fork so you stay informed.</p>
+
+<h2 id="mobile-wallets">Mobile wallets</h2>
+
+<p>Miners in Bitcoin are responsible for transaction ordering through putting transactions into blocks, and collectively
+creating a chain of these blocks. Most mobile wallets depend on blindly trusting the longest chain produced by the miners in order to safely send and receive transactions.
+There is considerable mining power supporting the contentious hard fork. A majority of miners have pledged to support the contentious
+hard fork, therefore the longest chain as seen by most mobile wallets may not be the true block chain. As a
+result of this, spending money from a mobile wallet during a hard fork is dangerous. You will be
+vulnerable to many attacks as your wallet is not aware that the miners are breaking the consensus rules on the longest chain.</p>
+
+<p>If the contentious hard fork has failed and the majority of miners have broken their pledge
+to support the hard fork, it is safe to continue using mobile wallets, however you should check multiple
+sources of Bitcoin news such as this website, <a href="https://www.reddit.com/r/Bitcoin/">/r/bitcoin</a>, and the <a href="https://bitcointalk.org">Bitcoin Forum</a>
+to make sure that it’s safe to continue using your particular wallet. As a general rule, you should not perform any transactions
+during and shortly after the hard fork.</p>
+
+<h2 id="after-the-fork">After the fork</h2>
+
+<p>Blocks may be slower shortly after the hard fork and your transactions will take longer to confirm. You
+will have to pay a higher transaction fee if your transaction is high priority and you want it confirmed
+in the next block. You should try to get any important transactions done a few days before the hard fork <a href="http://bashco.github.io/2x_Countdown/">date</a>.
+A lot of websites and programs will likely pop up around the time of the hard fork offering to split your Bitcoin
+so you can have access to both your BTC and to the new altcoin created by this contentious hard fork, you should
+exercise caution as many of these services are likely to be scams trying to steal your bitcoin. As the
+hard fork has very little replay protection, most transactions you perform on the Bitcoin network will also
+be valid on the hard fork network. You should keep this in mind when transacting.</p>
+
+<p>Some services may continue to present and name the altcoin created by this contentious hard
+fork as Bitcoin. Users should be aware that this new currency is not Bitcoin. Bitcoin can only
+be changed with the overwhelming consensus of the entire Bitcoin community of individuals,
+miners, developers and economy. Even when there is overwhelming consensus, unless in an
+emergency, a hard fork should have at least a year notice period to give enough time for users to upgrade. This
+hard fork being adopted by the signatories of this agreement achieves none of these things. It is a rushed
+and hasty upgrade which only has minority community support and has been thoroughly rejected by users and the technical community.
+As this new altcoin is not Bitcoin, this site will not list wallets and services that present
+this altcoin as “Bitcoin” or “BTC” to their users after the hard fork. These services have exited
+the Bitcoin system in a contentious manner and therefore are no longer useful to our visitors.</p>
+
+<p>The following companies and services have pledged to adopt the contentious hard fork:</p>
+
+<h2 id="wallets">Wallets</h2>
+
+<ul>
+  <li>Abra (United States)</li>
+  <li>Bitcoin.com (St. Kitts &amp; Nevis)</li>
+  <li><strong>BitPay (United States)</strong></li>
+  <li>BitPesa (Kenya)</li>
+  <li><strong>Blockchain.info (UK)</strong></li>
+  <li><strong>BTC.com (China)</strong></li>
+  <li>Circle (United States)</li>
+  <li><strong>Coinbase (United States)</strong></li>
+  <li>Coins.ph (Phillipines)</li>
+  <li>GoCoin (Isle of Man)</li>
+  <li>Jaxx (Canada)</li>
+  <li>Luno (Singapore)</li>
+  <li>Ripio (Argentina)</li>
+  <li>Unocoin (India)</li>
+  <li><strong>Xapo (United States)</strong></li>
+</ul>
+
+<h2 id="exchanges">Exchanges</h2>
+
+<ul>
+  <li>ANX (Hong Kong)</li>
+  <li>Bitex (Argentina)</li>
+  <li>bitFlyer (Japan)</li>
+  <li>Bitso (Mexico)</li>
+  <li>BTCC (China)</li>
+  <li>BTER.com (China)</li>
+  <li><strong>Coinbase (United States)</strong></li>
+  <li>Coins.ph (Phillipines)</li>
+  <li>CryptoFacilities (UK)</li>
+  <li>Korbit (South Korea)</li>
+  <li>Safello (Sweden)</li>
+  <li>SFOX (United States)</li>
+  <li><strong>ShapeShift (Switzerland)</strong></li>
+</ul>
+
+<h2 id="miners">Miners</h2>
+
+<ul>
+  <li>1Hash (China)</li>
+  <li>Bitcoin.com (St. Kitts &amp; Nevis)</li>
+  <li>Bitfury (United States)</li>
+  <li>Bitmain (China)</li>
+  <li>Bixin.com (China)</li>
+  <li>Genesis Mining (Hong Kong)</li>
+  <li>ViaBTC (China)</li>
+</ul>
+
+<h2 id="other">Other</h2>
+
+<ul>
+  <li>Bitangel.com /Chandler Guo (China)</li>
+  <li>BitClub Network (Hong Kong)</li>
+  <li>Bloq (United States)</li>
+  <li>Civic (United States)</li>
+  <li>Decentral (Canada)</li>
+  <li>Digital Currency Group (United States)</li>
+  <li>Filament (United States)</li>
+  <li>Genesis Global Trading (United States)</li>
+  <li>Grayscale Investments (United States)</li>
+  <li>MONI (Finland)</li>
+  <li>OB1 (United States)</li>
+  <li>Netki (United States)</li>
+  <li>Purse (United States)</li>
+  <li>Veem (United States)</li>
+</ul>
+
+<!-- FIXME previously removed links -->
+
+
+  </article>
+
+</div>
+
+</div>
+
+  <div class="footer">
+    
+
+
+
+<div class="footermenu">
+  <a href="/en/alerts" class="statusmenu">Network Status</a>
+  <a href="/en/legal">Legal</a>
+  
+  <a href="/en/privacy">Privacy Policy</a>
+  
+  <a href="/en/press">Press</a>
+  <a href="/en/about-us">About Example.com</a>
+  <a href="/en/blog">Blog</a>
+</div>
+
+    
+
+<div class="footersponsor">
+  <!--<div><span>A community website sponsored by</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png?1533148456" alt="Bitcoin Foundation"></a></div>-->
+</div>
+
+    
+
+<div class="footerlicense">© Bitcoin Project 2009-2018 Released under the <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT license</a></div>
+
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+  fallbackSVG();
+  addAnchorLinks();
+  trackOutgoingLinks();
+</script>
+
+
+
+
+
+
+</body>
+
+</html>

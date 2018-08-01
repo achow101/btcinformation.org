@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta property="og:image" content="https://example.com/img/icons/opengraph.png?1533148456" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>CVE-2012-2459: Critical Vulnerability (denial-of-service)</title>
+
+<link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/main.css?1533148456">
+<!--[if lt IE 8]><link rel="stylesheet" href="/css/ie.css"><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" href="/css/ie8.css"><![endif]-->
+
+
+<script type="text/javascript" src="/js/base.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+
+</head>
+
+<body>
+
+
+
+<div id="detectmobile" class="detectmobile"></div>
+
+
+
+
+
+
+
+<div class="head"><div>
+  
+
+<a class="logo" href="/en/"><img src="/img/icons/logotop.svg" alt="Bitcoin"></a>
+
+  
+
+<ul id="menusimple" class="menusimple menumain" onclick="mobileMenuHover(event);" ontouchstart="mobileMenuHover(event);">
+  <li><a>Introduction</a>
+    <ul>
+      <li><a href="/en/bitcoin-for-individuals">Individuals</a></li>
+      <li><a href="/en/bitcoin-for-businesses">Businesses</a></li>
+      <li><a href="/en/bitcoin-for-developers">Developers</a></li>
+      <li><a href="/en/getting-started">Getting started</a></li>
+      <li><a href="/en/how-it-works">How it works</a></li>
+      <li><a href="/en/you-need-to-know">You need to know</a></li>
+    </ul>
+  </li>
+  <li><a>Resources</a>
+    <ul>
+      <li><a href="/en/resources">Resources</a>
+      <li><a href="/en/exchanges">Exchanges</a></li>
+      <li><a href="/en/community">Community</a></li>
+      
+      
+      <li><a href="/en/developer-documentation">Documentation</a></li>
+      
+      <li><a href="/en/vocabulary">Vocabulary</a></li>
+    </ul>
+  </li>
+  <li><a href="/en/innovation">Innovation</a></li>
+  <li><a>Participate</a>
+    <ul>
+      <li><a href="/en/support-bitcoin">Support Bitcoin</a>
+      <li><a href="/en/buy">Buy Bitcoin</a></li>
+    </ul>
+  </li>
+  <li><a href="/en/faq">FAQ</a></li>
+</ul>
+
+  
+
+<a id="menumobile" class="menumobile" onclick="mobileMenuShow(event);" ontouchstart="mobileMenuShow(event);"></a>
+
+</div></div>
+
+<div class="body">
+  
+
+<div class="breadcrumbs">
+  
+</div>
+
+  
+
+<div id="content" class="content">
+  
+<script>window.location.href='/en/alert/2012-05-14-dos';</script>
+<link rel="canonical" href="https://example.com/en/alert/2012-05-14-dos"/>
+
+
+<link rel="alternate" type="application/rss+xml" href="/en/rss/alerts.rss" title="Bitcoin network status and alerts">
+
+<div class="subhead-links">
+  <a href="/en/alerts">Network alerts history</a>
+| <a type="application/rss+xml" href="/en/rss/alerts.rss"><img src="/img/icons/header_rss.svg" alt="rss" class="rssicon"> Subscribe to RSS feed</a>
+| <a href="https://github.com/achow101/bitcoin-site/commits/master/_alerts/2012-05-14-dos.html">Post history</a>
+| <a href="https://github.com/achow101/bitcoin-site/issues/new?body=Source%20File%3A%20_alerts/2012-05-14-dos.html%0A%0A">Report issue</a>
+</div>
+
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title alerttitle"><img src="/img/icons/warning.svg" alt="warning">CVE-2012-2459: Critical Vulnerability (denial-of-service)<br><small>14 May 2012</small></h1>
+  </header>
+
+  <article class="post-content">
+            <h2 id="risks">Risks</h2>
+<p>
+A denial-of-service vulnerability that affects all versions of
+bitcoind and Bitcoin-Qt has been reported and fixed. An attacker
+could isolate a victim's node and cause the creation of blockchain
+forks.
+</p>
+        <h2 id="solutions">Solutions</h2>
+<p>
+Because this bug could be exploited to severely disrupt the Bitcoin
+network we consider this a critical vulnerability, and encourage
+everybody to upgrade to <a href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.6.2/">the latest version: 0.6.2</a>.
+</p>
+<p>
+<a href="https://bitcointalk.org/?topic=79651">Backports for older releases (0.5.5 and 0.4.6) are also available</a> if
+you cannot upgrade to version 0.6.2.
+</p>
+        <h2 id="technical-details">Technical Details</h2>
+<p>
+Full technical details are being withheld to give people the
+opportunity to upgrade.
+</p>
+<p>
+Thanks to <a href="http://forre.st/">Forrest Voight</a> for discovering and reporting the vulnerability.
+</p>
+        <h2 id="questions-and-answers">Questions &amp; Answers</h2>
+<h3 id="how-do-i-know">
+How would I know if I am the victim of this attack?
+</h3>
+<p>
+Your bitcoin process would stop processing blocks and would have a
+different block count from the rest of the network (you can see the
+current block count at websites like <a href="http://blockexplorer.com/">blockexplorer.com</a> or
+<a href="http://blockchain.info/">blockchain.info</a>).  Eventually it would display the message:
+</p>
+<blockquote>WARNING: Displayed transactions may not be correct!  You may need to
+upgrade, or other nodes may need to upgrade.</blockquote>
+<p>
+(note that this message is displayed whenever your bitcoin process
+detects that the rest of the network seems to have a different
+block count, which can happen for several reasons unrelated to
+this vulnerability).
+</p>
+<h3 id="can-my-wallet-be-stolen">
+Could this bug be used to steal my wallet?
+</h3>
+<p>
+No.
+</p>
+<h3 id="can-malware-be-installed">
+Could this bug be used to install malware on my system?
+</h3>
+<p>
+No.
+</p>
+
+<div style="text-align:right">
+  <i>This notice last updated: Mon, 14 May 2012 17:00:00 UTC</i>
+</div>
+
+  </article>
+
+</div>
+
+</div>
+
+  <div class="footer">
+    
+
+
+
+<div class="footermenu">
+  <a href="/en/alerts" class="statusmenu">Network Status</a>
+  <a href="/en/legal">Legal</a>
+  
+  <a href="/en/privacy">Privacy Policy</a>
+  
+  <a href="/en/press">Press</a>
+  <a href="/en/about-us">About Example.com</a>
+  <a href="/en/blog">Blog</a>
+</div>
+
+    
+
+<div class="footersponsor">
+  <!--<div><span>A community website sponsored by</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png?1533148456" alt="Bitcoin Foundation"></a></div>-->
+</div>
+
+    
+
+<div class="footerlicense">© Bitcoin Project 2009-2018 Released under the <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT license</a></div>
+
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+  fallbackSVG();
+  addAnchorLinks();
+  trackOutgoingLinks();
+</script>
+
+
+
+
+
+
+</body>
+
+</html>

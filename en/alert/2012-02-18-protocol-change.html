@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta property="og:image" content="https://example.com/img/icons/opengraph.png?1533148456" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>February 20, 2012 Protocol Changes</title>
+
+<link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/main.css?1533148456">
+<!--[if lt IE 8]><link rel="stylesheet" href="/css/ie.css"><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" href="/css/ie8.css"><![endif]-->
+
+
+<script type="text/javascript" src="/js/base.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+
+</head>
+
+<body>
+
+
+
+<div id="detectmobile" class="detectmobile"></div>
+
+
+
+
+
+
+
+<div class="head"><div>
+  
+
+<a class="logo" href="/en/"><img src="/img/icons/logotop.svg" alt="Bitcoin"></a>
+
+  
+
+<ul id="menusimple" class="menusimple menumain" onclick="mobileMenuHover(event);" ontouchstart="mobileMenuHover(event);">
+  <li><a>Introduction</a>
+    <ul>
+      <li><a href="/en/bitcoin-for-individuals">Individuals</a></li>
+      <li><a href="/en/bitcoin-for-businesses">Businesses</a></li>
+      <li><a href="/en/bitcoin-for-developers">Developers</a></li>
+      <li><a href="/en/getting-started">Getting started</a></li>
+      <li><a href="/en/how-it-works">How it works</a></li>
+      <li><a href="/en/you-need-to-know">You need to know</a></li>
+    </ul>
+  </li>
+  <li><a>Resources</a>
+    <ul>
+      <li><a href="/en/resources">Resources</a>
+      <li><a href="/en/exchanges">Exchanges</a></li>
+      <li><a href="/en/community">Community</a></li>
+      
+      
+      <li><a href="/en/developer-documentation">Documentation</a></li>
+      
+      <li><a href="/en/vocabulary">Vocabulary</a></li>
+    </ul>
+  </li>
+  <li><a href="/en/innovation">Innovation</a></li>
+  <li><a>Participate</a>
+    <ul>
+      <li><a href="/en/support-bitcoin">Support Bitcoin</a>
+      <li><a href="/en/buy">Buy Bitcoin</a></li>
+    </ul>
+  </li>
+  <li><a href="/en/faq">FAQ</a></li>
+</ul>
+
+  
+
+<a id="menumobile" class="menumobile" onclick="mobileMenuShow(event);" ontouchstart="mobileMenuShow(event);"></a>
+
+</div></div>
+
+<div class="body">
+  
+
+<div class="breadcrumbs">
+  
+</div>
+
+  
+
+<div id="content" class="content">
+  
+
+<link rel="alternate" type="application/rss+xml" href="/en/rss/alerts.rss" title="Bitcoin network status and alerts">
+
+<div class="subhead-links">
+  <a href="/en/alerts">Network alerts history</a>
+| <a type="application/rss+xml" href="/en/rss/alerts.rss"><img src="/img/icons/header_rss.svg" alt="rss" class="rssicon"> Subscribe to RSS feed</a>
+| <a href="https://github.com/achow101/bitcoin-site/commits/master/_alerts/2012-02-18-protocol-change.html">Post history</a>
+| <a href="https://github.com/achow101/bitcoin-site/issues/new?body=Source%20File%3A%20_alerts/2012-02-18-protocol-change.html%0A%0A">Report issue</a>
+</div>
+
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title alerttitle"><img src="/img/icons/warning.svg" alt="warning">February 20, 2012 Protocol Changes<br><small>18 February 2012</small></h1>
+  </header>
+
+  <article class="post-content">
+    <p>
+In June 2010 the Bitcoin reference software version 0.2.10 introduced
+a change to the protocol: the 'version' messages exchanged by nodes
+at connection time would have a new format that included checksum
+values to detect corruption by broken networks.
+</p><p>
+All other messages already carry a checksum (for connections between
+nodes 0.2.9 and later) but the version messages themselves could not
+be changed in a compatible way, so this change was delayed and did not take effect until
+<a href="http://www.timeanddate.com/worldclock/fixedtime.html?msg=Bitcoin+protocol+change&amp;iso=20120220T00">midnight UTC on Feb 20th 2012</a>
+to leave users time to upgrade.
+</p><p>
+The developers of the Bitcoin reference software are unable to find
+any evidence of any nodes still running software prior to 0.2.10 on
+the network. If any nodes with software this old
+do still exist, they will no longer be able to connect to newer nodes.
+</p><p>
+This switchover has been tested and no significant disruption is
+expected and none has been observed so far.
+Nodes with incorrect clocks may have a difficult
+time making new connections for a brief period around the switchover
+time. 
+</p><p>
+Please report any new connectivity issues to the <a
+href="http://webchat.freenode.net/?channels=bitcoin-dev&amp;uio=d4">#bitcoin-dev
+channel</a> on Freenode IRC.
+</p><p>
+If there are unexpected difficulties this page will be updated with
+relevant information.
+</p>
+
+<div style="text-align:right">
+  <i>This notice last updated: Mon, 20 Feb 2012 00:10:00 UTC</i>
+</div>
+
+  </article>
+
+</div>
+
+</div>
+
+  <div class="footer">
+    
+
+
+
+<div class="footermenu">
+  <a href="/en/alerts" class="statusmenu">Network Status</a>
+  <a href="/en/legal">Legal</a>
+  
+  <a href="/en/privacy">Privacy Policy</a>
+  
+  <a href="/en/press">Press</a>
+  <a href="/en/about-us">About Example.com</a>
+  <a href="/en/blog">Blog</a>
+</div>
+
+    
+
+<div class="footersponsor">
+  <!--<div><span>A community website sponsored by</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png?1533148456" alt="Bitcoin Foundation"></a></div>-->
+</div>
+
+    
+
+<div class="footerlicense">© Bitcoin Project 2009-2018 Released under the <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT license</a></div>
+
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+  fallbackSVG();
+  addAnchorLinks();
+  trackOutgoingLinks();
+</script>
+
+
+
+
+
+
+</body>
+
+</html>
