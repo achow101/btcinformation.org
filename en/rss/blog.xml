@@ -5,8 +5,8 @@
     <description>News about btcinformation.org</description>
     <link>https://btcinformation.org//</link>
     <atom:link href="https://btcinformation.org//en/rss/blog.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 02 Aug 2018 13:15:54 -0700</pubDate>
-    <lastBuildDate>Thu, 02 Aug 2018 13:15:54 -0700</lastBuildDate>
+    <pubDate>Thu, 02 Aug 2018 23:19:59 +0000</pubDate>
+    <lastBuildDate>Thu, 02 Aug 2018 23:19:59 +0000</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -131,7 +131,7 @@ strStatusBar == &quot;URGENT: Alert key compromised, upgrade required&quot;
 &lt;p&gt;Should altcoins wish to continue using the Alert system but with a different Alert Key, a few very simple fixes will safeguard nodes from the aforementioned issues. Limiting the number of alerts, the size of &lt;code class=&quot;highlighter-rouge&quot;&gt;setCancel&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;setSubVer&lt;/code&gt;, and only allowing one final alert altogether fix the above issues. &lt;a href=&quot;https://gist.github.com/achow101/02d03238090691558a68010a9ccbbf9d&quot;&gt;This patch&lt;/a&gt;, on top of Bitcoin Core 0.11 (a vulnerable version), fixes the aforementioned issues. Altcoins that still use the Alert system are recommended to port this patch to their software. Outdated node software is still vulnerable.&lt;/p&gt;
 
 </description>
-        <pubDate>Tue, 03 Jul 2018 00:00:00 -0700</pubDate>
+        <pubDate>Tue, 03 Jul 2018 00:00:00 +0000</pubDate>
         <link>https://btcinformation.org//en/posts/alert-key-and-vulnerabilities-disclosure</link>
         <guid isPermaLink="true">https://btcinformation.org//en/posts/alert-key-and-vulnerabilities-disclosure</guid>
         
@@ -173,7 +173,7 @@ for contributing to a discussion. We will only stop promoting particular
 wallets and services if they plan to move their users onto a
 contentious hard fork by default.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 16 Jun 2015 00:00:00 -0700</pubDate>
+        <pubDate>Tue, 16 Jun 2015 00:00:00 +0000</pubDate>
         <link>https://btcinformation.org//en/posts/hard-fork-policy</link>
         <guid isPermaLink="true">https://btcinformation.org//en/posts/hard-fork-policy</guid>
         
