@@ -2,7 +2,7 @@
 
 #### Preview Small Text Changes
 
-Simple text changes can be previewed live on bitcoin.org. You only need to click
+Simple text changes can be previewed live on btcinformation.org. You only need to click
 anywhere on the page and hold your mouse button for one second. You'll then be
 able to edit the page just like a document. Changes will be lost as soon as the
 page is refreshed.
@@ -11,7 +11,7 @@ page is refreshed.
 
 For anything more than simple text previews, you will need to build the
 site. If you can't do this yourself using the instructions below, please
-[open a pull request](https://github.com/bitcoin-dot-org/bitcoin.org/compare)
+[open a pull request](https://github.com/achow101/btcinformation.org/compare)
 with your suggested change and one of the site developers will create a preview
 for you.
 
@@ -76,11 +76,11 @@ Use that program to install bundle:
 **Install the Ruby dependencies**
 
 Ensure you checked out the site repository as described in [Working with
-GitHub](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/working-with-github.md).
+GitHub](docs/working-with-github.md).
 Then change directory to the top-level of your local repository (replace
-`bitcoin.org` with the full path to your local repository clone):
+`btcinformation.org` with the full path to your local repository clone):
 
-    cd bitcoin.org
+    cd btcinformation.org
 
 And install the necessary dependencies using Bundle:
 
@@ -94,7 +94,7 @@ Once Bundle completes successfully, you can preview or build the site.
 ##### Preview The Site
 
 To preview the website in your local browser, make sure you're in the
-`bitcoin.org` directory and run the following command:
+`btcinformation.org` directory and run the following command:
 
     make preview
 
@@ -110,7 +110,7 @@ Visit the indicated URL in your browser to view the site.
 ##### Build The Site
 
 To build the site exactly like we do for the deployment server, make
-sure you're in the `bitcoin.org` directory and run:
+sure you're in the `btcinformation.org` directory and run:
 
     make
 
@@ -172,13 +172,13 @@ For a list of languages, look in the `_translations` directory.
 
 You can publish your previews online to any static hosting service.
 [GitHub pages](https://pages.github.com/) is a free service available to
-all GitHub users that works with Bitcoin.org's site hierarchy.
+all GitHub users that works with btcinformation.org's site hierarchy.
 
 Before building a preview site, it is recommended that you set the
 environmental variable `BITCOINORG_BUILD_TYPE` to "preview".  This will
 enable some content that would otherwise be hidden and also create a
 robots.txt file that will help prevent the site from being indexed by
-search engines and mistaken for the actual Bitcoin.org website.
+search engines and mistaken for the actual btcinformation.org website.
 
 In the bash shell, you can do this by running the following command line
 before building you preview:

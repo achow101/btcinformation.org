@@ -2,11 +2,11 @@
 
 ### Events
 
-Events added to Bitcoin.org should have clear agendas that relate to Bitcoin
+Events added to btcinformation.org should have clear agendas that relate to Bitcoin
 in some way - e.g. it being used as a currency, harnessing its technology,
 speakers from bitcoin-related companies, etc.
 
-If you're not comfortable with GitHub pull requests, please open a [new issue](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new?title=New%20event&body=%20%20%20%20-%20date%3A%20YYYY-MM-DD%0A%20%20%20%20%20%20title%3A%20%22%22%0A%20%20%20%20%20%20venue%3A%20%22%22%0A%20%20%20%20%20%20address%3A%20%22%22%0A%20%20%20%20%20%20city%3A%20%22%22%0A%20%20%20%20%20%20country%3A%20%22%22%0A%20%20%20%20%20%20link%3A%20%22%22).
+If you're not comfortable with GitHub pull requests, please open a [new issue](https://github.com/achow101/btcinformation.org/issues/new?title=New%20event&body=%20%20%20%20-%20date%3A%20YYYY-MM-DD%0A%20%20%20%20%20%20title%3A%20%22%22%0A%20%20%20%20%20%20venue%3A%20%22%22%0A%20%20%20%20%20%20address%3A%20%22%22%0A%20%20%20%20%20%20city%3A%20%22%22%0A%20%20%20%20%20%20country%3A%20%22%22%0A%20%20%20%20%20%20link%3A%20%22%22).
 
 To create an event pull request, place the event in `_events.yml` and adhere to
 this format:
@@ -55,7 +55,7 @@ optional_magnetlink:
 ## 1. Make sure both ordered and unordered lists are preceded by an empty
 ## (whitespace only) line, like the empty line before this list item.
 ##
-## 2. Place URLs inside angle brackets, like <http://bitcoin.org/bin>
+## 2. Place URLs inside angle brackets, like <http://btcinformation.org/bin>
 ---
 ```
 
@@ -87,12 +87,11 @@ is the particular version:
 1. Create a new branch named `bitcoin-core-<VERSION>`.  You can either
    do this locally or in GitHub's web GUI.
 
-2. Follow the instructions in the [Release
-   Notes](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/adding-events-release-notes-and-alerts.md#release-notes)
+2. Follow the instructions in the [Release Notes](#release-notes)
    section to create a new release.  You should leave the `optional_date` blank
    unless you happen to know the date of the planned release.
 
-3. Push the branch to the https://github.com/bitcoin-dot-org/bitcoin.org
+3. Push the branch to the https://github.com/achow101/btcinformation.org
    repository so any contributor can edit it. **Don't** open a pull
    request yet.
 
@@ -185,16 +184,16 @@ addresses are on the linked GitHub profiles.
 
 1. Open your editor on a file named `_alerts/YYYY-MM-DD-short-title.md`
    (the alert will appear as
-<https://bitcoin.org/en/alert/YYYY-MM-DD-short-title>).
+<https://btcinformation.org/en/alert/YYYY-MM-DD-short-title>).
 
 2. Paste the following text into the top of the file:
 ```
 ---
 ## Title displayed on alert page
 title: "11/12 March 2017 Chain Fork"
-## Short URL for use in P2P network alerts: https://bitcoin.org/<shorturl>
+## Short URL for use in P2P network alerts: https://btcinformation.org/<shorturl>
 shorturl: "chainfork"
-## Active alerts will display the banner (below) on all bitcoin.org content pages
+## Active alerts will display the banner (below) on all btcinformation.org content pages
 active: true
 ## Banner displayed if 'active: true'.  Can use HTML formatting banner: "<b>Chain fork</b> - Please stop mining on bitcoin version 0.14.1. Click here for more information."
 ## Date of the alert in YYYY-MM-DD format
@@ -238,7 +237,7 @@ certain software:
       displayed on the live site.  The site build aborts and starts over
       when new commits are found.
 
-- Give the `shorturl` URL (`bitcoin.org/<shorturl>`) to the P2P alert message
+- Give the `shorturl` URL (`btcinformation.org/<shorturl>`) to the P2P alert message
   key holders to use in any alert messages they send.
 
 - Proceed to the next section to improve the alert.
@@ -256,10 +255,10 @@ The following fields may be defined in the the alert YAML header:
 ## (Required; HTML text) Title displayed on alert page
 title: "11/12 March 2017 Chain Fork"
 ## (Optional; display ASCII only) Short URL for use in P2P network alerts:
-https://bitcoin.org/<shorturl>
+https://btcinformation.org/<shorturl>
 shorturl: "chainfork"
 ## (Optional; default=false) Active alerts will display the banner (below) on
-all bitcoin.org content pages
+all btcinformation.org content pages
 active: true
 ## (Optional; HTML text) Banner displayed if 'active: true'.  Can use HTML
 formatting
@@ -288,12 +287,12 @@ alert.
 
 #### Clearing An Alert
 
-To stop advertising an alert on every Bitcoin.org page, change the YAML
+To stop advertising an alert on every btcinformation.org page, change the YAML
 header field `active` to *false*:
 
 ```yaml
 ## (Optional; default=false) Active alerts will display the banner (below) on
-all bitcoin.org content pages
+all btcinformation.org content pages
 active: false
 ```
 

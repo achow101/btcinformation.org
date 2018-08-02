@@ -1,9 +1,9 @@
 ## Developer Documentation
 
 Most parts of the documentation can be found in the
-[_includes](https://github.com/bitcoin-dot-org/bitcoin.org/tree/master/_includes)
+[_includes](_includes)
 directory. Updates, fixes and improvements are welcome and can submitted using
-[pull requests](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/working-with-github.md)
+[pull requests](docs/working-with-github.md)
 on GitHub.
 
 **Mailing List**: General discussions can take place on the
@@ -11,11 +11,11 @@ on GitHub.
 
 **TODO List**: New content and suggestions for improvements can be submitted
 to the [TODO
-list](https://github.com/bitcoin-dot-org/bitcoin.org/wiki/Documentation-TODO).
+list](https://github.com/achow101/btcinformation.org/wiki/Documentation-TODO).
 You are also welcome if you want to assign yourself to any task.
 
 **Style Guide**: For better consistency, the [style
-guide](https://github.com/bitcoin-dot-org/bitcoin.org/wiki/Documentation-Style-Guide)
+guide](https://github.com/achow101/btcinformation.org/wiki/Documentation-Style-Guide)
 can be used as a reference for terminology, style and formatting. Suggested
 changes can also be submitted to this guide to keep it up to date.
 

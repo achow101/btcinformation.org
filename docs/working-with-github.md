@@ -4,14 +4,14 @@ GitHub allows you to make changes to a project using git, and later submit them
 in a "pull request" so they can be reviewed and discussed. In order to use
 GitHub, you need to [sign up](http://github.com/signup) and [set up
 git](https://help.github.com/articles/set-up-git). You will also need to
-[fork](https://help.github.com/articles/fork-a-repo/) the bitcoin.org repository
-from its [GitHub page](https://github.com/bitcoin-dot-org/bitcoin.org) and clone
+[fork](https://help.github.com/articles/fork-a-repo/) the btcinformation.org repository
+from its [GitHub page](https://github.com/achow101/btcinformation.org) and clone
 your GitHub repository into a local directory with the following command lines:
 
 ```
-git clone (url provided by GitHub on your fork's page) bitcoin.org
-cd bitcoin.org
-git remote add upstream https://github.com/bitcoin-dot-org/bitcoin.org.git
+git clone (url provided by GitHub on your fork's page) btcinformation.org
+cd btcinformation.org
+git remote add upstream https://github.com/achow101/btcinformation.org.git
 ```
 
 **How to send a pull request**
@@ -33,7 +33,7 @@ changes into separate branches and pull requests.
 **Travis Continuous Integration (CI)**
 
 Shortly after your Pull Request (PR) is submitted, a Travis CI job will
-be added to [our queue](https://travis-ci.org/bitcoin-dot-org/bitcoin.org). This
+be added to [our queue](https://travis-ci.org/achow101/btcinformation.org). This
 will build the site and run some basic checks. If the job fails, you
 will be emailed a link to the build log and the PR will indicate a
 failed job. Read the build report and try to correct the problem---but
@@ -47,14 +47,14 @@ If you'd like to setup Travis on your own repository so you can test
 builds before opening a pull request, it's really simple:
 
 1. Make sure the master branch of your repository is up to date with the
-   bitcoin-dot-org/bitcoin.org master branch.
+   achow101/btcinformation.org master branch.
 
 2. Open [this guide](http://docs.travis-ci.com/user/getting-started/)
    and perform steps one, two, and four. (The other steps are already
    done in our master branch.)
 
 3. After you push a branch to your repository, go to your branches page
-   (e.g. for user harding, github.com/harding/bitcoin.org/branches). A
+   (e.g. for user harding, github.com/harding/btcinformation.org/branches). A
    yellow circle, green checkmark, or red X will appear near the branch
    name when the build finishes, and clicking on the icon will take you
    to the corresponding build report.
@@ -75,6 +75,6 @@ need to re-create the branch and the pull request.
 
 **Advanced GitHub Workflow**
 
-If you continue to contribute to Bitcoin.org beyond a single pull
+If you continue to contribute to btcinformation.org beyond a single pull
 request, you may want to use a more [advanced GitHub
 workflow](https://gist.github.com/harding/1a99b0bad37f9498709f).

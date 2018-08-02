@@ -6,6 +6,6 @@ http://opensource.org/licenses/MIT.
 <!--Temporary disclaimer BEGIN-->
 <p class="devdoc_translation_warning">
     <b>BETA</b>: {% translate fragmenttranslationwarning developer-documentation %}
-    <a href="https://github.com/bitcoin-dot-org/bitcoin.org/docs/assisting-with-translation#translate">{% translate fragmenttranslationdoclink developer-documentation %}</a>
+    <a href="https://github.com/achow101/btcinformation.org/docs/assisting-with-translation#translate">{% translate fragmenttranslationdoclink developer-documentation %}</a>
 </p>
 <!--Temporary disclaimer END-->

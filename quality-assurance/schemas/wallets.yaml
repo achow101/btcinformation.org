@@ -1,7 +1,7 @@
 ---
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
-id: https://bitcoin.org/quality-assurance/schemas/wallets.yaml
+id: https://btcinformation.org/quality-assurance/schemas/wallets.yaml
 description: The wallet object
 type: object
 required:

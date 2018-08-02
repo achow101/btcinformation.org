@@ -240,7 +240,7 @@ manual-check-diff-sha256sums:
 ## see if any files were built differently upstream from what we have
 ## locally
 	$S echo "Files listed below (if any) have different hashes"
-	$S curl -s -o- https://bitcoin.org/sha256sums.txt \
+	$S curl -s -o- https://btcinformation.org/sha256sums.txt \
 	  | sort - _site/sha256sums.txt \
 	  | uniq -u \
 	  | sort -k2

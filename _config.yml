@@ -84,10 +84,10 @@ base-url:    /
 ## Used in newer versions of Jekyll
 baseurl:    /
 
-name: "Example.com"  ## FIXME:update_to_real_name
-url: "https://example.com" ## No trailing slash.  FIXME:update_to_real_domain
-repo: https://github.com/achow101/bitcoin-site
-email: "FIXME@example.com"  ## FIXME:update_to_real_email_address
+name: "btcinformation.org"
+url: "https://btcinformation.org" ## No trailing slash.
+repo: https://github.com/achow101/btcinformation.org
+email: "admin@btcinformation.org"
 
 source:      .
 destination: ./_site
@@ -137,8 +137,7 @@ kramdown:
 text:
   ## Values last updated 2017-05-21
   ## All variable names must indicate unit type for easy translation of adjacent text,
-  ##   such as: subsidy_in_decimal_bitcoins or
-  ##   bitcoin_org_docs_maintainer_email_link
+  ##   such as: subsidy_in_decimal_bitcoins
   ## For increasing variables, like chain size, choose a somewhat higher
   ##   value so we don't need to update too often
   subsidy_in_decimal_bitcoins: 12.5
@@ -153,7 +152,6 @@ text:
   total_tx_count_in_millions: 230
   typical_ibd_time_in_hours: 4
   typical_144_block_catchup_time_in_minutes: 5
-  bitcoin_org_docs_maintainer_email_link: '<a href="mailto:will@bitcoin.org">Will Binns</a>'
   ## Before updating this, verify all assertions are still correct: git grep site.text.assertion_month
   ## Use ISO-8601 format, but feel free to round to the nearest month
   assertion_month: 2017-06-01

@@ -3,7 +3,7 @@
 ### How To Translate
 
 You can join a translation team on
-[Transifex](https://www.transifex.com/projects/p/bitcoinorg/) and start
+[Transifex](https://www.transifex.com/projects/p/btcinformationorg/) and start
 translating or improving existing translations.
 
 * You must be a native speaker for the language you choose to translate.
@@ -22,7 +22,7 @@ translating or improving existing translations.
 \_translations/ and from the root of the git repository run
 ./\_contrib/updatetx.rb to update layouts and templates for this language. You
 should also make sure that no url has been changed by translators. If any page
-needs to be moved, please add [redirections](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/miscellaneous.md#redirections).
+needs to be moved, please add [redirections](docs/miscellaneous.md#redirections).
 
 **Add a new language**: You can put the language file from Transifex in
 \_translations and add the language in \_config.yml in the right display order
@@ -54,15 +54,15 @@ translations at once:
     tx init
     
     # Setup Transifex local client to use a project created on Transifex
-    tx set --auto-remote https://www.transifex.com/bitcoinorg/bitcoinorg/
+    tx set --auto-remote https://www.transifex.com/btcinformationorg/btcinformationorg/
     
     # Download all translations
     tx pull -a -s --skip
     
-    # Set the translations/bitcoinorg.bitcoinorg/en.yml file
+    # Set the translations/btcinformationorg.btcinformationorg/en.yml file
     # as a source that will be pushed back to the server after
     # updating the translation
-    tx set --source -r bitcoinorg.bitcoinorg -l en translations/bitcoinorg.bitcoinorg/en.yml
+    tx set --source -r btcinformationorg.btcinformationorg -l en translations/btcinformationorg.btcinformationorg/en.yml
     
     # (update en.yml)
     

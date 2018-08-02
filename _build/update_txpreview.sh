@@ -9,11 +9,11 @@ PATH=/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin
 LANGS=('ar' 'bg' 'bn' 'ca' 'cs' 'da' 'de' 'el' 'es' 'fa' 'fr' 'hi' 'hr' 'hu' 'id' 'it' 'ja' 'ko' 'lv' 'ml' 'nl' 'no' 'pl' 'pt_BR' 'ro' 'ru' 'sl' 'sr' 'sv' 'tr' 'uk' 'zh_CN' 'zh_TW')
 WORKDIR=`mktemp -d`
 LIVEDIR=`mktemp -d`
-SITEDIR='/bitcoin.org/txpreview'
+SITEDIR='/btcinformation.org/txpreview'
 DESTDIR='/var/www/txpreview'
-BITCOINORG_BUILD_TYPE='preview'
+btcinformationorg_BUILD_TYPE='preview'
 
-export BITCOINORG_BUILD_TYPE
+export btcinformationorg_BUILD_TYPE
 
 # Stop script in case a single command fails
 set -e
@@ -35,7 +35,7 @@ tx pull -a -s --skip
 update=false
 for la in "${LANGS[@]}"
 do
-	checksum=`sha256sum $SITEDIR/tx/translations/bitcoinorg.bitcoinorg/$la.yml`
+	checksum=`sha256sum $SITEDIR/tx/translations/btcinformationorg.btcinformationorg/$la.yml`
 	checksum=(${checksum//" "/ })
 	checksum=${checksum[@]:0:1}
 	checksum=${checksum:0:10}
@@ -64,7 +64,7 @@ lasttime=`stat -c %Y "$SITEDIR/site/_buildlock" | cut -d ' ' -f1`
 # Create new checksum files
 for la in "${LANGS[@]}"
 do
-	checksum=`sha256sum $SITEDIR/tx/translations/bitcoinorg.bitcoinorg/$la.yml`
+	checksum=`sha256sum $SITEDIR/tx/translations/btcinformationorg.btcinformationorg/$la.yml`
 	checksum=(${checksum//" "/ })
 	checksum=${checksum[@]:0:1}
 	checksum=${checksum:0:10}
@@ -73,11 +73,11 @@ done
 
 # Update languages and generate diff files
 cd $WORKDIR
-linecounten=`cat $SITEDIR/tx/translations/bitcoinorg.bitcoinorg/en.yml | grep -o '^ \+[a-z0-9]\+:' | wc -l`
+linecounten=`cat $SITEDIR/tx/translations/btcinformationorg.btcinformationorg/en.yml | grep -o '^ \+[a-z0-9]\+:' | wc -l`
 echo '<h1>Needs updating</h1>' > $WORKDIR/diff.html
 for la in "${LANGS[@]}"
 do
-	rsync -a $SITEDIR/tx/translations/bitcoinorg.bitcoinorg/$la.yml $WORKDIR/_translations/$la.yml
+	rsync -a $SITEDIR/tx/translations/btcinformationorg.btcinformationorg/$la.yml $WORKDIR/_translations/$la.yml
 	ruby $WORKDIR/_contrib/updatetx.rb $la
 	ruby $SITEDIR/addlang.rb $la
 	if [[ ! -e $WORKDIR/$la ]]; then
