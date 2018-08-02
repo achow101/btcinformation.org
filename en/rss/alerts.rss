@@ -2,103 +2,103 @@
 <rss version="2.0">
 <channel>
 	<title>Bitcoin network status and alerts</title>
-	<link>https://example.com/en/alerts</link>
+	<link>https://btcinformation.org/en/alerts</link>
 	<description>This RSS feed allows to follow events and alerts surrounding the Bitcoin network and software.</description>
 	<image>
 		<title>Bitcoin network status and alerts</title>
-		<url>https://example.com/img/icons/logo_rss.png?1528322191</url>
-		<link>https://example.com/en/alerts</link>
+		<url>https://btcinformation.org/img/icons/logo_rss.png?1528322191</url>
+		<link>https://btcinformation.org/en/alerts</link>
 	</image>
         
 	
         <item>
             <title>Beware of Bitcoin&apos;s possible incompatibility with some major services</title>
-            <link>https://example.com/en/alert/2017-10-09-segwit2x-safety</link>
-            <guid>https://example.com/en/alert/2017-10-09-segwit2x-safety</guid>
+            <link>https://btcinformation.org/en/alert/2017-10-09-segwit2x-safety</link>
+            <guid>https://btcinformation.org/en/alert/2017-10-09-segwit2x-safety</guid>
             <pubDate>Wed, 11 Oct 2017 00:00:00 GMT</pubDate>
         </item>
 	
         <item>
             <title>Potential network disruption</title>
-            <link>https://example.com/en/alert/2017-07-12-potential-split</link>
-            <guid>https://example.com/en/alert/2017-07-12-potential-split</guid>
+            <link>https://btcinformation.org/en/alert/2017-07-12-potential-split</link>
+            <guid>https://btcinformation.org/en/alert/2017-07-12-potential-split</guid>
             <pubDate>Wed, 12 Jul 2017 00:00:00 GMT</pubDate>
         </item>
 	
         <item>
             <title>Alert System Retirement</title>
-            <link>https://example.com/en/alert/2016-11-01-alert-retirement</link>
-            <guid>https://example.com/en/alert/2016-11-01-alert-retirement</guid>
+            <link>https://btcinformation.org/en/alert/2016-11-01-alert-retirement</link>
+            <guid>https://btcinformation.org/en/alert/2016-11-01-alert-retirement</guid>
             <pubDate>Tue, 01 Nov 2016 00:00:00 GMT</pubDate>
         </item>
 	
         <item>
             <title>Vulnerability in UPnP library used by Bitcoin Core</title>
-            <link>https://example.com/en/alert/2015-10-12-upnp-vulnerability</link>
-            <guid>https://example.com/en/alert/2015-10-12-upnp-vulnerability</guid>
+            <link>https://btcinformation.org/en/alert/2015-10-12-upnp-vulnerability</link>
+            <guid>https://btcinformation.org/en/alert/2015-10-12-upnp-vulnerability</guid>
             <pubDate>Mon, 12 Oct 2015 00:00:00 GMT</pubDate>
         </item>
 	
         <item>
             <title>Some Miners Generating Invalid Blocks</title>
-            <link>https://example.com/en/alert/2015-07-04-spv-mining</link>
-            <guid>https://example.com/en/alert/2015-07-04-spv-mining</guid>
+            <link>https://btcinformation.org/en/alert/2015-07-04-spv-mining</link>
+            <guid>https://btcinformation.org/en/alert/2015-07-04-spv-mining</guid>
             <pubDate>Sat, 04 Jul 2015 00:00:00 GMT</pubDate>
         </item>
 	
         <item>
             <title>OpenSSL Heartbleed vulnerability</title>
-            <link>https://example.com/en/alert/2014-04-11-heartbleed</link>
-            <guid>https://example.com/en/alert/2014-04-11-heartbleed</guid>
+            <link>https://btcinformation.org/en/alert/2014-04-11-heartbleed</link>
+            <guid>https://btcinformation.org/en/alert/2014-04-11-heartbleed</guid>
             <pubDate>Fri, 11 Apr 2014 00:00:00 GMT</pubDate>
         </item>
 	
         <item>
             <title>Transaction malleability</title>
-            <link>https://example.com/en/alert/2014-02-11-malleability</link>
-            <guid>https://example.com/en/alert/2014-02-11-malleability</guid>
+            <link>https://btcinformation.org/en/alert/2014-02-11-malleability</link>
+            <guid>https://btcinformation.org/en/alert/2014-02-11-malleability</guid>
             <pubDate>Tue, 11 Feb 2014 00:00:00 GMT</pubDate>
         </item>
 	
         <item>
             <title>Android Security Vulnerability</title>
-            <link>https://example.com/en/alert/2013-08-11-android</link>
-            <guid>https://example.com/en/alert/2013-08-11-android</guid>
+            <link>https://btcinformation.org/en/alert/2013-08-11-android</link>
+            <guid>https://btcinformation.org/en/alert/2013-08-11-android</guid>
             <pubDate>Sun, 11 Aug 2013 00:00:00 GMT</pubDate>
         </item>
 	
         <item>
             <title>15 May 2013 Upgrade Deadline</title>
-            <link>https://example.com/en/alert/2013-03-15-upgrade-deadline</link>
-            <guid>https://example.com/en/alert/2013-03-15-upgrade-deadline</guid>
+            <link>https://btcinformation.org/en/alert/2013-03-15-upgrade-deadline</link>
+            <guid>https://btcinformation.org/en/alert/2013-03-15-upgrade-deadline</guid>
             <pubDate>Fri, 15 Mar 2013 00:00:00 GMT</pubDate>
         </item>
 	
         <item>
             <title>11/12 March 2013 Chain Fork Information</title>
-            <link>https://example.com/en/alert/2013-03-11-chain-fork</link>
-            <guid>https://example.com/en/alert/2013-03-11-chain-fork</guid>
+            <link>https://btcinformation.org/en/alert/2013-03-11-chain-fork</link>
+            <guid>https://btcinformation.org/en/alert/2013-03-11-chain-fork</guid>
             <pubDate>Mon, 11 Mar 2013 00:00:00 GMT</pubDate>
         </item>
 	
         <item>
             <title>CVE-2012-2459: Critical Vulnerability (denial-of-service)</title>
-            <link>https://example.com/en/alert/2012-05-14-dos</link>
-            <guid>https://example.com/en/alert/2012-05-14-dos</guid>
+            <link>https://btcinformation.org/en/alert/2012-05-14-dos</link>
+            <guid>https://btcinformation.org/en/alert/2012-05-14-dos</guid>
             <pubDate>Mon, 14 May 2012 00:00:00 GMT</pubDate>
         </item>
 	
         <item>
             <title>Potentially Critical Security Vulnerability</title>
-            <link>https://example.com/en/alert/2012-03-16-critical-vulnerability</link>
-            <guid>https://example.com/en/alert/2012-03-16-critical-vulnerability</guid>
+            <link>https://btcinformation.org/en/alert/2012-03-16-critical-vulnerability</link>
+            <guid>https://btcinformation.org/en/alert/2012-03-16-critical-vulnerability</guid>
             <pubDate>Fri, 16 Mar 2012 00:00:00 GMT</pubDate>
         </item>
 	
         <item>
             <title>February 20, 2012 Protocol Changes</title>
-            <link>https://example.com/en/alert/2012-02-18-protocol-change</link>
-            <guid>https://example.com/en/alert/2012-02-18-protocol-change</guid>
+            <link>https://btcinformation.org/en/alert/2012-02-18-protocol-change</link>
+            <guid>https://btcinformation.org/en/alert/2012-02-18-protocol-change</guid>
             <pubDate>Sat, 18 Feb 2012 00:00:00 GMT</pubDate>
         </item>
 	
