@@ -5,11 +5,11 @@
 
 PATH=/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin
 
-AUTHORIZED_SIGNERS_DIR='/bitcoin-site/auto-build-committers.gnupg'
-REPO='https://github.com/achow101/bitcoin-site.git'
-BUNDLE_DIR='/bitcoin-site/bundle'
-SITEDIR='/bitcoin-site/site'
-DESTDIR='build@bitcoinsite:/var/www/site'
+AUTHORIZED_SIGNERS_DIR='/btcinformation.org/auto-build-committers.gnupg'
+REPO='https://github.com/achow101/btcinformation.org.git'
+BUNDLE_DIR='/btcinformation.org/bundle'
+SITEDIR='/btcinformation.org/site'
+DESTDIR='btcinformation.org/built'
 WORKDIR=`mktemp -d`
 BITCOINORG_BUILD_TYPE='deployment'
 
@@ -96,7 +96,7 @@ do
 	# Update site and exit if site has been successfully built
 	if [ -e "$WORKDIR/_builddone" ]; then
 		find $WORKDIR/_site \( -iname '*.html' -o -iname '*.css' -o -iname '*.js' -o -iname '*.rss' -o -iname '*.xml' -o -iname '*.svg' -o -iname '*.ttf' \) -exec gzip -9 -k {} \;
-		rsync --delete -zrt $WORKDIR/_site/ $DESTDIR/
+		rsync --delete -zrt --exclude .git* $WORKDIR/_site/ $DESTDIR/
                 echo "Upload done; terminating script"
 		exit
 	fi
