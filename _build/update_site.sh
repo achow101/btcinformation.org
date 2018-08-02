@@ -7,9 +7,10 @@ PATH=/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin
 
 AUTHORIZED_SIGNERS_DIR='/btcinformation.org/auto-build-committers.gnupg'
 REPO='https://github.com/achow101/btcinformation.org.git'
-BUNDLE_DIR='/btcinformation.org/bundle'
-SITEDIR='/btcinformation.org/site'
-DESTDIR='btcinformation.org/built'
+BASEDIR='/btcinformation.org'
+BUNDLE_DIR="$BASEDIR/bundle"
+SITEDIR="$BASEDIR//site"
+DESTDIR="$BASEDIR/built"
 WORKDIR=`mktemp -d`
 BITCOINORG_BUILD_TYPE='deployment'
 
@@ -17,11 +18,23 @@ export BUNDLE_DIR
 export BITCOINORG_BUILD_TYPE
 
 # Stop script in case a single command fails
-set -e
+set -ex
 
 # Cleanup on EXIT and kill all subprocesses (even when a command fails)
-trap "rm -rf $WORKDIR; kill 0; exit 1;" EXIT
-trap "rm -rf $WORKDIR; kill 0;" SIGINT
+trap "rm -rf $WORKDIR $BASEDIR/build.pid; kill 0;" EXIT
+
+# Make the base dir and set a pid file
+mkdir -p $BASEDIR
+if [ -f $BASEDIR/build.pid ]
+then
+    # Kill the process and wait
+    kill $(<"$BASEDIR/build.pid")
+    while [ -f $BASEDIR/build.pid ]
+    do
+        sleep 1
+    done
+fi
+echo $$ > $BASEDIR/build.pid
 
 # Clone repository if missing
 if [ ! -d $SITEDIR ]; then
@@ -30,22 +43,19 @@ if [ ! -d $SITEDIR ]; then
 	git reset --hard HEAD~1
 fi
 
-# Exit if no new commit is available
 cd $SITEDIR
 git fetch -a
-LASTLOCALCOMMIT=`git log --format="%H" | head -n1`
-LASTREMOTECOMMIT=`git log origin/master --format="%H" | head -n1`
-if [ $LASTLOCALCOMMIT == $LASTREMOTECOMMIT ]; then
-	exit
-fi
-
-# Update local branch
-git reset --hard origin/master
-git clean -x -f -d
 
 ## Whether to auto-build or force-build
 case "${1:-nil}" in
   auto)
+    # Exit if no new commit is available
+    LASTLOCALCOMMIT=`git log --format="%H" | head -n1`
+    LASTREMOTECOMMIT=`git log origin/master --format="%H" | head -n1`
+    if [ $LASTLOCALCOMMIT == $LASTREMOTECOMMIT ]; then
+      exit
+    fi
+
     ## From git-log(1):
     ## %G?: show "G" for a Good signature, "B" for a Bad signature, "U"
     ## for a good, untrusted signature and "N" for no signature
@@ -69,46 +79,19 @@ case "${1:-nil}" in
   ;;
 esac
 
+# Update local branch
+git reset --hard origin/master
+git clean -x -f -d
+
 # Copy files to temporary directory
 rsync -rt --delete "$SITEDIR/" "$WORKDIR/"
 
-# Get last modification time for _buildlock
-touch "$SITEDIR/_buildlock"
-lasttime=`stat -c %Y "$SITEDIR/_buildlock" | cut -d ' ' -f1`
-
-# Build website in a child process
-(
+# Build website
 source /etc/profile.d/rvm.sh
 cd $WORKDIR
-make deployment && touch "$WORKDIR/_builddone" || touch "$WORKDIR/_buildfail"
-)&
+make deployment
 
-# Loop every 1 second to check status
-while true
-do
-
-	# Exit if site has been failed to build
-	if [ -e "$WORKDIR/_buildfail" ]; then
-		echo "Build failed"
-		exit
-	fi
-
-	# Update site and exit if site has been successfully built
-	if [ -e "$WORKDIR/_builddone" ]; then
-		find $WORKDIR/_site \( -iname '*.html' -o -iname '*.css' -o -iname '*.js' -o -iname '*.rss' -o -iname '*.xml' -o -iname '*.svg' -o -iname '*.ttf' \) -exec gzip -9 -k {} \;
-		rsync --delete -zrt --exclude .git* $WORKDIR/_site/ $DESTDIR/
-                echo "Upload done; terminating script"
-		exit
-	fi
-
-	# Cancel script if a concurrent script has touched _buildlock
-	if [ -e "$SITEDIR/_buildlock" ]; then
-		time=`stat -c %Y "$SITEDIR/_buildlock" | cut -d ' ' -f1`
-		if [ $time != $lasttime ]; then
-			echo "Build cancelled"
-			exit
-		fi
-	fi
-	sleep 1
-
-done
+#  Upload stuff
+find $WORKDIR/_site \( -iname '*.html' -o -iname '*.css' -o -iname '*.js' -o -iname '*.rss' -o -iname '*.xml' -o -iname '*.svg' -o -iname '*.ttf' \) -exec gzip -9 -k {} \;
+rsync --delete -zrt --exclude .git* $WORKDIR/_site/ $DESTDIR/
+echo "Upload done"
