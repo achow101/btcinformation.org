@@ -17,7 +17,7 @@ The following quick guides will help you get started:
 + [Improving Developer Documentation](docs/contributing-to-developer-documentation.md)
 + [Assisting with Translations](docs/assisting-with-translations.md)
 + [Managing Wallets](docs/managing-wallets.md)
-+ [Adding Alerts](docs/adding-events-release-notes-and-alerts.md)
++ [Adding Alerts](docs/adding-alerts.md)
 + [Adding Blog Posts](docs/adding-blog-posts.md)
 + [Miscellaneous / Other](docs/miscellaneous.md)
 
