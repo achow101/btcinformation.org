@@ -5,9 +5,65 @@
     <description>News about btcinformation.org</description>
     <link>https://btcinformation.org//</link>
     <atom:link href="https://btcinformation.org//en/rss/blog.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 02 Aug 2018 23:23:29 +0000</pubDate>
-    <lastBuildDate>Thu, 02 Aug 2018 23:23:29 +0000</lastBuildDate>
+    <pubDate>Sat, 04 Aug 2018 16:44:00 +0000</pubDate>
+    <lastBuildDate>Sat, 04 Aug 2018 16:44:00 +0000</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Announcing btcinformation.org</title>
+        <description>&lt;p&gt;Today we are excited to announce btcinformation.org, a website where you can
+learn about Bitcoin. This website is a community maintained fork of Bitcoin.org&lt;!-- skip-test --&gt;.&lt;/p&gt;
+
+&lt;p&gt;While Bitcoin.org&lt;!-- skip-test --&gt; is still a great resource, we feel that recent events are
+damaging Bitcoin.org&lt;!-- skip-test --&gt;’s neutrality and that there is an increased risk of the
+maintainers and domain owners of Bitcoin.org&lt;!-- skip-test --&gt; using Bitcoin.org&lt;!-- skip-test --&gt; for things other
+than Bitcoin.&lt;/p&gt;
+
+&lt;p&gt;Furthermore, the maintainers and domain owners have, over the past few years,
+been taking unilateral actions which go against the wishes of and occurred without
+the consent of the community. These actions have been driving away frequent
+contributors to the project.&lt;/p&gt;
+
+&lt;p&gt;As a result of these, we have decided to launch btcinformation.org as a community
+maintained fork of Bitcoin.org&lt;!-- skip-test --&gt;. The goal of this site is to be a neutral,
+informational resource about Bitcoin and how to use Bitcoin.&lt;/p&gt;
+
+&lt;p&gt;This website, like Bitcoin.org&lt;!-- skip-test --&gt;, is fully open source. If you would like to contribute
+or view the source code, please visit https://github.com/achow101/btcinformation.org.&lt;/p&gt;
+
+&lt;h2 id=&quot;differences-from-bitcoinorg---skip-test---&quot;&gt;Differences From Bitcoin.org&lt;!-- skip-test --&gt;&lt;/h2&gt;
+
+&lt;p&gt;While browsing btcinformation.org, you may nave noticed that the site is slightly
+different from Bitcoin.org&lt;!-- skip-test --&gt;. Below are the changes that were made:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Reverted the redesign. In order to keep btcinformation.org visually distinct
+from Bitcoin.org&lt;!-- skip-test --&gt;, we have reverted the site redesign so that the website has
+a different look and feel to it.&lt;/li&gt;
+  &lt;li&gt;Removed Events. The events page on Bitcoin.org&lt;!-- skip-test --&gt; was frequently populated with
+non-bitcoin related events. This page is additionally hard to maintain with
+new events, so it has been removed.&lt;/li&gt;
+  &lt;li&gt;Removed Bitcoin Core sub-site. Bitcoin Core is a project independent of
+Bitcoin.org&lt;!-- skip-test --&gt; and btcinformation.org. Thus pages dedicated solely to Bitcoin Core
+have been removed.&lt;/li&gt;
+  &lt;li&gt;Disabled translations. While we are working on the site, we have temporarily
+disabled translations. They will be re-enabled at some time in the future.&lt;/li&gt;
+  &lt;li&gt;Less use of JavaScript and Cookies. We have removed the Google Analytics
+trackers that are on Bitcoin.org&lt;!-- skip-test --&gt;. While this information is useful, we do
+not think that it is useful for btcinformation.org as we never intend to sell
+ads. With this removal, as much JavaScript was removed as possible.&lt;/li&gt;
+  &lt;li&gt;Removed donations. For now, we are not accepting donations as we work on a
+better, distributed donations setup.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sat, 04 Aug 2018 00:00:00 +0000</pubDate>
+        <link>https://btcinformation.org//en/posts/announcing-btcinformation</link>
+        <guid isPermaLink="true">https://btcinformation.org//en/posts/announcing-btcinformation</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>Alert Key and Alert System Vulnerabilities Disclosure</title>
