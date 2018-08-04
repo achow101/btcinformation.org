@@ -9,8 +9,9 @@ title: About Us
 ---
 # {{page.title}}
 
-This website provides educational material about Bitcoin.  All material
-is released under the MIT open source license.
+This website provides educational material about Bitcoin.
+It is a community maintained fork of Bitcoin.org<!-- skip-test -->.
+All material is released under the MIT open source license.
 
 {:style="width: 80%; font-style: italic; text-align: center; margin-right: auto; margin-left: auto;"}
 {% translate owntxt4 %}
