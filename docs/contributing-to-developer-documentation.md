@@ -1,9 +1,9 @@
 ## Developer Documentation
 
 Most parts of the documentation can be found in the
-[_includes](_includes)
+[_includes](../_includes)
 directory. Updates, fixes and improvements are welcome and can submitted using
-[pull requests](docs/working-with-github.md)
+[pull requests](working-with-github.md)
 on GitHub.
 
 **Mailing List**: General discussions can take place on the
