@@ -76,7 +76,7 @@ Use that program to install bundle:
 **Install the Ruby dependencies**
 
 Ensure you checked out the site repository as described in [Working with
-GitHub](docs/working-with-github.md).
+GitHub](working-with-github.md).
 Then change directory to the top-level of your local repository (replace
 `btcinformation.org` with the full path to your local repository clone):
 
