@@ -17,7 +17,7 @@ addresses are on the linked GitHub profiles.
 
 1. Open your editor on a file named `_alerts/YYYY-MM-DD-short-title.md`
    (the alert will appear as
-<https://btcinformation.org/en/alert/YYYY-MM-DD-short-title>).
+https://btcinformation.org/en/alert/YYYY-MM-DD-short-title).
 
 2. Paste the following text into the top of the file:
 ```
