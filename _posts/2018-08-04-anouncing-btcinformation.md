@@ -15,11 +15,7 @@ Today we are excited to announce btcinformation.org, a website where you can
 learn about Bitcoin. This website is a community maintained fork of Bitcoin.org<!-- skip-test -->.
 
 While Bitcoin.org<!-- skip-test --> is still a great resource, we feel that recent events are
-damaging Bitcoin.org<!-- skip-test -->'s neutrality and that there is an increased risk of the
-maintainers and domain owners of Bitcoin.org<!-- skip-test --> using Bitcoin.org<!-- skip-test --> for things other
-than Bitcoin.
-
-Furthermore, the maintainers and domain owners have, over the past few years,
+damaging Bitcoin.org<!-- skip-test -->'s neutrality. Furthermore, the maintainers and domain owners have, over the past few years,
 been taking unilateral actions which go against the wishes of and occurred without
 the consent of the community. These actions have been driving away frequent
 contributors to the project.
