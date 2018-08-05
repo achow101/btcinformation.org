@@ -5,8 +5,8 @@
     <description>News about btcinformation.org</description>
     <link>https://btcinformation.org//</link>
     <atom:link href="https://btcinformation.org//en/rss/blog.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 04 Aug 2018 17:06:48 +0000</pubDate>
-    <lastBuildDate>Sat, 04 Aug 2018 17:06:48 +0000</lastBuildDate>
+    <pubDate>Sun, 05 Aug 2018 02:33:16 +0000</pubDate>
+    <lastBuildDate>Sun, 05 Aug 2018 02:33:16 +0000</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -15,11 +15,7 @@
 learn about Bitcoin. This website is a community maintained fork of Bitcoin.org&lt;!-- skip-test --&gt;.&lt;/p&gt;
 
 &lt;p&gt;While Bitcoin.org&lt;!-- skip-test --&gt; is still a great resource, we feel that recent events are
-damaging Bitcoin.org&lt;!-- skip-test --&gt;’s neutrality and that there is an increased risk of the
-maintainers and domain owners of Bitcoin.org&lt;!-- skip-test --&gt; using Bitcoin.org&lt;!-- skip-test --&gt; for things other
-than Bitcoin.&lt;/p&gt;
-
-&lt;p&gt;Furthermore, the maintainers and domain owners have, over the past few years,
+damaging Bitcoin.org&lt;!-- skip-test --&gt;’s neutrality. Furthermore, the maintainers and domain owners have, over the past few years,
 been taking unilateral actions which go against the wishes of and occurred without
 the consent of the community. These actions have been driving away frequent
 contributors to the project.&lt;/p&gt;
