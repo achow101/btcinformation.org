@@ -145,8 +145,7 @@ function mobileMenuShow(e) {
   // Show the mobile menu when the visitors touch the menu icon.
   var show = function() {
     var mm = document.getElementById('menusimple');
-    var ml = document.getElementById('langselect');
-    mm.style.display = ml.style.display = (mm.style.display === 'block') ? '' : 'block';
+    mm.style.display = (mm.style.display === 'block') ? '' : 'block';
     addClass(mm, 'menutap');
     cancelEvent(e);
   };
