@@ -121,7 +121,7 @@ f9beb4d9 ................... Start string: Mainnet
 The following network messages all request or provide data related to
 transactions and blocks.
 
-![Overview Of P2P Protocol Data Request And Reply Messages](/img/dev/en-p2p-data-messages.svg?{{site.time | date: '%s'}})
+![Overview Of P2P Protocol Data Request And Reply Messages](/img/dev/en-p2p-data-messages.svg)
 
 Many of the data messages use
 [inventories][/en/glossary/inventory]{:#term-inventory}{:.term} as unique identifiers
@@ -824,7 +824,7 @@ The following network messages all help control the connection between
 two peers or allow them to advise each other about the rest of the
 network.
 
-![Overview Of P2P Protocol Control And Advisory Messages](/img/dev/en-p2p-control-messages.svg?{{site.time | date: '%s'}})
+![Overview Of P2P Protocol Control And Advisory Messages](/img/dev/en-p2p-control-messages.svg)
 
 Note that almost none of the control messages are authenticated in any
 way, meaning they can contain incorrect or intentionally harmful
@@ -1098,7 +1098,7 @@ it must be truncated to its four most significant bytes (for example,
 The actual hash function implementation used is the [32-bit Murmur3 hash
 function][murmur3].
 
-![Warning icon](/img/icons/icon_warning.svg?{{site.time | date: '%s'}})
+![Warning icon](/img/icons/icon_warning.svg)
 **Warning:** the Murmur3 hash function has separate 32-bit and 64-bit
 versions that produce different results for the same input.  Only the
 32-bit Murmur3 version is used with Bitcoin bloom filters.
@@ -1220,7 +1220,7 @@ address, or other data element matching the filter, the filtering node
 immediately updates the filter with the outpoint corresponding to that
 pubkey script.
 
-![Automatically Updating Bloom Filters](/img/dev/en-bloom-update.svg?{{site.time | date: '%s'}})
+![Automatically Updating Bloom Filters](/img/dev/en-bloom-update.svg)
 
 If an input later spends that outpoint, the filter will match it,
 allowing the filtering node to tell the client that one of its

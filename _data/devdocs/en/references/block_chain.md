@@ -134,7 +134,7 @@ hashed to produce the merkle root.
 -->
 {% endcomment %}
 
-![Example Merkle Tree Construction](/img/dev/en-merkle-tree-construction.svg?{{site.time | date: '%s'}})
+![Example Merkle Tree Construction](/img/dev/en-merkle-tree-construction.svg)
 
 TXIDs and intermediate hashes are always in internal byte order when they're
 concatenated, and the resulting merkle root is also in internal byte
@@ -154,12 +154,12 @@ However, the header field *nBits* provides only 32 bits of space, so the
 target number uses a less precise format called "compact" which works
 like a base-256 version of scientific notation:
 
-![Converting nBits Into A Target Threshold](/img/dev/en-nbits-overview.svg?{{site.time | date: '%s'}})
+![Converting nBits Into A Target Threshold](/img/dev/en-nbits-overview.svg)
 
 As a base-256 number, nBits can be quickly parsed as bytes the same way
 you might parse a decimal number in base-10 scientific notation:
 
-![Quickly Converting nBits](/img/dev/en-nbits-quick-parse.svg?{{site.time | date: '%s'}})
+![Quickly Converting nBits](/img/dev/en-nbits-quick-parse.svg)
 
 {% comment %}
 <!-- Source for paragraph below: Bitcoin Core src/tests/bignum_tests.cpp:

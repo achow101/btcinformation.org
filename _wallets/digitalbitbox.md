@@ -15,7 +15,7 @@ platform:
         text: "walletdbb"
         link: "https://digitalbitbox.com/"
         source: "https://github.com/digitalbitbox/"
-        screenshot: "digitalbitbox.png?1528322191"
+        screenshot: "digitalbitbox.png"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkneutralvalidationvariable"

@@ -14,7 +14,7 @@ platform:
       text: "walletmsigna"
       link: "https://ciphrex.com/"
       source: "https://github.com/ciphrex/CoinVault"
-      screenshot: "msigna.png?1528322191"
+      screenshot: "msigna.png"
       check:
         control: "checkgoodcontrolfull"
         validation: "checkgoodvalidationfullnoderequired"

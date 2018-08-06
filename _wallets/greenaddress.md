@@ -15,7 +15,7 @@ platform:
         text: "walletgreenaddress"
         link: "https://itunes.apple.com/app/id1206035886"
         source: "https://github.com/greenaddress/WalletCordova"
-        screenshot: "greenaddressandroid.png?1528322191"
+        screenshot: "greenaddressandroid.png"
         check:
           control: "checkpasscontrolmulti"
           validation: "checkpassvalidationservers"
@@ -31,7 +31,7 @@ platform:
         text: "walletgreenaddress"
         link: "https://play.google.com/store/apps/details?id=it.greenaddress.cordova"
         source: "https://github.com/greenaddress/WalletCordova"
-        screenshot: "greenaddressandroid.png?1528322191"
+        screenshot: "greenaddressandroid.png"
         check:
           control: "checkpasscontrolmulti"
           validation: "checkpassvalidationservers"
@@ -49,7 +49,7 @@ platform:
       text: "walletgreenaddress"
       link: "https://github.com/greenaddress/WalletElectron/releases"
       source: "https://github.com/greenaddress/WalletElectron"
-      screenshot: "greenaddressdesktop.png?1528322191"
+      screenshot: "greenaddressdesktop.png"
       check:
         control: "checkpasscontrolmulti"
         validation: "checkfailvalidationcentralized"
