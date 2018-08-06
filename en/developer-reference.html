@@ -5,12 +5,12 @@
 
 
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<meta property="og:image" content="https://btcinformation.org/img/icons/opengraph.png?1533436396" />
+<meta property="og:image" content="https://btcinformation.org/img/icons/opengraph.png?1533589217" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>Bitcoin Developer Reference - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="/css/main.css?1533436396">
+<link rel="stylesheet" href="/css/main.css?1533589217">
 <!--[if lt IE 8]><link rel="stylesheet" href="/css/ie.css"><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" href="/css/ie8.css"><![endif]-->
 
@@ -321,10 +321,9 @@
     <ul class="goback"><li><a href="/en/developer-documentation">Return To Overview</a></li></ul>
     <ul class="reportissue"><li><a href="https://github.com/achow101/btcinformation.org/issues/new" onmouseover="updateIssue(event);">Report An Issue</a></li></ul>
     <ul class="editsource"><li><a href="https://github.com/achow101/btcinformation.org/tree/master/_includes" onmouseover="updateSource(event);">Edit On GitHub</a></li></ul>
+
   </div>
 </div>
-
-<p>&lt;/div&gt;&lt;/div&gt;</p>
 <div class="toccontent">
 
   <!--Temporary disclaimer BEGIN-->
@@ -571,7 +570,7 @@ row (and, if necessary, repeated further to create additional rows).
 Once a row is obtained with only two hashes, those hashes are concatenated and
 hashed to produce the <a href="/en/glossary/merkle-root" title="The root node of a merkle tree, a descendant of all the hashed pairs in the tree.  Block headers must include a valid merkle root descended from all transactions in that block." class="auto-link">merkle root</a>.</p>
 
-  <p><img src="/img/dev/en-merkle-tree-construction.svg?1533436396" alt="Example Merkle Tree Construction" /></p>
+  <p><img src="/img/dev/en-merkle-tree-construction.svg?1533589217" alt="Example Merkle Tree Construction" /></p>
 
   <p><a href="/en/glossary/txid" title="An identifier used to uniquely identify a particular transaction; specifically, the sha256d hash of the transaction." class="auto-link">TXIDs</a> and intermediate hashes are always in <a href="/en/glossary/internal-byte-order" title="The standard order in which hash digests are displayed as strings---the same format used in serialized blocks and transactions." class="auto-link">internal byte order</a> when they’re
 concatenated, and the resulting <a href="/en/glossary/merkle-root" title="The root node of a merkle tree, a descendant of all the hashed pairs in the tree.  Block headers must include a valid merkle root descended from all transactions in that block." class="auto-link">merkle root</a> is also in <a href="/en/glossary/internal-byte-order" title="The standard order in which hash digests are displayed as strings---the same format used in serialized blocks and transactions." class="auto-link">internal byte
@@ -590,12 +589,12 @@ However, the <a href="/en/glossary/block-header" title="An 80-byte header belong
 <a href="/en/glossary/nbits" title="The target is the threshold below which a block header hash must be in order for the block to valid, and nBits is the encoded form of the target threshold as it appears in the block header." class="auto-link">target</a> number uses a less precise format called “compact” which works
 like a base-256 version of scientific notation:</p>
 
-  <p><img src="/img/dev/en-nbits-overview.svg?1533436396" alt="Converting nBits Into A Target Threshold" /></p>
+  <p><img src="/img/dev/en-nbits-overview.svg?1533589217" alt="Converting nBits Into A Target Threshold" /></p>
 
   <p>As a base-256 number, <a href="/en/glossary/nbits" title="The target is the threshold below which a block header hash must be in order for the block to valid, and nBits is the encoded form of the target threshold as it appears in the block header." class="auto-link">nBits</a> can be quickly parsed as bytes the same way
 you might parse a decimal number in base-10 scientific notation:</p>
 
-  <p><img src="/img/dev/en-nbits-quick-parse.svg?1533436396" alt="Quickly Converting nBits" /></p>
+  <p><img src="/img/dev/en-nbits-quick-parse.svg?1533589217" alt="Quickly Converting nBits" /></p>
 
   <p>Although the <a href="/en/glossary/nbits" title="The target is the threshold below which a block header hash must be in order for the block to valid, and nBits is the encoded form of the target threshold as it appears in the block header." class="auto-link">target threshold</a> should be an unsigned integer, the
 original <a href="/en/glossary/nbits" title="The target is the threshold below which a block header hash must be in order for the block to valid, and nBits is the encoded form of the target threshold as it appears in the block header." class="auto-link">nBits</a> implementation inherits properties from a signed data
@@ -806,7 +805,7 @@ the next values (<a href="/en/glossary/signature" title="A value related to a pu
 Page</a>, with an authoritative list in the <code>opcodetype</code> enum
 of the Bitcoin Core <a href="https://github.com/bitcoin/bitcoin/blob/master/src/script/script.h">script header file</a></p>
 
-  <p><img src="/img/icons/icon_warning.svg?1533436396" alt="Warning icon" />
+  <p><img src="/img/icons/icon_warning.svg?1533589217" alt="Warning icon" />
 <strong><span id="signature_script_modification_warning"><a href="/en/glossary/signature-script" title="Data generated by a spender which is almost always used as variables to satisfy a pubkey script. Signature Scripts are called scriptSig in code." class="auto-link">Signature script</a> modification warning</span>:</strong>
 <a href="/en/glossary/signature-script" title="Data generated by a spender which is almost always used as variables to satisfy a pubkey script. Signature Scripts are called scriptSig in code." class="auto-link">Signature scripts</a> are not signed, so anyone can modify them. This
 means <a href="/en/glossary/signature-script" title="Data generated by a spender which is almost always used as variables to satisfy a pubkey script. Signature Scripts are called scriptSig in code." class="auto-link">signature scripts</a> should only contain data and <a href="/en/glossary/op-code" title="Operation codes from the Bitcoin Script language which push data or perform functions within a pubkey script or signature script." class="auto-link">data-pushing opcodes</a>
@@ -816,7 +815,7 @@ makes a transaction non-standard, and future <a href="/en/glossary/consensus-rul
 such transactions altogether. (<a href="/en/glossary/op-code" title="Operation codes from the Bitcoin Script language which push data or perform functions within a pubkey script or signature script." class="auto-link">Non-data-pushing opcodes</a> are already
 forbidden in <a href="/en/glossary/signature-script" title="Data generated by a spender which is almost always used as variables to satisfy a pubkey script. Signature Scripts are called scriptSig in code." class="auto-link">signature scripts</a> when spending a <a href="/en/glossary/p2sh-address" title="A Bitcoin payment address comprising a hashed script, allowing the spender to create a standard pubkey script that Pays To Script Hash (P2SH). The script can be almost any valid pubkey script." class="auto-link">P2SH pubkey script</a>.)</p>
 
-  <p><img src="/img/icons/icon_warning.svg?1533436396" alt="Warning icon" />
+  <p><img src="/img/icons/icon_warning.svg?1533589217" alt="Warning icon" />
 <strong><a href="/en/developer-reference#term-op-checkmultisig" title="Opcode which returns true if one or more provided signatures (m) sign the correct parts of a transaction and match one or more provided public keys (n)" class="auto-link"><code>OP_CHECKMULTISIG</code></a> warning:</strong> The <a href="/en/glossary/multisig" title="A pubkey script that provides *n* number of pubkeys and requires the corresponding signature script provide *m* minimum number signatures corresponding to the provided pubkeys." class="auto-link">multisig</a> verification process
 described above requires that <a href="/en/glossary/signature" title="A value related to a public key which could only have reasonably been created by someone who has the private key that created that public key. Used in Bitcoin to authorize spending satoshis previously sent to a public key." class="auto-link">signatures</a> in the <a href="/en/glossary/signature-script" title="Data generated by a spender which is almost always used as variables to satisfy a pubkey script. Signature Scripts are called scriptSig in code." class="auto-link">signature script</a> be
 provided in the same order as their corresponding <a href="/en/glossary/public-key" title="The public portion of a keypair which can be used to verify signatures made with the private portion of the keypair." class="auto-link">public keys</a> in
@@ -1343,7 +1342,7 @@ sharing is extremely limited.</p>
   <h4 id="type-2-hierarchical-deterministic-hd-wallets">Type 2: Hierarchical Deterministic (HD) Wallets</h4>
   <!-- no subhead-links here -->
 
-  <p><img src="/img/dev/en-hd-overview.svg?1533436396" alt="Overview Of Hierarchical Deterministic Key Derivation" /></p>
+  <p><img src="/img/dev/en-hd-overview.svg?1533589217" alt="Overview Of Hierarchical Deterministic Key Derivation" /></p>
 
   <p>For an overview of <a href="/en/glossary/hd-protocol" title="The Hierarchical Deterministic (HD) key creation and transfer protocol (BIP32), which allows creating child keys from parent keys in a hierarchy. Wallets using the HD protocol are called HD wallets." class="auto-link">HD wallets</a>, please see the <a href="/en/developer-guide#wallets">developer guide
 section</a>.  For details, please see <a href="https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki" class="auto-link">BIP32</a>.</p>
@@ -1584,7 +1583,7 @@ header</a> from a <a href="/en/developer-reference#verack" title="A P2P network 
   <p>The following <a href="/en/developer-guide#term-network" title="The Bitcoin P2P network which broadcasts transactions and blocks" class="auto-link">network</a> messages all request or provide data related to
 transactions and <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">blocks</a>.</p>
 
-  <p><img src="/img/dev/en-p2p-data-messages.svg?1533436396" alt="Overview Of P2P Protocol Data Request And Reply Messages" /></p>
+  <p><img src="/img/dev/en-p2p-data-messages.svg?1533589217" alt="Overview Of P2P Protocol Data Request And Reply Messages" /></p>
 
   <p>Many of the data messages use
 <a href="/en/glossary/inventory" title="A data type identifier and a hash; used to identify transactions and blocks available for download through the Bitcoin P2P network." id="term-inventory" class="term">inventories</a> as unique identifiers
@@ -2619,7 +2618,7 @@ transaction section</a>.</p>
 two <a href="/en/glossary/node" title="A computer that connects to the Bitcoin network." class="auto-link">peers</a> or allow them to advise each other about the rest of the
 <a href="/en/developer-guide#term-network" title="The Bitcoin P2P network which broadcasts transactions and blocks" class="auto-link">network</a>.</p>
 
-  <p><img src="/img/dev/en-p2p-control-messages.svg?1533436396" alt="Overview Of P2P Protocol Control And Advisory Messages" /></p>
+  <p><img src="/img/dev/en-p2p-control-messages.svg?1533589217" alt="Overview Of P2P Protocol Control And Advisory Messages" /></p>
 
   <p>Note that almost none of the control messages are authenticated in any
 way, meaning they can contain incorrect or intentionally harmful
@@ -3005,7 +3004,7 @@ it must be truncated to its four most significant bytes (for example,
   <p>The actual hash function implementation used is the <a href="https://en.wikipedia.org/wiki/MurmurHash">32-bit Murmur3 hash
 function</a>.</p>
 
-  <p><img src="/img/icons/icon_warning.svg?1533436396" alt="Warning icon" />
+  <p><img src="/img/icons/icon_warning.svg?1533589217" alt="Warning icon" />
 <strong>Warning:</strong> the Murmur3 hash function has separate 32-bit and 64-bit
 versions that produce different results for the same <a href="/en/glossary/input" title="An input in a transaction which contains three fields: an outpoint, a signature script, and a sequence number.  The outpoint references a previous output and the signature script allows spending it." class="auto-link">input</a>.  Only the
 32-bit Murmur3 version is used with Bitcoin <a href="/en/glossary/bloom-filter" title="A filter used primarily by SPV clients to request only matching transactions and merkle blocks from full nodes." class="auto-link">bloom filters</a>.</p>
@@ -3132,7 +3131,7 @@ When the filtering <a href="/en/glossary/node" title="A computer that connects t
 immediately updates the filter with the <a href="/en/glossary/outpoint" title="The data structure used to refer to a particular transaction output, consisting of a 32-byte TXID and a 4-byte output index number (vout)." class="auto-link">outpoint</a> corresponding to that
 <a href="/en/glossary/pubkey-script" title="A script included in outputs which sets the conditions that must be fulfilled for those satoshis to be spent.  Data for fulfilling the conditions can be provided in a signature script. Pubkey Scripts are called a scriptPubKey in code." class="auto-link">pubkey script</a>.</p>
 
-  <p><img src="/img/dev/en-bloom-update.svg?1533436396" alt="Automatically Updating Bloom Filters" /></p>
+  <p><img src="/img/dev/en-bloom-update.svg?1533589217" alt="Automatically Updating Bloom Filters" /></p>
 
   <p>If an <a href="/en/glossary/input" title="An input in a transaction which contains three fields: an outpoint, a signature script, and a sequence number.  The outpoint references a previous output and the signature script allows spending it." class="auto-link">input</a> later spends that <a href="/en/glossary/outpoint" title="The data structure used to refer to a particular transaction output, consisting of a 32-byte TXID and a 4-byte output index number (vout)." class="auto-link">outpoint</a>, the filter will match it,
 allowing the filtering <a href="/en/glossary/node" title="A computer that connects to the Bitcoin network." class="auto-link">node</a> to tell the client that one of its
@@ -14179,7 +14178,7 @@ Core.  Use the <a href="/en/developer-reference#remote-procedure-calls-rpcs" cla
     </tbody>
   </table>
 
-  <p><img src="/img/icons/icon_warning.svg?1533436396" alt="Warning icon" />
+  <p><img src="/img/icons/icon_warning.svg?1533589217" alt="Warning icon" />
 <strong>Warning:</strong> if account1 receives an <a href="/en/glossary/confirmation-score" title="A score indicating the number of blocks on the best block chain that would need to be modified to remove or modify a particular transaction. A confirmed transaction has a confirmation score of one or higher." class="auto-link">unconfirmed</a> payment and transfers
 it to account2 with the <a href="/en/developer-reference#move" class="auto-link"><code>move</code> RPC</a>, account2 will be able to spend those
 <a href="/en/glossary/denominations" title="Denominations of Bitcoin value, usually measured in fractions of a bitcoin but sometimes measured in multiples of a satoshi.  One bitcoin equals 100,000,000 satoshis." class="auto-link">bitcoins</a> even if this parameter is set to <code>1</code> or higher.</p>
@@ -14352,7 +14351,7 @@ transaction the comment “Example spend” and labeling the spender
     </tbody>
   </table>
 
-  <p><img src="/img/icons/icon_warning.svg?1533436396" alt="Warning icon" />
+  <p><img src="/img/icons/icon_warning.svg?1533589217" alt="Warning icon" />
 <strong>Warning:</strong> if account1 receives an <a href="/en/glossary/confirmation-score" title="A score indicating the number of blocks on the best block chain that would need to be modified to remove or modify a particular transaction. A confirmed transaction has a confirmation score of one or higher." class="auto-link">unconfirmed</a> payment and transfers
 it to account2 with the <a href="/en/developer-reference#move" class="auto-link"><code>move</code> RPC</a>, account2 will be able to spend those
 <a href="/en/glossary/denominations" title="Denominations of Bitcoin value, usually measured in fractions of a bitcoin but sometimes measured in multiples of a satoshi.  One bitcoin equals 100,000,000 satoshis." class="auto-link">bitcoins</a> even if this parameter is set to <code>1</code> or higher.</p>
@@ -18433,7 +18432,7 @@ cb6a325d2903b726980865210d2127de09710121023ee7a6437e9ad2957cd032\
     
 
 <div class="footersponsor">
-  <!--<div><span>A community website sponsored by</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png?1533436396" alt="Bitcoin Foundation"></a></div>-->
+  <!--<div><span>A community website sponsored by</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png?1533589217" alt="Bitcoin Foundation"></a></div>-->
 </div>
 
     
