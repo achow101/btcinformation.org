@@ -45,13 +45,23 @@ module Jekyll
         sitemap.puts '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"'
         sitemap.puts '	xmlns:xhtml="http://www.w3.org/1999/xhtml">'
         #Add translated pages with their alternative in each languages
+        ids = []
         locs['en']['url'].each do |id,value|
-          locs.each do |lang,value|
+          ids.push(id)
+        end
+        langs = []
+        locs.each do |lang,value|
+          langs.push(lang)
+        end
+        ids.sort!
+        langs.sort!
+        ids.each do |id|
+          langs.each do |lang|
             #Don't add a page if their url is not translated
             next if locs[lang]['url'][id].nil? or locs[lang]['url'][id] == ''
             sitemap.puts '<url>'
             sitemap.puts '  <loc>' + site.config["url"] + '/'+lang+'/'+CGI::escape(locs[lang]['url'][id])+'</loc>'
-            locs.each do |altlang,value|
+            langs.each do |altlang|
               next if locs[altlang]['url'][id].nil? or locs[altlang]['url'][id] == '' or altlang == lang
               sitemap.puts '  <xhtml:link'
               sitemap.puts '    rel="alternate"'
@@ -62,7 +72,12 @@ module Jekyll
           end
         end
 	#Add static non-translated pages
+        files = []
         Dir.glob('en/**/*.{md,html}').concat(Dir.glob('*.{md,html}')).each do |file|
+          files.push(file)
+        end
+        files.sort!
+        files.each do |file|
           next if file == 'index.html' or file == '404.html' or file == 'README.md'
           #Ignore google webmaster tools
           data = File.read(file)
@@ -72,7 +87,12 @@ module Jekyll
           sitemap.puts '</url>'
         end
         #Add alerts pages
+        alerts = []
         Dir.foreach('_alerts') do |file|
+          alerts.push(file)
+        end
+        alerts.sort!
+        alerts.each do |file|
           next if file == '.' or file == '..'
           sitemap.puts '<url>'
           sitemap.puts '  <loc>' + site.config["url"] + '/'+file.gsub('.html','')+'</loc>'
