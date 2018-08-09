@@ -26,10 +26,33 @@ dependencies and tools, which are pretty easy on any modern Linux:
 
 **Install binary libraries and tools**
 
+###### Ubuntu/Debian Systems
 On recent versions of Ubuntu and Debian, you can run the following
 command to ensure you have the required libraries, headers, and tools:
 
     sudo apt-get install build-essential git libicu-dev zlib1g-dev
+
+###### Mac OSX Systems
+Mac OS X's equivalent of build-essential is the Xcode command line tools, which also includes zlib.
+https://stackoverflow.com/questions/38086451/how-to-install-build-essential-on-mac    
+
+    xcode-select --install
+    
+Homebrew is the missing package manager for OS X, so we can use it in place of the apt-get command for some things.
+
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"    
+    brew update    
+    brew install git
+    
+A couple of the packages are tricky. https://stackoverflow.com/questions/33259191/installing-libicu-dev-on-mac
+
+    brew install icu4c
+    brew link icu4c --force
+
+Mac OSX is missing -d for xargs. Workaround: https://superuser.com/questions/467176/replacement-for-xargs-d-in-osx
+
+    brew install findutils
+    PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
 
 **Install RVM**
 
