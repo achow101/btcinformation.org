@@ -105,9 +105,9 @@ clean:
 ## This should not affect webpage output.
 build:
 	$S export LC_ALL=en_US.UTF-8 ; export ENABLED_LANGS="en" ; bundle exec jekyll build 2>&1 | tee $(JEKYLL_LOG)
-	$S grep -r -L 'Note: this file is built non-deterministically' _site/ \
+	$S grep -r -L 'Note: this file is built non-deterministically' _site \
 	  | egrep -v 'sha256sums.txt' \
-	  | sort \
+	  | LC_ALL=en_US.UTF-8 sort -f \
 	  | xargs -d '\n' sha256sum > _site/sha256sums.txt
 	$S git log -1 --format="%H" > _site/commit.txt
 
