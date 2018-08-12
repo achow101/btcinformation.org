@@ -5,13 +5,16 @@
   <loc>https://btcinformation.org/en/about-us</loc>
 </url>
 <url>
+  <loc>https://btcinformation.org/en/bitcoin-for-businesses</loc>
+</url>
+<url>
   <loc>https://btcinformation.org/en/bitcoin-for-developers</loc>
 </url>
 <url>
   <loc>https://btcinformation.org/en/bitcoin-for-individuals</loc>
 </url>
 <url>
-  <loc>https://btcinformation.org/en/bitcoin-for-businesses</loc>
+  <loc>https://btcinformation.org/en/bitcoin-paper</loc>
 </url>
 <url>
   <loc>https://btcinformation.org/en/buy</loc>
@@ -38,10 +41,10 @@
   <loc>https://btcinformation.org/en/developer-reference</loc>
 </url>
 <url>
-  <loc>https://btcinformation.org/en/exchanges</loc>
+  <loc>https://btcinformation.org/en/events</loc>
 </url>
 <url>
-  <loc>https://btcinformation.org/en/events</loc>
+  <loc>https://btcinformation.org/en/exchanges</loc>
 </url>
 <url>
   <loc>https://btcinformation.org/en/faq</loc>
@@ -74,6 +77,9 @@
   <loc>https://btcinformation.org/en/secure-your-wallet</loc>
 </url>
 <url>
+  <loc>https://btcinformation.org/en/spend-bitcoin</loc>
+</url>
+<url>
   <loc>https://btcinformation.org/en/support-bitcoin</loc>
 </url>
 <url>
@@ -83,28 +89,22 @@
   <loc>https://btcinformation.org/en/you-need-to-know</loc>
 </url>
 <url>
-  <loc>https://btcinformation.org/en/bitcoin-paper</loc>
-</url>
-<url>
-  <loc>https://btcinformation.org/en/spend-bitcoin</loc>
-</url>
-<url>
-  <loc>https://btcinformation.org/en/about-us</loc>
-</url>
-<url>
-  <loc>https://btcinformation.org/en/full-node</loc>
-</url>
-<url>
-  <loc>https://btcinformation.org/en/blog</loc>
-</url>
-<url>
-  <loc>https://btcinformation.org/en/alerts</loc>
+  <loc>https://btcinformation.org/CODE_OF_CONDUCT</loc>
 </url>
 <url>
   <loc>https://btcinformation.org/CONTRIBUTING</loc>
 </url>
 <url>
-  <loc>https://btcinformation.org/CODE_OF_CONDUCT</loc>
+  <loc>https://btcinformation.org/en/about-us</loc>
+</url>
+<url>
+  <loc>https://btcinformation.org/en/alerts</loc>
+</url>
+<url>
+  <loc>https://btcinformation.org/en/blog</loc>
+</url>
+<url>
+  <loc>https://btcinformation.org/en/full-node</loc>
 </url>
 <url>
   <loc>https://btcinformation.org/2012-02-18-protocol-change</loc>
@@ -113,28 +113,7 @@
   <loc>https://btcinformation.org/2012-03-16-critical-vulnerability</loc>
 </url>
 <url>
-  <loc>https://btcinformation.org/2013-08-11-android</loc>
-</url>
-<url>
-  <loc>https://btcinformation.org/2014-02-11-malleability</loc>
-</url>
-<url>
-  <loc>https://btcinformation.org/2015-07-04-spv-mining.md</loc>
-</url>
-<url>
   <loc>https://btcinformation.org/2012-05-14-dos</loc>
-</url>
-<url>
-  <loc>https://btcinformation.org/2017-10-09-segwit2x-safety.md</loc>
-</url>
-<url>
-  <loc>https://btcinformation.org/2015-10-12-upnp-vulnerability.md</loc>
-</url>
-<url>
-  <loc>https://btcinformation.org/2014-04-11-heartbleed</loc>
-</url>
-<url>
-  <loc>https://btcinformation.org/2016-11-01-alert-retirement.md</loc>
 </url>
 <url>
   <loc>https://btcinformation.org/2013-03-11-chain-fork</loc>
@@ -143,6 +122,27 @@
   <loc>https://btcinformation.org/2013-03-15-upgrade-deadline</loc>
 </url>
 <url>
+  <loc>https://btcinformation.org/2013-08-11-android</loc>
+</url>
+<url>
+  <loc>https://btcinformation.org/2014-02-11-malleability</loc>
+</url>
+<url>
+  <loc>https://btcinformation.org/2014-04-11-heartbleed</loc>
+</url>
+<url>
+  <loc>https://btcinformation.org/2015-07-04-spv-mining.md</loc>
+</url>
+<url>
+  <loc>https://btcinformation.org/2015-10-12-upnp-vulnerability.md</loc>
+</url>
+<url>
+  <loc>https://btcinformation.org/2016-11-01-alert-retirement.md</loc>
+</url>
+<url>
   <loc>https://btcinformation.org/2017-07-12-potential-split.md</loc>
+</url>
+<url>
+  <loc>https://btcinformation.org/2017-10-09-segwit2x-safety.md</loc>
 </url>
 </urlset>

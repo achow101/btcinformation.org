@@ -6,7 +6,7 @@
 	<description>This RSS feed allows to follow events and alerts surrounding the Bitcoin network and software.</description>
 	<image>
 		<title>Bitcoin network status and alerts</title>
-		<url>https://btcinformation.org/img/icons/logo_rss.png?1528322191</url>
+		<url>https://btcinformation.org/img/icons/logo_rss.png</url>
 		<link>https://btcinformation.org/en/alerts</link>
 	</image>
         
