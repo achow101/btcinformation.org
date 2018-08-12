@@ -4,12 +4,12 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<meta property="og:image" content="{{site.url}}/img/icons/opengraph.png?{{site.time | date: '%s'}}" />
+<meta property="og:image" content="{{site.url}}/img/icons/opengraph.png" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>{% capture title %}{% translate title %}{% endcapture %}{% if title != '' %}{{ title }}{% else %}{{ page.title }}{% endif %}</title>
 {% capture metadescription %}{% translate metadescription %}{% endcapture %}{% if metadescription != '' %}<meta name="description" content="{{ metadescription }}">{% endif %}
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="/css/main.css?{{site.time | date: '%s'}}">
+<link rel="stylesheet" href="/css/main.css">
 <!--[if lt IE 8]><link rel="stylesheet" href="/css/ie.css"><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" href="/css/ie8.css"><![endif]-->
 {% if page.lang == 'ar' or page.lang == 'fa' %}<link rel="stylesheet" href="/css/rtl.css">{% endif %}

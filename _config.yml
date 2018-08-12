@@ -1,3 +1,5 @@
+timezone: UTC
+
 langsorder:
 - 'id'
 - 'da'
