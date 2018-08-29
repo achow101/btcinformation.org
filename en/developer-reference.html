@@ -4135,7 +4135,7 @@ Bitcoin Wiki article for details and example code.</p>
 
   <ul>
     <li><a href="/en/developer-reference#createmultisig">CreateMultiSig</a>: creates a P2SH multi-<a href="/en/glossary/signature" title="A value related to a public key which could only have reasonably been created by someone who has the private key that created that public key. Used in Bitcoin to authorize spending satoshis previously sent to a public key." class="auto-link">signature</a> <a href="/en/glossary/address" title="A 20-byte hash formatted using base58check to produce either a P2PKH or P2SH Bitcoin address.  Currently the most common way users exchange payment information." class="auto-link">address</a>.</li>
-    <li><a href="/en/developer-reference#estimatefee">EstimateFee</a>: estimates the <a href="/en/glossary/transaction-fee" title="The amount remaining when the value of all outputs in a transaction are subtracted from all inputs in a transaction; the fee is paid to the miner who includes that transaction in a block." class="auto-link">transaction fee</a> per kilobyte that needs to be paid for a transaction to be included within a certain number of <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">blocks</a>. <strong><abbr title="Updated in Bitcoin Core v0.14.0">Updated in 0.14.0</abbr></strong></li>
+    <li><a href="/en/developer-reference#estimatefee">EstimateFee</a>: estimates the <a href="/en/glossary/transaction-fee" title="The amount remaining when the value of all outputs in a transaction are subtracted from all inputs in a transaction; the fee is paid to the miner who includes that transaction in a block." class="auto-link">transaction fee</a> per kilobyte that needs to be paid for a transaction to be included within a certain number of <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">blocks</a>. <strong><abbr title="Updated in Bitcoin Core v0.14.0">Updated in 0.14.0</abbr></strong><strong><abbr title="Deprecated; will be removed in a future version of Bitcoin Core">Deprecated</abbr></strong></li>
     <li><a href="/en/developer-reference#estimatepriority">EstimatePriority</a>: estimates the priority that a transaction needs in order to be included within a certain number of <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">blocks</a> as a free <a href="/en/glossary/high-priority-transaction" title="Transactions that don't have to pay a transaction fee because their inputs have been idle long enough to accumulated large amounts of priority.  Note: miners choose whether to accept free transactions." class="auto-link">high-priority transaction</a>. <strong><abbr title="Deprecated; will be removed in a future version of Bitcoin Core">Deprecated</abbr></strong></li>
     <li><a href="/en/developer-reference#getmemoryinfo">GetMemoryInfo</a>: returns information about memory usage.</li>
     <li><a href="/en/developer-reference#validateaddress">ValidateAddress</a>: returns information about the given Bitcoin <a href="/en/glossary/address" title="A 20-byte hash formatted using base58check to produce either a P2PKH or P2SH Bitcoin address.  Currently the most common way users exchange payment information." class="auto-link">address</a>. <em><abbr title="Updated in Bitcoin Core v0.13.0">Updated in 0.13.0</abbr></em></li>
@@ -5713,7 +5713,7 @@ wallet. The keypool has been flushed, you need to make a new backup.</code></pre
         <td><a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">Blocks</a></td>
         <td>number (int)</td>
         <td>Required<br />(exactly 1)</td>
-        <td>The maximum number of <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">blocks</a> a transaction should have to wait before it is predicted to be included in a <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block</a> based purely on its priority</td>
+        <td>Deprecated: will be removed in a later version of Bitcoin Core<br /><br />The maximum number of <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">blocks</a> a transaction should have to wait before it is predicted to be included in a <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block</a> based purely on its priority</td>
       </tr>
     </tbody>
   </table>
@@ -5758,7 +5758,7 @@ wallet. The keypool has been flushed, you need to make a new backup.</code></pre
   <p><em>See also</em></p>
 
   <ul>
-    <li><a href="/en/developer-reference#estimatefee">EstimateFee</a>: estimates the <a href="/en/glossary/transaction-fee" title="The amount remaining when the value of all outputs in a transaction are subtracted from all inputs in a transaction; the fee is paid to the miner who includes that transaction in a block." class="auto-link">transaction fee</a> per kilobyte that needs to be paid for a transaction to be included within a certain number of <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">blocks</a>.</li>
+    <li><a href="/en/developer-reference#estimatefee">EstimateFee</a>: estimates the <a href="/en/glossary/transaction-fee" title="The amount remaining when the value of all outputs in a transaction are subtracted from all inputs in a transaction; the fee is paid to the miner who includes that transaction in a block." class="auto-link">transaction fee</a> per kilobyte that needs to be paid for a transaction to be included within a certain number of <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">blocks</a>. Deprecated</li>
   </ul>
 
   <p>﻿</p>
@@ -6671,7 +6671,8 @@ that account.</p>
     </tbody>
   </table>
 
-  <p><em>Parameter #2—whether to get JSON or hex <a href="/en/glossary/output" title="An output in a transaction which contains two fields: a value field for transferring zero or more satoshis and a pubkey script for indicating what conditions must be fulfilled for those satoshis to be further spent." class="auto-link">output</a></em></p>
+  <p><em>Parameter #2—whether to get JSON or hex <a href="/en/glossary/output" title="An output in a transaction which contains two fields: a value field for transferring zero or more satoshis and a pubkey script for indicating what conditions must be fulfilled for those satoshis to be further spent." class="auto-link">output</a></em>
+Prior to 0.15.0 release the verbose parameter was of boolean type. After the 0.15.0 release, the variable has been renamed to <code>verbosity</code> and now takes an integer from 0 to 2. It is backward compatible with prior releases with verbose level 0 equivalent to verbose=false, whilst verbose level 1 is equivalent to verbose=true.</p>
 
   <table class="ntpd">
     <thead>
@@ -6692,7 +6693,7 @@ that account.</p>
     </tbody>
   </table>
 
-  <p><em>Result (if format was <code>false</code>)—a <a href="/en/glossary/serialized-block" title="A complete block in its binary format---the same format used to calculate total block byte size; often represented using hexadecimal." class="auto-link">serialized block</a></em></p>
+  <p><em>Result (if format was <code>0</code>)—a <a href="/en/glossary/serialized-block" title="A complete block in its binary format---the same format used to calculate total block byte size; often represented using hexadecimal." class="auto-link">serialized block</a></em></p>
 
   <table class="ntpd">
     <thead>
@@ -6713,7 +6714,7 @@ that account.</p>
     </tbody>
   </table>
 
-  <p><em>Result (if format was <code>true</code> or omitted)—a JSON <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block</a></em></p>
+  <p><em>Result (if format was <code>1</code> or omitted)—a JSON <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block</a></em></p>
 
   <table class="ntpd">
     <thead>
@@ -6790,6 +6791,141 @@ that account.</p>
         <td>array</td>
         <td>Required<br />(exactly 1)</td>
         <td>An array containing the <a href="/en/glossary/txid" title="An identifier used to uniquely identify a particular transaction; specifically, the sha256d hash of the transaction." class="auto-link">TXIDs</a> of all transactions in this <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block</a>.  The transactions appear in the array in the same order they appear in the <a href="/en/glossary/serialized-block" title="A complete block in its binary format---the same format used to calculate total block byte size; often represented using hexadecimal." class="auto-link">serialized block</a></td>
+      </tr>
+      <tr>
+        <td>→ →<br /><a href="/en/glossary/txid" title="An identifier used to uniquely identify a particular transaction; specifically, the sha256d hash of the transaction." class="auto-link">TXID</a></td>
+        <td>string (hex)</td>
+        <td>Required<br />(1 or more)</td>
+        <td>The <a href="/en/glossary/txid" title="An identifier used to uniquely identify a particular transaction; specifically, the sha256d hash of the transaction." class="auto-link">TXID</a> of a transaction in this <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block</a>, encoded as hex in <a href="/en/glossary/rpc-byte-order" title="A hash digest displayed with the byte order reversed; used in Bitcoin Core RPCs, many block explorers, and other software." class="auto-link">RPC byte order</a></td>
+      </tr>
+      <tr>
+        <td>→<br /><code>time</code></td>
+        <td>number (int)</td>
+        <td>Required<br />(exactly 1)</td>
+        <td>The value of the <em>time</em> field in the <a href="/en/glossary/block-header" title="An 80-byte header belonging to a single block which is hashed repeatedly to create proof of work." class="auto-link">block header</a>, indicating approximately when the <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block</a> was created</td>
+      </tr>
+      <tr>
+        <td>→<br /><code>mediantime</code></td>
+        <td>number (int)</td>
+        <td>Required<br />(exactly 1)</td>
+        <td><em>Added in <a href="https://bitcoincore.org/en/releases/0.12.0/" class="auto-link">Bitcoin Core 0.12.0</a></em><br /><br />The median <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block</a> time in <a href="https://en.wikipedia.org/wiki/Unix_time" class="auto-link">Unix epoch time</a></td>
+      </tr>
+      <tr>
+        <td>→<br /><code>nonce</code></td>
+        <td>number (int)</td>
+        <td>Required<br />(exactly 1)</td>
+        <td>The nonce which was successful at turning this particular <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block</a> into one that could be added to the <a href="/en/glossary/block-chain" title="A chain of blocks with each block referencing the block that preceded it. The most-difficult-to-recreate chain is the best block chain." class="auto-link">best block chain</a></td>
+      </tr>
+      <tr>
+        <td>→<br /><code>bits</code></td>
+        <td>string (hex)</td>
+        <td>Required<br />(exactly 1)</td>
+        <td>The value of the <em><a href="/en/glossary/nbits" title="The target is the threshold below which a block header hash must be in order for the block to valid, and nBits is the encoded form of the target threshold as it appears in the block header." class="auto-link">nBits</a></em> field in the <a href="/en/glossary/block-header" title="An 80-byte header belonging to a single block which is hashed repeatedly to create proof of work." class="auto-link">block header</a>, indicating the <a href="/en/glossary/nbits" title="The target is the threshold below which a block header hash must be in order for the block to valid, and nBits is the encoded form of the target threshold as it appears in the block header." class="auto-link">target threshold</a> this <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block’s</a> <a href="/en/glossary/block-header" title="An 80-byte header belonging to a single block which is hashed repeatedly to create proof of work." class="auto-link">header</a> had to pass</td>
+      </tr>
+      <tr>
+        <td>→<br /><code>difficulty</code></td>
+        <td>number (real)</td>
+        <td>Required<br />(exactly 1)</td>
+        <td>The estimated amount of work done to find this <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block</a> relative to the estimated amount of work done to find <a href="/en/glossary/genesis-block" title="The first block in the Bitcoin block chain." class="auto-link">block 0</a></td>
+      </tr>
+      <tr>
+        <td>→<br /><code>chainwork</code></td>
+        <td>string (hex)</td>
+        <td>Required<br />(exactly 1)</td>
+        <td>The estimated number of <a href="/en/glossary/block-header" title="An 80-byte header belonging to a single block which is hashed repeatedly to create proof of work." class="auto-link">block header</a> hashes <a href="/en/glossary/mining" title="Mining is the act of creating valid Bitcoin blocks, which requires demonstrating proof of work, and miners are devices that mine or people who own those devices." class="auto-link">miners</a> had to check from the <a href="/en/glossary/genesis-block" title="The first block in the Bitcoin block chain." class="auto-link">genesis block</a> to this <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block</a>, encoded as big-endian hex</td>
+      </tr>
+      <tr>
+        <td>→<br /><code>previousblockhash</code></td>
+        <td>string (hex)</td>
+        <td>Optional<br />(0 or 1)</td>
+        <td>The hash of the <a href="/en/glossary/block-header" title="An 80-byte header belonging to a single block which is hashed repeatedly to create proof of work." class="auto-link">header</a> of the previous <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block</a>, encoded as hex in <a href="/en/glossary/rpc-byte-order" title="A hash digest displayed with the byte order reversed; used in Bitcoin Core RPCs, many block explorers, and other software." class="auto-link">RPC byte order</a>.  Not returned for <a href="/en/glossary/genesis-block" title="The first block in the Bitcoin block chain." class="auto-link">genesis block</a></td>
+      </tr>
+      <tr>
+        <td>→<br /><code>nextblockhash</code></td>
+        <td>string (hex)</td>
+        <td>Optional<br />(0 or 1)</td>
+        <td>The hash of the next <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block</a> on the <a href="/en/glossary/block-chain" title="A chain of blocks with each block referencing the block that preceded it. The most-difficult-to-recreate chain is the best block chain." class="auto-link">best block chain</a>, if known, encoded as hex in <a href="/en/glossary/rpc-byte-order" title="A hash digest displayed with the byte order reversed; used in Bitcoin Core RPCs, many block explorers, and other software." class="auto-link">RPC byte order</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p><em>Result (if format was <code>2</code>)— a decoded <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block</a> as a JSON object with verbose transaction data</em></p>
+
+  <table class="ntpd">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Presence</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>result</code></td>
+        <td>object/null</td>
+        <td>Required<br />(exactly 1)</td>
+        <td>An object containing the requested <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block</a>, or JSON <code>null</code> if an error occurred</td>
+      </tr>
+      <tr>
+        <td>→<br /><code>hash</code></td>
+        <td>string (hex)</td>
+        <td>Required<br />(exactly 1)</td>
+        <td>The hash of this <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block’s</a> <a href="/en/glossary/block-header" title="An 80-byte header belonging to a single block which is hashed repeatedly to create proof of work." class="auto-link">block header</a> encoded as hex in <a href="/en/glossary/rpc-byte-order" title="A hash digest displayed with the byte order reversed; used in Bitcoin Core RPCs, many block explorers, and other software." class="auto-link">RPC byte order</a>.  This is the same as the hash provided in parameter #1</td>
+      </tr>
+      <tr>
+        <td>→<br /><code>confirmations</code></td>
+        <td>number (int)</td>
+        <td>Required<br />(exactly 1)</td>
+        <td>The number of <a href="/en/glossary/confirmation-score" title="A score indicating the number of blocks on the best block chain that would need to be modified to remove or modify a particular transaction. A confirmed transaction has a confirmation score of one or higher." class="auto-link">confirmations</a> the transactions in this <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block</a> have, starting at 1 when this <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block</a> is at the tip of the <a href="/en/glossary/block-chain" title="A chain of blocks with each block referencing the block that preceded it. The most-difficult-to-recreate chain is the best block chain." class="auto-link">best block chain</a>.  This score will be -1 if the the <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block</a> is not part of the <a href="/en/glossary/block-chain" title="A chain of blocks with each block referencing the block that preceded it. The most-difficult-to-recreate chain is the best block chain." class="auto-link">best block chain</a></td>
+      </tr>
+      <tr>
+        <td>→<br /><code>size</code></td>
+        <td>number (int)</td>
+        <td>Required<br />(exactly 1)</td>
+        <td>The size of this <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block</a> in <a href="/en/glossary/serialized-block" title="A complete block in its binary format---the same format used to calculate total block byte size; often represented using hexadecimal." class="auto-link">serialized block</a> format, counted in bytes</td>
+      </tr>
+      <tr>
+        <td>→<br /><code>strippedsize</code></td>
+        <td>number (int)</td>
+        <td>Required<br />(exactly 1)</td>
+        <td><em>Added in <a href="https://bitcoincore.org/en/releases/0.13.0/" class="auto-link">Bitcoin Core 0.13.0</a></em><br /><br />The size of this <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block</a> in <a href="/en/glossary/serialized-block" title="A complete block in its binary format---the same format used to calculate total block byte size; often represented using hexadecimal." class="auto-link">serialized block</a> format excluding witness data, counted in bytes</td>
+      </tr>
+      <tr>
+        <td>→<br /><code>weight</code></td>
+        <td>number (int)</td>
+        <td>Required<br />(exactly 1)</td>
+        <td><em>Added in <a href="https://bitcoincore.org/en/releases/0.13.0/" class="auto-link">Bitcoin Core 0.13.0</a></em><br /><br />This <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block’s</a> weight as defined in <a href="https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki" class="auto-link">BIP141</a></td>
+      </tr>
+      <tr>
+        <td>→<br /><code>height</code></td>
+        <td>number (int)</td>
+        <td>Required<br />(exactly 1)</td>
+        <td>The <a href="/en/glossary/block-height" title="The number of blocks preceding a particular block on a block chain. For example, the genesis block has a height of zero because zero block preceded it." class="auto-link">height</a> of this <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block</a> on its <a href="/en/glossary/block-chain" title="A chain of blocks with each block referencing the block that preceded it. The most-difficult-to-recreate chain is the best block chain." class="auto-link">block chain</a></td>
+      </tr>
+      <tr>
+        <td>→<br /><code>version</code></td>
+        <td>number (int)</td>
+        <td>Required<br />(exactly 1)</td>
+        <td>This <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block’s</a> version number.  See <a href="/en/developer-reference#block-versions">block version numbers</a></td>
+      </tr>
+      <tr>
+        <td>→<br /><code>versionHex</code></td>
+        <td>string (hex)</td>
+        <td>Required<br />(exactly 1)</td>
+        <td><em>Added in <a href="https://bitcoincore.org/en/releases/0.13.0/" class="auto-link">Bitcoin Core 0.13.0</a></em><br /><br />This <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block’s</a> version formatted in hexadecimal</td>
+      </tr>
+      <tr>
+        <td>→<br /><code>merkleroot</code></td>
+        <td>string (hex)</td>
+        <td>Required<br />(exactly 1)</td>
+        <td>The <a href="/en/glossary/merkle-root" title="The root node of a merkle tree, a descendant of all the hashed pairs in the tree.  Block headers must include a valid merkle root descended from all transactions in that block." class="auto-link">merkle root</a> for this <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block</a>, encoded as hex in <a href="/en/glossary/rpc-byte-order" title="A hash digest displayed with the byte order reversed; used in Bitcoin Core RPCs, many block explorers, and other software." class="auto-link">RPC byte order</a></td>
+      </tr>
+      <tr>
+        <td>→<br /><code>tx</code></td>
+        <td>array</td>
+        <td>Required<br />(exactly 1)</td>
+        <td>An array containing the full transaction details of each transaction in the <a href="/en/glossary/output" title="An output in a transaction which contains two fields: a value field for transferring zero or more satoshis and a pubkey script for indicating what conditions must be fulfilled for those satoshis to be further spent." class="auto-link">output</a> as given by <a href="/en/developer-reference#getrawtransaction" class="auto-link"><code>getrawtransaction</code></a> in this <a href="/en/glossary/block" title="One or more transactions prefaced by a block header and protected by proof of work. Blocks are the data stored on the block chain." class="auto-link">block</a>. The transactions appear in the array in the same order they appear in the <a href="/en/glossary/serialized-block" title="A complete block in its binary format---the same format used to calculate total block byte size; often represented using hexadecimal." class="auto-link">serialized block</a></td>
       </tr>
       <tr>
         <td>→ →<br /><a href="/en/glossary/txid" title="An identifier used to uniquely identify a particular transaction; specifically, the sha256d hash of the transaction." class="auto-link">TXID</a></td>
@@ -9385,6 +9521,27 @@ d255fda67a6e3bd63ba1d908c8c2</code></pre></figure>
         <td>string</td>
         <td>Optional<br />(0 or 1)</td>
         <td>The name of the account to put the <a href="/en/glossary/address" title="A 20-byte hash formatted using base58check to produce either a P2PKH or P2SH Bitcoin address.  Currently the most common way users exchange payment information." class="auto-link">address</a> in.  The default is the default account, an empty string (“”)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p><em>Parameter #2—<a href="/en/glossary/address" title="A 20-byte hash formatted using base58check to produce either a P2PKH or P2SH Bitcoin address.  Currently the most common way users exchange payment information." class="auto-link">address</a> type</em></p>
+
+  <table class="ntpd">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Presence</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="/en/glossary/address" title="A 20-byte hash formatted using base58check to produce either a P2PKH or P2SH Bitcoin address.  Currently the most common way users exchange payment information." class="auto-link">Address</a> Type</td>
+        <td>string</td>
+        <td>Optional<br />(0 or 1)</td>
+        <td>The <a href="/en/glossary/address" title="A 20-byte hash formatted using base58check to produce either a P2PKH or P2SH Bitcoin address.  Currently the most common way users exchange payment information." class="auto-link">address</a> type to use. Options are ‘legacy’, ‘p2sh-segwit’, and ‘bech32’. Default is set by -addresstype</td>
       </tr>
     </tbody>
   </table>
