@@ -118,6 +118,7 @@ nl:
     walletgreenaddress: "GreenAddress is een gebruiksvriendelijke portemonnee voor meervoudige ondertekening met verbeterde beveiliging en privacy. Uw sleutels staan nooit op de server, ook niet versleuteld. Voor veiligheidsredenen dient u altijd gebruik te maken van 2FA en de browserextensie of de Android-app."
     wallettrezor: "TREZOR is een hardwareportemonnee die een hoog niveau van bescherming biedt zonder gemak op te offeren. In tegenstelling tot cold storage is TREZOR in staat om transacties te tekenen terwijl hij verbonden is met een online apparaat. Dat wil zeggen dat het spenderen van bitcoins zelfs veilig is als er een besmette computer gebruikt wordt."
     walletnano: "Ledger Nano is een hardwareportemonnee die gebouwd is op een ST23YT66 smartcardplatform voor bankieren. Het houdt de privésleutels van de gebruiker veilig, valideert transacties, kan gebruikt worden als een veilige prepaidkaart of als partij voor meerdere handtekeningen. Hoewel het niet open-source is, kan het deterministisch gevalideerd worden."
+    walletwasabi: "Open-source, zelfbeheerde Bitcoin portefeuille gericht op privacy, voor Windows, Linux en Mac. Ingebouwd Tor netwerk voor verhoogde anonimiteit, CoinJoin en andere eigenschappen voor het beheren van coins."
     walletdownload: "Installeer"
     walletvisit: "Naar de website"
     walletsourcecode: "Broncode"

@@ -118,6 +118,7 @@ id:
     walletgreenaddress: "GreenAddress adalah dompet tanda tangan berganda yang ramah pengguna, dengan keamanan dan privasi yang telah ditingkatkan. Dalam waktu singkat kunci pribadi Anda ada di server, bahkan tidak dienkripsi. Untuk alasan keamanan, Anda sebaiknya selalu menggunakan 2FA dan ekstensi browser atau Android App."
     wallettrezor: "TREZOR adalah dompet perangkat keras yang menyediakan keamanan tingkat tinggi tanpa mengorbankan kenyamanan. Tidak seperti penyimpanan dingin, TREZOR mampu melakukan transaksi selama terkoneksi dengan perangkat online. Hal ini berarti membelanjakan bitcoin lebih aman bahkan saat menggunakan komputer yang terinfeksi malware."
     walletnano: "Ledger Nano adalah sebuah dompet perangkat keras yang diciptakan pada sebuah platform kartu pintar perbankan ST23YT66. Dompet ini menjaga keamanan kunci pribadi pengguna, memvalidasi transaksi, bisa digunakan sebagai sebuah kartu prabayar yang aman atau sebuah kelompok tanda tangan berganda. Meskipun dompet ini bukan sumber terbuka, tetapi dapat divalidasi secara deterministik."
+    walletwasabi: "Wasabi adalah dompet bitcoin yang berfokus pada privasi."
     walletdownload: "Memasang"
     walletvisit: "Kunjungi situs web"
     walletsourcecode: "Sumber Kode"

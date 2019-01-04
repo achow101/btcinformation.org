@@ -121,6 +121,7 @@ it:
     wallettrezor: "Trezor è un portafoglio hardware che fornisce un elevato livello di sicurezza senza sacrificare la comodità. A differenza del cold storage, trezor è in grado di firmare le transazioni quando connesso a un dispositivo online. Ciò significa che è sicuro spendere Bitcoin anche quando si utilizza un computer compromesso."
     walletnano: "Ledger Nano è un portafoglio hardware basato sulla smartcard bancaria ST23YT66. Mantiene la chiave privata dell'utente al sicuro, conferma le transazioni e può essere utilizzata come una carta prepagata o come un membro per multifirma. Anche se non è open-source, può essere convalidata in maniera deterministica."
     walletninki: "Ninki è un portafoglio multi-firma con una bella interfaccia utente che rende l'invio di bitcoin facile come un'email. Hai in ogni momento il pieno controllo dei tuoi bitcoin."
+    walletwasabi: "Wasabi é un portafogli  Bitcoin con attenzione alla privacy."
     walletdownload: "Installa"
     walletvisit: "Visita il sito web"
     walletsourcecode: "Codice sorgente"
