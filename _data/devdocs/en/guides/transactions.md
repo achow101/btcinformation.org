@@ -656,7 +656,7 @@ enable locktime.
 <span id="locktime_parsing_rules">Locktime itself is an unsigned 4-byte integer which can be parsed two ways:</span>
 
 * If less than 500 million, locktime is parsed as a block height. The
-  transaction can be added to any block which has this height or higher.
+  transaction can be added to any block higher than this height.
 
 * If greater than or equal to 500 million, locktime is parsed using the
   Unix epoch time format (the number of seconds elapsed since
