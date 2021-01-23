@@ -304,7 +304,7 @@ we just created does.
 
 <div markdown="1" class="multicode">
 {% highlight bash %}
-> bitcoin-cli -regtest signrawtransaction $RAW_TX
+> bitcoin-cli -regtest signrawtransactionwithwallet $RAW_TX
 {% endhighlight %}
 {% highlight json %}
 {
@@ -324,7 +324,7 @@ we just created does.
 {% endhighlight %}
 </div>
 
-Use the `signrawtransaction` RPC to sign the transaction created by
+Use the `signrawtransactionwithwallet` RPC to sign the transaction created by
 `createrawtransaction` and save the returned "hex" raw format signed
 transaction to a shell variable. 
 
