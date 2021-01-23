@@ -119,7 +119,8 @@ someone else, that second transaction would not be displayed in our
 list of UTXOs.
 
 {% highlight bash %}
-> bitcoin-cli -regtest generate 1
+> bitcoin-cli -regtest -generate 1
+> # use `bitcoin-cli -regtest generate 1` for Bitcoin Core 0.20.x and earlier
 
 > unset NEW_ADDRESS
 {% endhighlight %}
